@@ -1,4 +1,9 @@
 import React from "react";
+import meting from "../assets/meting.webp";
+import castelius from "../assets/castelius.jpg";
+import cezarius from "../assets/cezarius.jpg";
+import cirilius from "../assets/cirilius.jpg";
+import constantinus from "../assets/constantinus.jpg";
 
 export default function Body() {
   return (
@@ -6,7 +11,7 @@ export default function Body() {
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
-          <img src="/assets/meting.webp" alt="Meeting" className="main-image" />
+          <img src={meting} alt="Meeting" className="main-image" />
           <h3>Shipping available worldwide!</h3>
           <p>
             Thank you for gracing Casa di Andrey Kennel with your presence. For
@@ -34,7 +39,7 @@ export default function Body() {
           <div className="section-two-image-container">
             <div className="feature-item">
               <img
-                src="/assets/cezarius.jpg"
+                src={cezarius}
                 alt="cezarius fawn male"
                 className="feature-image"
               />
@@ -42,7 +47,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="/assets/castelius.jpg"
+                src={castelius}
                 alt="castelius fawn male"
                 className="feature-image"
               />
@@ -50,7 +55,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="/assets/cirilius.jpg"
+                src={cirilius}
                 alt="cirilius fawn male"
                 className="feature-image"
               />
@@ -58,7 +63,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="/assets/constantinus.jpg"
+                src={constantinus}
                 alt="constantinus fawn male"
                 className="feature-image"
               />
