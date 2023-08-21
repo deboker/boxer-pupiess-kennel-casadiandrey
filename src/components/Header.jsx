@@ -16,19 +16,19 @@ export default function Header() {
             "CASA DI ANDREY" Breeders of European Top Quality Boxer Puppies
           </span>
 
-          <nav>
+          {/* <nav>
             <ul>
               <li>
-                {/* <a href="https://www.facebook.com/andrej.andrasik.7">
+                <a href="https://www.facebook.com/andrej.andrasik.7">
                   <img
                     className="fb-logo"
                     src="src/assets/facebook.png"
                     alt="facebook logo"
                   />
-                </a> */}
+                </a> 
               </li>
             </ul>
-          </nav>
+          </nav> */}
         </div>
       </header>
     </div>

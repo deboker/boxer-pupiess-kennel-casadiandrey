@@ -1,9 +1,9 @@
 import React from "react";
 import meting from "../assets/meting.webp";
-import castelius from "../assets/castelius.jpg";
-import cezarius from "../assets/cezarius.jpg";
-import cirilius from "../assets/cirilius.jpg";
-import constantinus from "../assets/constantinus.jpg";
+import Cornelius from "../assets/Cornelius.jpg";
+import Caesar from "../assets/Caesar.jpg";
+import Claudius from "../assets/Claudius.jpg";
+import Commodus from "../assets/Commodus.jpg";
 
 export default function Body() {
   return (
@@ -11,7 +11,7 @@ export default function Body() {
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
-          <img src={meting} alt="Meeting" className="main-image" />
+          {/* <img src={""} alt="Meeting" className="main-image" /> */}
           <h3>Shipping available worldwide!</h3>
           <p>
             Thank you for gracing Casa di Andrey Kennel with your presence. For
@@ -39,35 +39,35 @@ export default function Body() {
           <div className="section-two-image-container">
             <div className="feature-item">
               <img
-                src={cezarius}
-                alt="cezarius fawn male"
+                src={Caesar}
+                alt="Caesar fawn male"
                 className="feature-image"
               />
-              <p>Cezarius Casa di Andrey</p>
+              <p>Caesar Casa di Andrey</p>
             </div>
             <div className="feature-item">
               <img
-                src={castelius}
-                alt="castelius fawn male"
+                src={Cornelius}
+                alt="Cornelius fawn male"
                 className="feature-image"
               />
-              <p>Castelius Casa di Andrey</p>
+              <p>Cornelius Casa di Andrey</p>
             </div>
             <div className="feature-item">
               <img
-                src={cirilius}
-                alt="cirilius fawn male"
+                src={Claudius}
+                alt="Claudius fawn male"
                 className="feature-image"
               />
-              <p>Cirilius Casa di Andrey</p>
+              <p>Claudius Casa di Andrey</p>
             </div>
             <div className="feature-item">
               <img
-                src={constantinus}
-                alt="constantinus fawn male"
+                src={Commodus}
+                alt="Commodus fawn male"
                 className="feature-image"
               />
-              <p>Constantinus Casa di Andrey</p>
+              <p>Commodus Casa di Andrey</p>
             </div>
           </div>
           <a
