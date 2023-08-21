@@ -101,10 +101,22 @@ a:active {
   color: #fff;
 }
 
-.btn:hover,
-.btn:active {
-  color: rgb(149, 149, 149);
+.btn-light:hover,
+.btn-light:active {
+  color: #4a4a4a;
   background-color: #77ffa9;
+}
+
+.btn-mid:hover,
+.btn-mid:active {
+  color: #4a4a4a;
+  background-color: #ac4eeb;
+}
+
+.btn-mess:hover,
+.btn-mess:active {
+  color: #4a4a4a;
+  background-color: #82c7ff;
 }
 
 /* ----- LAYOUT ----- */
