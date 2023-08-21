@@ -6,11 +6,7 @@ export default function Body() {
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
-          <img
-            src="src/assets/meting.webp"
-            alt="Meeting"
-            className="main-image"
-          />
+          <img src="/assets/meting.webp" alt="Meeting" className="main-image" />
           <h3>Shipping available worldwide!</h3>
           <p>
             Thank you for gracing Casa di Andrey Kennel with your presence. For
@@ -38,7 +34,7 @@ export default function Body() {
           <div className="section-two-image-container">
             <div className="feature-item">
               <img
-                src="src/assets/cezarius.jpg"
+                src="/assets/cezarius.jpg"
                 alt="cezarius fawn male"
                 className="feature-image"
               />
@@ -46,7 +42,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="src/assets/castelius.jpg"
+                src="/assets/castelius.jpg"
                 alt="castelius fawn male"
                 className="feature-image"
               />
@@ -54,7 +50,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="src/assets/cirilius.jpg"
+                src="/assets/cirilius.jpg"
                 alt="cirilius fawn male"
                 className="feature-image"
               />
@@ -62,7 +58,7 @@ export default function Body() {
             </div>
             <div className="feature-item">
               <img
-                src="src/assets/constantinus.jpg"
+                src="/assets/constantinus.jpg"
                 alt="constantinus fawn male"
                 className="feature-image"
               />
