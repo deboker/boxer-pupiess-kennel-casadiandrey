@@ -1,17 +1,66 @@
-import React from "react";
+import React, { useEffect } from "react";
 import meting from "../assets/meting.webp";
 import Cornelius from "../assets/Cornelius.jpg";
 import Caesar from "../assets/Caesar.jpg";
 import Claudius from "../assets/Claudius.jpg";
 import Commodus from "../assets/Commodus.jpg";
+import arrow from "../assets/arrow-up.svg";
+import "../index.css";
 
 export default function Body() {
+  useEffect(() => {
+    const handleFirstTab = (e) => {
+      if (e.key === "Tab") {
+        document.body.classList.add("user-is-tabbing");
+
+        window.removeEventListener("keydown", handleFirstTab);
+        window.addEventListener("mousedown", handleMouseDownOnce);
+      }
+    };
+
+    const handleMouseDownOnce = () => {
+      document.body.classList.remove("user-is-tabbing");
+
+      window.removeEventListener("mousedown", handleMouseDownOnce);
+      window.addEventListener("keydown", handleFirstTab);
+    };
+
+    window.addEventListener("keydown", handleFirstTab);
+
+    const backToTopButton = document.querySelector(".back-to-top");
+    let isBackToTopRendered = false;
+
+    let alterStyles = (isBackToTopRendered) => {
+      backToTopButton.style.visibility = isBackToTopRendered
+        ? "visible"
+        : "hidden";
+      backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+      backToTopButton.style.transform = isBackToTopRendered
+        ? "scale(1)"
+        : "scale(0)";
+    };
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 700) {
+        isBackToTopRendered = true;
+        alterStyles(isBackToTopRendered);
+      } else {
+        isBackToTopRendered = false;
+        alterStyles(isBackToTopRendered);
+      }
+    });
+    return () => {
+      window.removeEventListener("keydown", handleFirstTab);
+      window.removeEventListener("mousedown", handleMouseDownOnce);
+    };
+  }, []);
+
   return (
     <div>
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
-          {/* <img src={""} alt="Meeting" className="main-image" /> */}
+          <img src={meting} alt="Meeting" className="main-image" />
           <h3>Shipping available worldwide!</h3>
           <p>
             Thank you for gracing Casa di Andrey Kennel with your presence. For
@@ -92,6 +141,9 @@ export default function Body() {
             We have puppies available and upcoming litters. Reservations are now
             open.
           </p>
+          <a href="#top" class="back-to-top" title="Back to Top">
+            <img src={arrow} alt="Back to Top" class="back-to-top__image" />
+          </a>
         </div>
       </section>
     </div>
