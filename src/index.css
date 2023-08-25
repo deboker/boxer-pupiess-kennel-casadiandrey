@@ -11,7 +11,7 @@
 /* ----- TYPOGRAPHY ----- */
 
 body {
-  color: #2e2e2e;
+  color: #333;
   font-family: "Tilt Neon", cursive;
 }
 
@@ -25,12 +25,12 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  color: rgb(75, 75, 75);
+  color: #333;
   font-size: 1.875rem;
 }
 
 h2 {
-  color: rgb(75, 75, 75);
+  color: #333;
   font-size: 1.375rem;
   margin-top: 0;
   text-align: center;
@@ -38,7 +38,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
-  color: rgb(75, 75, 75);
+  color: #333;
 }
 
 p {
@@ -60,13 +60,13 @@ p {
 /* ----- LINKS ----- */
 
 a {
-  color: #ef5839;
-  text-decoration: underline dotted;
+  color: #4e8ec1;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: #d4b44c;
+  color: #206d9a;
 }
 
 .btn {
@@ -80,44 +80,22 @@ a:active {
   border-radius: 4.6px;
 }
 
-.btn-dark {
-  color: whitesmoke;
-  background: #59267c;
-}
-
+.btn,
 .btn-mid,
-.btn-light {
-  color: whitesmoke;
-}
-
-.btn-mid {
-  background: #59267c;
-}
-
-.btn-light {
-  background: #25d366;
-}
+.btn-light,
 .btn-mess {
-  background: #2196f3;
+  background-color: #4e8ec1;
   color: #fff;
 }
 
 .btn-light:hover,
-.btn-light:active {
-  color: #4a4a4a;
-  background-color: #77ffa9;
-}
-
+.btn-light:active,
 .btn-mid:hover,
-.btn-mid:active {
-  color: #4a4a4a;
-  background-color: #ac4eeb;
-}
-
+.btn-mid:active,
 .btn-mess:hover,
 .btn-mess:active {
-  color: #4a4a4a;
-  background-color: #82c7ff;
+  background-color: #206d9a;
+  color: #fff;
 }
 
 /* ----- LAYOUT ----- */
@@ -139,7 +117,7 @@ footer {
 
 header,
 .section-two {
-  background-color: #a2b7f3;
+  background-color: #f0f5f9;
 }
 
 .section-two {
@@ -181,14 +159,14 @@ header,
 .feature-item {
   flex: 1 260px;
   text-align: center;
-  background: whitesmoke;
+  background-color: #fff;
   font-size: 1.125rem;
   border-radius: 4.6px;
 }
 
 footer {
   text-align: center;
-  color: #5f29a3;
+  color: #666;
 }
 
 /* ----- NAVIGATION ----- */
@@ -221,11 +199,15 @@ body:not(.user-is-tabbing) a:focus {
   align-items: center;
   height: 5.5rem;
   width: 5.5rem;
-  background-color: var(--pink);
+  background-color: #4e8ec1;
   border-radius: 50%;
   z-index: 10;
   visibility: hidden;
   transition: all 0.4s;
+}
+
+.back-to-top:hover {
+  background-color: #206d9a;
 }
 
 .back-to-top__image {
