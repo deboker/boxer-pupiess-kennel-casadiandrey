@@ -74,10 +74,15 @@ a:active {
   text-align: center;
   font-weight: 500;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5em 1em;
   margin-bottom: 1em;
   border-radius: 4.6px;
+  background-color: #4e8ec1;
+  color: #fff;
+  gap: 0.3rem;
 }
 
 .btn,
@@ -86,6 +91,7 @@ a:active {
 .btn-mess {
   background-color: #4e8ec1;
   color: #fff;
+  align-items: center;
 }
 
 .btn-light:hover,
@@ -192,13 +198,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .back-to-top {
   position: fixed;
-  bottom: 4rem;
+  bottom: 2rem;
   right: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5.5rem;
-  width: 5.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   background-color: #4e8ec1;
   border-radius: 50%;
   z-index: 10;

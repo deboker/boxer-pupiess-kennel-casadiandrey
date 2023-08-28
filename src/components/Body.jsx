@@ -6,6 +6,7 @@ import Claudius from "../assets/Claudius.jpg";
 import Commodus from "../assets/Commodus.jpg";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
+import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
 export default function Body() {
   useEffect(() => {
@@ -123,19 +124,19 @@ export default function Body() {
             href="https://www.facebook.com/messages/t/andrej.andrasik.7"
             className="btn btn-mess"
           >
-            Messanger
+            <FaFacebookMessenger /> Messanger
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=+381638878655&text=Hi%20There!"
             className="btn btn-light"
           >
-            WhatsApp
+            <FaWhatsapp /> WhatsApp
           </a>
           <a
             href="viber://contact?number=%2B381638878655"
             className="btn btn-mid"
           >
-            Viber
+            <FaViber /> Viber
           </a>
           <p>
             We have puppies available and upcoming litters. Reservations are now

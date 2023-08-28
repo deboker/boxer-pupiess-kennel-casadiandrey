@@ -1,5 +1,5 @@
 import React from "react";
-import fb from "../assets/facebook.png";
+import { AiFillFacebook } from "react-icons/ai";
 
 export default function Header() {
   return (
@@ -9,7 +9,7 @@ export default function Header() {
           <h1>
             German Boxer Puppies for Sale!
             <a href="https://www.facebook.com/andrej.andrasik.7">
-              <img className="fb-logo" src={fb} alt="facebook logo" />
+              <AiFillFacebook />
             </a>
           </h1>
           <span className="subheading">
