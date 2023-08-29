@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import meting from "../assets/meting.webp";
-import Cornelius from "../assets/Cornelius.jpg";
-import Caesar from "../assets/Caesar.jpg";
-import Claudius from "../assets/Claudius.jpg";
-import Commodus from "../assets/Commodus.jpg";
+import Cornelius from "../assets/1693313389728.jpg";
+import Caesar from "../assets/1693313751087.jpg";
+import Claudius from "../assets/1693313660218.jpg";
+import Commodus from "../assets/1693313570624.jpg";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
@@ -85,7 +85,10 @@ export default function Body() {
 
       <section className="section-two">
         <div className="container">
-          <h2>Available Adorable Puppies: Fawn Males.</h2>
+          <h2>
+            Discover our selection of charming fawn male puppies ready to bring
+            joy and companionship into your life.
+          </h2>
           <div className="section-two-image-container">
             <div className="feature-item">
               <img
@@ -139,8 +142,10 @@ export default function Body() {
             <FaViber /> Viber
           </a>
           <p>
-            We have puppies available and upcoming litters. Reservations are now
-            open.
+            Reserve Your Puppy Now! Contact us for more photos and adorable
+            short videos showcasing our puppies. Discover Your New Furry Friend
+            Explore our available puppies and get ready to welcome a new member
+            to your family. Stay tuned for our upcoming litters too!
           </p>
           <a href="#top" class="back-to-top" title="Back to Top">
             <img src={arrow} alt="Back to Top" class="back-to-top__image" />

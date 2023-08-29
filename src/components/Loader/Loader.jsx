@@ -7,7 +7,7 @@ const Loader = () => {
     <div className="loader">
       <div className="svg-wraper">
         <div className="loading-text"></div>
-        <p>LOGO TU MA IST</p>
+        LOGO TU MA IST
       </div>
     </div>
   );
