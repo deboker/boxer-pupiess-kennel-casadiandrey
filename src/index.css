@@ -33,6 +33,7 @@ h2 {
   color: #333;
   font-size: 1.375rem;
   margin-top: 0;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@ h3 {
 p {
   line-height: 1.5;
   color: rgb(75, 75, 75);
+  margin-top: 1.5rem;
 }
 
 .subheading {
