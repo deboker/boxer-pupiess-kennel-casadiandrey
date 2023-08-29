@@ -3,7 +3,7 @@ import meting from "../assets/meting.webp";
 import Cornelius from "../assets/1693313389728.jpg";
 import Caesar from "../assets/1693313751087.jpg";
 import Claudius from "../assets/1693313660218.jpg";
-import Commodus from "../assets/1693313570624.jpg";
+import Commodus from "../assets/1693315136623.jpg";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
