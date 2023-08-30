@@ -1,21 +1,8 @@
-import React from "react";
-import "./loader.css";
-
-const Loader = () => {
-  return (
-    <div className="loader">
-      <div className="svg-wrapper">
-        {/* copy svg image and past it here */}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          viewBox="0.00 0.00 225.00 323.00"
-        >
-          <g stroke-width="2.00" fill="none" stroke-linecap="butt">
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 225.00 323.00">
+<g stroke-width="2.00" fill="none" stroke-linecap="butt">
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 100.95 39.73
   L 112.90 53.99
   A 0.54 0.43 -77.6 0 1 113.01 54.21
@@ -89,11 +76,8 @@ const Loader = () => {
   Q 99.48 46.17 99.60 45.49
   L 100.58 39.83
   Q 100.66 39.39 100.95 39.73"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 187.65 180.31
   C 187.66 173.76 182.67 168.26 176.00 168.26
   Q 118.02 168.25 60.05 168.25
@@ -105,11 +89,8 @@ const Loader = () => {
   Q 148.87 286.78 176.26 271.29
   C 183.26 267.32 187.48 265.24 187.49 257.25
   Q 187.54 218.78 187.65 180.31"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 168.60 111.05
   L 167.00 110.19
   Q 166.56 109.96 166.20 110.30
@@ -134,11 +115,8 @@ const Loader = () => {
   C 172.95 80.50 175.77 82.23 175.29 88.02
   C 174.81 93.88 174.90 107.18 170.15 110.91
   A 1.42 1.41 -50.1 0 1 168.60 111.05"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 86.57 107.16
   C 78.77 114.37 64.69 107.81 58.54 101.56
   C 54.49 97.45 54.76 89.51 57.83 84.99
@@ -154,11 +132,8 @@ const Loader = () => {
   C 71.73 153.59 89.44 156.75 92.32 140.84
   C 94.28 130.05 93.85 116.79 87.51 107.27
   A 0.63 0.62 51.5 0 0 86.57 107.16"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 136.90 88.71
   Q 139.08 87.75 137.63 89.64
   C 134.97 93.11 132.67 96.08 131.54 100.59
@@ -195,22 +170,16 @@ const Loader = () => {
   C 123.17 109.43 125.01 110.20 126.65 107.64
   C 129.69 102.91 127.83 97.61 131.56 92.95
   Q 133.90 90.02 136.90 88.71"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 171.26 86.51
   C 170.04 81.66 165.26 79.92 161.72 83.63
   Q 161.39 83.97 161.72 84.31
   C 167.80 90.61 167.50 98.64 167.80 106.79
   A 0.85 0.85 0.0 0 0 169.28 107.33
   C 173.22 103.02 172.55 91.69 171.26 86.51"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 144.48 118.77
   A 0.73 0.73 0.0 0 0 145.84 119.20
   L 149.98 112.16
@@ -218,22 +187,16 @@ const Loader = () => {
   L 145.15 113.68
   A 0.73 0.73 0.0 0 0 144.82 114.24
   L 144.48 118.77"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 163.12 119.87
   C 161.00 122.66 158.86 120.83 156.34 120.37
   Q 155.84 120.28 155.45 120.62
   Q 154.51 121.44 154.71 122.66
   C 155.33 126.42 166.70 127.13 164.29 120.06
   A 0.67 0.67 0.0 0 0 163.12 119.87"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 183.47 181.86
   C 183.45 176.03 180.70 172.27 174.50 172.26
   Q 156.64 172.23 139.00 172.26
@@ -243,11 +206,8 @@ const Loader = () => {
   L 183.06 217.86
   A 0.43 0.43 0.0 0 0 183.49 217.43
   Q 183.53 199.65 183.47 181.86"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 66.94 211.52
   L 64.19 211.76
   A 0.92 0.91 -13.3 0 1 63.26 211.19
@@ -263,11 +223,8 @@ const Loader = () => {
   A 1.56 1.56 0.0 0 0 68.15 208.61
   L 67.67 210.88
   A 0.82 0.82 0.0 0 1 66.94 211.52"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 91.97 187.77
   C 91.91 178.17 80.51 178.17 80.50 188.51
   Q 80.49 201.43 80.50 214.42
@@ -283,11 +240,8 @@ const Loader = () => {
   L 91.48 215.00
   Q 91.98 215.00 91.98 214.50
   Q 92.04 201.12 91.97 187.77"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 109.46 204.91
   Q 109.43 206.07 109.44 208.51
   C 109.47 213.46 103.47 212.66 104.16 207.81
@@ -310,11 +264,8 @@ const Loader = () => {
   Q 100.90 193.72 101.15 200.20
   C 101.32 204.64 105.70 203.55 108.89 204.20
   A 0.71 0.70 6.8 0 1 109.46 204.91"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 131.57 206.31
   L 131.21 214.44
   A 0.55 0.55 0.0 0 0 131.80 215.01
@@ -331,11 +282,8 @@ const Loader = () => {
   Q 125.50 205.39 126.18 205.44
   L 131.06 205.73
   Q 131.60 205.77 131.57 206.31"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 63.00 250.75
   L 67.75 250.75
   Q 68.25 250.75 68.25 251.25
@@ -351,11 +299,8 @@ const Loader = () => {
   Q 62.50 260.41 62.50 259.80
   L 62.50 251.25
   Q 62.50 250.75 63.00 250.75"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 88.83 247.30
   Q 86.50 237.16 83.89 226.97
   Q 83.69 226.20 82.22 225.88
@@ -374,11 +319,8 @@ const Loader = () => {
   Q 89.25 225.98 89.25 226.62
   L 89.25 247.25
   A 0.21 0.21 0.0 0 1 88.83 247.30"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 101.64 226.18
   L 101.70 260.22
   A 0.23 0.23 0.0 0 0 101.93 260.45
@@ -388,11 +330,8 @@ const Loader = () => {
   A 6.79 6.48 89.9 0 0 106.62 225.94
   L 101.87 225.95
   A 0.23 0.23 0.0 0 0 101.64 226.18"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 125.72 250.99
   L 128.94 251.38
   A 1.77 1.76 2.4 0 1 130.48 253.04
@@ -412,11 +351,8 @@ const Loader = () => {
   Q 125.29 260.50 125.28 259.73
   L 125.18 251.47
   Q 125.18 250.92 125.72 250.99"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 146.65 257.50
   A 0.40 0.40 0.0 0 1 146.25 257.10
   L 146.25 250.84
@@ -442,11 +378,8 @@ const Loader = () => {
   L 154.99 257.96
   A 0.40 0.40 0.0 0 0 154.60 257.50
   L 146.65 257.50"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 168.41 250.65
   Q 172.06 249.34 172.20 245.43
   Q 172.35 240.95 172.21 226.66
@@ -468,11 +401,8 @@ const Loader = () => {
   Q 168.17 260.62 168.16 260.10
   L 167.94 251.34
   Q 167.93 250.82 168.41 250.65"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 143.47 180.94
   L 143.53 214.56
   A 0.36 0.36 0.0 0 0 143.89 214.92
@@ -482,11 +412,8 @@ const Loader = () => {
   A 6.43 6.02 -0.1 0 0 148.08 180.57
   L 143.83 180.58
   A 0.36 0.36 0.0 0 0 143.47 180.94"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 167.99 181.70
   A 0.99 0.99 0.0 0 0 167.00 180.71
   L 166.24 180.71
@@ -496,11 +423,8 @@ const Loader = () => {
   L 167.00 215.13
   A 0.99 0.99 0.0 0 0 167.99 214.14
   L 167.99 181.70"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 146.20 183.77
   L 146.30 211.81
   A 0.51 0.51 0.0 0 0 146.81 212.32
@@ -510,11 +434,8 @@ const Loader = () => {
   A 4.00 3.87 89.8 0 0 148.05 183.25
   L 146.71 183.26
   A 0.51 0.51 0.0 0 0 146.20 183.77"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 83.60 202.87
   L 88.92 202.87
   A 0.22 0.22 0.0 0 0 89.14 202.64
@@ -524,11 +445,8 @@ const Loader = () => {
   A 4.75 2.56 89.9 0 0 83.35 188.53
   L 83.38 202.66
   A 0.22 0.22 0.0 0 0 83.60 202.87"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 125.82 202.92
   L 130.98 202.92
   A 0.27 0.27 0.0 0 0 131.25 202.65
@@ -538,11 +456,8 @@ const Loader = () => {
   A 4.74 2.06 -89.9 0 0 125.58 188.72
   L 125.55 202.65
   A 0.27 0.27 0.0 0 0 125.82 202.92"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 68.1261 230.9751
   A 1.49 1.49 0.0 0 0 66.6335 229.4877
   L 64.0335 229.4923
@@ -552,11 +467,8 @@ const Loader = () => {
   L 66.6665 248.3477
   A 1.49 1.49 0.0 0 0 68.1539 246.8551
   L 68.1261 230.9751"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 104.45 228.92
   L 104.55 257.24
   A 0.34 0.34 0.0 0 0 104.89 257.58
@@ -566,11 +478,8 @@ const Loader = () => {
   A 3.96 3.77 89.8 0 0 106.28 228.57
   L 104.79 228.58
   A 0.34 0.34 0.0 0 0 104.45 228.92"
-            />
-            <path
-              stroke="#808080"
-              vector-effect="non-scaling-stroke"
-              d="
+/>
+<path stroke="#808080" vector-effect="non-scaling-stroke" d="
   M 130.33 229.10
   L 125.49 229.10
   A 0.28 0.28 0.0 0 0 125.21 229.38
@@ -580,11 +489,9 @@ const Loader = () => {
   A 2.28 1.43 90.0 0 0 130.61 245.66
   L 130.61 229.38
   A 0.28 0.28 0.0 0 0 130.33 229.10"
-            />
-          </g>
-          <path
-            fill="#000000"
-            d="
+/>
+</g>
+<path fill="#000000" d="
   M 0.00 0.00
   L 225.00 0.00
   L 225.00 323.00
@@ -677,10 +584,8 @@ const Loader = () => {
   C 183.26 267.32 187.48 265.24 187.49 257.25
   Q 187.54 218.78 187.65 180.31
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 100.58 39.83
   L 99.60 45.49
   Q 99.48 46.17 98.87 45.85
@@ -840,10 +745,8 @@ const Loader = () => {
   A 0.85 0.85 0.0 0 0 169.28 107.33
   C 173.22 103.02 172.55 91.69 171.26 86.51
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 168.60 111.05
   A 1.42 1.41 -50.1 0 0 170.15 110.91
   C 174.90 107.18 174.81 93.88 175.29 88.02
@@ -869,10 +772,8 @@ const Loader = () => {
   Q 166.56 109.96 167.00 110.19
   L 168.60 111.05
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 58.54 101.56
   C 64.69 107.81 78.77 114.37 86.57 107.16
   A 0.63 0.62 51.5 0 1 87.51 107.27
@@ -889,10 +790,8 @@ const Loader = () => {
   C 58.45 79.28 59.73 82.20 57.83 84.99
   C 54.76 89.51 54.49 97.45 58.54 101.56
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 136.90 88.71
   Q 133.90 90.02 131.56 92.95
   C 127.83 97.61 129.69 102.91 126.65 107.64
@@ -945,10 +844,8 @@ const Loader = () => {
   C 155.33 126.42 166.70 127.13 164.29 120.06
   A 0.67 0.67 0.0 0 0 163.12 119.87
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 161.72 83.63
   C 165.26 79.92 170.04 81.66 171.26 86.51
   C 172.55 91.69 173.22 103.02 169.28 107.33
@@ -956,10 +853,8 @@ const Loader = () => {
   C 167.50 98.64 167.80 90.61 161.72 84.31
   Q 161.39 83.97 161.72 83.63
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 144.48 118.77
   L 144.82 114.24
   A 0.73 0.73 0.0 0 1 145.15 113.68
@@ -968,10 +863,8 @@ const Loader = () => {
   L 145.84 119.20
   A 0.73 0.73 0.0 0 1 144.48 118.77
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 156.34 120.37
   C 158.86 120.83 161.00 122.66 163.12 119.87
   A 0.67 0.67 0.0 0 1 164.29 120.06
@@ -979,10 +872,8 @@ const Loader = () => {
   Q 154.51 121.44 155.45 120.62
   Q 155.84 120.28 156.34 120.37
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 176.00 168.26
   C 182.67 168.26 187.66 173.76 187.65 180.31
   Q 187.54 218.78 187.49 257.25
@@ -1190,10 +1081,8 @@ const Loader = () => {
   L 167.94 251.34
   Q 167.93 250.82 168.41 250.65
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 174.50 172.26
   C 180.70 172.27 183.45 176.03 183.47 181.86
   Q 183.53 199.65 183.49 217.43
@@ -1224,10 +1113,8 @@ const Loader = () => {
   A 0.99 0.99 0.0 0 0 167.99 214.14
   L 167.99 181.70
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 143.47 180.94
   A 0.36 0.36 0.0 0 1 143.83 180.58
   L 148.08 180.57
@@ -1248,10 +1135,8 @@ const Loader = () => {
   L 146.71 183.26
   A 0.51 0.51 0.0 0 0 146.20 183.77
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 67.67 210.88
   L 68.15 208.61
   A 1.56 1.56 0.0 0 1 71.24 208.89
@@ -1268,10 +1153,8 @@ const Loader = () => {
   L 66.94 211.52
   A 0.82 0.82 0.0 0 0 67.67 210.88
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 80.50 188.51
   C 80.51 178.17 91.91 178.17 91.97 187.77
   Q 92.04 201.12 91.98 214.50
@@ -1298,10 +1181,8 @@ const Loader = () => {
   L 83.38 202.66
   A 0.22 0.22 0.0 0 0 83.60 202.87
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 108.89 204.20
   C 105.70 203.55 101.32 204.64 101.15 200.20
   Q 100.90 193.72 101.03 187.27
@@ -1325,10 +1206,8 @@ const Loader = () => {
   Q 109.43 206.07 109.46 204.91
   A 0.71 0.70 6.8 0 0 108.89 204.20
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 131.06 205.73
   L 126.18 205.44
   Q 125.50 205.39 125.50 206.07
@@ -1356,18 +1235,9 @@ const Loader = () => {
   L 125.55 202.65
   A 0.27 0.27 0.0 0 0 125.82 202.92
   Z"
-          />
-          <rect
-            fill="#ffffff"
-            x="165.25"
-            y="180.71"
-            width="2.74"
-            height="34.42"
-            rx="0.99"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<rect fill="#ffffff" x="165.25" y="180.71" width="2.74" height="34.42" rx="0.99"/>
+<path fill="#000000" d="
   M 146.20 183.77
   A 0.51 0.51 0.0 0 1 146.71 183.26
   L 148.05 183.25
@@ -1378,10 +1248,8 @@ const Loader = () => {
   A 0.51 0.51 0.0 0 1 146.30 211.81
   L 146.20 183.77
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 83.60 202.87
   A 0.22 0.22 0.0 0 1 83.38 202.66
   L 83.35 188.53
@@ -1392,10 +1260,8 @@ const Loader = () => {
   A 0.22 0.22 0.0 0 1 88.92 202.87
   L 83.60 202.87
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 125.82 202.92
   A 0.27 0.27 0.0 0 1 125.55 202.65
   L 125.58 188.72
@@ -1406,10 +1272,8 @@ const Loader = () => {
   A 0.27 0.27 0.0 0 1 130.98 202.92
   L 125.82 202.92
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 62.50 251.25
   L 62.50 259.80
   Q 62.50 260.41 61.89 260.36
@@ -1436,10 +1300,8 @@ const Loader = () => {
   A 1.49 1.49 0.0 0 0 68.1539 246.8551
   L 68.1261 230.9751
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 88.83 247.30
   A 0.21 0.21 0.0 0 0 89.25 247.25
   L 89.25 226.62
@@ -1459,10 +1321,8 @@ const Loader = () => {
   Q 83.69 226.20 83.89 226.97
   Q 86.50 237.16 88.83 247.30
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 101.64 226.18
   A 0.23 0.23 0.0 0 1 101.87 225.95
   L 106.62 225.94
@@ -1483,10 +1343,8 @@ const Loader = () => {
   L 104.79 228.58
   A 0.34 0.34 0.0 0 0 104.45 228.92
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 125.18 251.47
   L 125.28 259.73
   Q 125.29 260.50 124.52 260.50
@@ -1517,10 +1375,8 @@ const Loader = () => {
   L 130.61 229.38
   A 0.28 0.28 0.0 0 0 130.33 229.10
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 146.65 257.50
   L 154.60 257.50
   A 0.40 0.40 0.0 0 1 154.99 257.96
@@ -1547,10 +1403,8 @@ const Loader = () => {
   L 146.25 257.10
   A 0.40 0.40 0.0 0 0 146.65 257.50
   Z"
-          />
-          <path
-            fill="#000000"
-            d="
+/>
+<path fill="#000000" d="
   M 167.94 251.34
   L 168.16 260.10
   Q 168.17 260.62 167.65 260.56
@@ -1573,10 +1427,8 @@ const Loader = () => {
   Q 172.06 249.34 168.41 250.65
   Q 167.93 250.82 167.94 251.34
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 104.45 228.92
   A 0.34 0.34 0.0 0 1 104.79 228.58
   L 106.28 228.57
@@ -1587,10 +1439,8 @@ const Loader = () => {
   A 0.34 0.34 0.0 0 1 104.55 257.24
   L 104.45 228.92
   Z"
-          />
-          <path
-            fill="#ffffff"
-            d="
+/>
+<path fill="#ffffff" d="
   M 130.33 229.10
   A 0.28 0.28 0.0 0 1 130.61 229.38
   L 130.61 245.66
@@ -1601,53 +1451,6 @@ const Loader = () => {
   A 0.28 0.28 0.0 0 1 125.49 229.10
   L 130.33 229.10
   Z"
-          />
-          <rect
-            fill="#ffffff"
-            x="-2.79"
-            y="-9.43"
-            transform="translate(65.35,238.92) rotate(-0.1)"
-            width="5.58"
-            height="18.86"
-            rx="1.49"
-          />
-
-          <title>Loader</title>
-          <defs>
-            <linearGradient id="ttb" y2="1">
-              {/* if you are thinking how it is animating 
-                    we have added animation to svg here 
-                */}
-
-              <stop offset="100%" stopOpacity="1" stopColor="#333">
-                <animate
-                  attributeName="offset"
-                  values="0;1;1;0"
-                  repeatCount="indefinite"
-                  repeatDur="05:00"
-                  dur="4s"
-                  begin="0s"
-                />
-              </stop>
-              <stop offset="100%" stopOpacity="1" stopColor="#E0E0E0">
-                <animate
-                  attributeName="offset"
-                  values="0;1;1;0"
-                  repeatCount="indefinite"
-                  repeatDur="05:00"
-                  dur="4s"
-                  begin="0s"
-                />
-              </stop>
-
-              {/* end */}
-            </linearGradient>
-          </defs>
-        </svg>
-        <div className="loading-text">Loading...</div>
-      </div>
-    </div>
-  );
-};
-
-export default Loader;
+/>
+<rect fill="#ffffff" x="-2.79" y="-9.43" transform="translate(65.35,238.92) rotate(-0.1)" width="5.58" height="18.86" rx="1.49"/>
+</svg>
