@@ -5,19 +5,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #18181b;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .loader svg {
-  width: 80%;
+  width: 60%;
+  border-radius: 0.6rem;
 }
 
 .loading-text {
   width: 100%;
   font-weight: bold;
-  color: translate(0.4rem);
+  color: translate(0.3rem);
   margin-top: 1rem;
 }
