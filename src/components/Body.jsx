@@ -4,6 +4,7 @@ import Cornelius from "../assets/1693313389728.jpg";
 import Caesar from "../assets/1693313751087.jpg";
 import Claudius from "../assets/1693313660218.jpg";
 import Commodus from "../assets/1693315136623.jpg";
+import Allfour from "../assets/1693593267855.jpg";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
@@ -89,6 +90,7 @@ export default function Body() {
             Discover our selection of charming fawn male puppies ready to bring
             joy and companionship into your life.
           </h2>
+          <img src={Allfour} alt="all fawn male" className="feature-image" />
           <div className="section-two-image-container">
             <div className="feature-item">
               <img
