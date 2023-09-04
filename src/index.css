@@ -25,6 +25,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   color: #333;
   font-size: 1.875rem;
 }
@@ -115,6 +116,10 @@ a:active {
 
 .fb-logo {
   width: 2rem;
+}
+
+.logo {
+  width: 10%;
 }
 
 header,

@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
+import Logo from "../assets/CASADIANDREY-logo.svg";
 
 export default function Header() {
   return (
@@ -7,6 +8,7 @@ export default function Header() {
       <header>
         <div className="container header">
           <h1>
+            <img src={Logo} alt="Logo" className="logo" />
             German Boxer Puppies for Sale!
             <a href="https://www.facebook.com/andrej.andrasik.7">
               <AiFillFacebook />

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import meting from "../assets/meting.webp";
+import meting from "../assets/meting.jpg";
 import Cornelius from "../assets/1693313389728.jpg";
 import Caesar from "../assets/1693313751087.jpg";
 import Claudius from "../assets/1693313660218.jpg";
@@ -149,7 +149,7 @@ export default function Body() {
             Explore our available puppies and get ready to welcome a new member
             to your family. Stay tuned for our upcoming litters too!
           </p>
-          <a href="#top" class="back-to-top" title="Back to Top">
+          <a href="#top" className="back-to-top" title="Back to Top">
             <img src={arrow} alt="Back to Top" class="back-to-top__image" />
           </a>
         </div>
