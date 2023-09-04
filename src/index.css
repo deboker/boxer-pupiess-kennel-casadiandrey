@@ -154,7 +154,7 @@ header,
   display: block;
   max-width: 640px;
   margin: 0 auto 2em;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
 }
 
 .section-two-image-container {
