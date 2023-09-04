@@ -75,7 +75,7 @@ export default function Body() {
             <a href="https://www.pedigreedatabase.com/boxer/dog.html?id=2916967-aleksandar-serbian-diamond?_v=20230820162815">
               Aleksandar Serbian Diamond
             </a>
-            and
+            <span style={{ margin: "0 5px" }}>and</span>
             <a href="https://www.pedigreedatabase.com/boxer/dog.html?id=3233248-aprillia-von-der-drachenwiese?_v=20230820163345">
               Aprillia Von der Drachenwiese
             </a>
