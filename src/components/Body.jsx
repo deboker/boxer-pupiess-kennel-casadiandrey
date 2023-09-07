@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import meting from "../assets/meting.jpg";
 import Cornelius from "../assets/1694111226823.jpg";
-import Caesar from "../assets/1693313751087.jpg";
+// import Caesar from "../assets/1693313751087.jpg";
 import Claudius from "../assets/1694111209281.jpg";
 import Commodus from "../assets/1694111174036.jpg";
 import Allfour from "../assets/1694111307972.jpg";
