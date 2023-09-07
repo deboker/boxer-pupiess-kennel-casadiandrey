@@ -92,14 +92,14 @@ export default function Body() {
           </h2>
           <img src={Allfour} alt="all fawn male" className="feature-image" />
           <div className="section-two-image-container">
-            <div className="feature-item">
+            {/* <div className="feature-item">
               <img
                 src={Caesar}
                 alt="Caesar fawn male"
                 className="feature-image"
               />
               <p>Caesar Casa di Andrey</p>
-            </div>
+            </div> */}
             <div className="feature-item">
               <img
                 src={Cornelius}
