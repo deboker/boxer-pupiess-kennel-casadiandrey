@@ -90,7 +90,7 @@ export default function Body() {
             Discover our selection of charming fawn male puppies ready to bring
             joy and companionship into your life.
           </h2>
-          <img src={Allfour} alt="all fawn male" className="feature-image" />
+          {/* <img src={Allfour} alt="all fawn male" className="feature-image" /> */}
           <div className="section-two-image-container">
             {/* <div className="feature-item">
               <img
@@ -116,14 +116,14 @@ export default function Body() {
               />
               <p>Claudius Casa di Andrey</p>
             </div>
-            <div className="feature-item">
+            {/* <div className="feature-item">
               <img
                 src={Commodus}
                 alt="Commodus fawn male"
                 className="feature-image"
               />
               <p>Commodus Casa di Andrey</p>
-            </div>
+            </div> */}
           </div>
           <a
             href="https://www.facebook.com/messages/t/andrej.andrasik.7"
