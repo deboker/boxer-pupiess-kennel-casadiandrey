@@ -10,7 +10,10 @@ export default function Header() {
           <h1>
             <img src={Logo} alt="Logo" className="logo" />
             German Boxer Puppies for Sale!
-            <a href="https://www.facebook.com/andrej.andrasik.7">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/andrej.andrasik.7"
+            >
               <AiFillFacebook />
             </a>
           </h1>

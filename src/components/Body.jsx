@@ -72,11 +72,17 @@ export default function Body() {
             home, our puppies are chosen from the best European bloodlines. With
             health-tested sires and dams, we prioritize the well-being of each
             pup. Feel free to explore our pedigre database:
-            <a href="https://www.pedigreedatabase.com/boxer/dog.html?id=2916967-aleksandar-serbian-diamond?_v=20230820162815">
+            <a
+              target="_blank"
+              href="https://www.pedigreedatabase.com/boxer/dog.html?id=2916967-aleksandar-serbian-diamond?_v=20230820162815"
+            >
               Aleksandar Serbian Diamond
             </a>
             <span style={{ margin: "0 5px" }}>and</span>
-            <a href="https://www.pedigreedatabase.com/boxer/dog.html?id=3233248-aprillia-von-der-drachenwiese?_v=20230820163345">
+            <a
+              target="_blank"
+              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3233248-aprillia-von-der-drachenwiese?_v=20230820163345"
+            >
               Aprillia Von der Drachenwiese
             </a>
             .
@@ -126,18 +132,21 @@ export default function Body() {
             </div>
           </div>
           <a
+            target="_blank"
             href="https://www.facebook.com/messages/t/andrej.andrasik.7"
             className="btn btn-mess"
           >
             <FaFacebookMessenger /> Messanger
           </a>
           <a
+            target="_blank"
             href="https://api.whatsapp.com/send?phone=+381638878655&text=Hi%20There!"
             className="btn btn-light"
           >
             <FaWhatsapp /> WhatsApp
           </a>
           <a
+            target="_blank"
             href="viber://contact?number=%2B381638878655"
             className="btn btn-mid"
           >
