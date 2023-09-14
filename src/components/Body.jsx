@@ -108,22 +108,22 @@ export default function Body() {
               />
               <p>Cornelius Casa di Andrey</p>
             </div>
-            <div className="feature-item">
+            {/* <div className="feature-item">
               <img
                 src={Claudius}
                 alt="Claudius fawn male"
                 className="feature-image"
               />
               <p>Claudius Casa di Andrey</p>
-            </div>
-            {/* <div className="feature-item">
+            </div> */}
+            <div className="feature-item">
               <img
                 src={Commodus}
                 alt="Commodus fawn male"
                 className="feature-image"
               />
               <p>Commodus Casa di Andrey</p>
-            </div> */}
+            </div>
           </div>
           <a
             href="https://www.facebook.com/messages/t/andrej.andrasik.7"
