@@ -92,10 +92,10 @@ export default function Body() {
 
       <section className="section-two">
         <div className="container">
-          <h2>
+          {/* <h2>
             Discover our selection of charming fawn male puppies ready to bring
             joy and companionship into your life.
-          </h2>
+          </h2> */}
           {/* <img src={Allfour} alt="all fawn male" className="feature-image" /> */}
           <div className="section-two-image-container">
             {/* <div className="feature-item">
@@ -106,14 +106,14 @@ export default function Body() {
               />
               <p>Caesar Casa di Andrey</p>
             </div> */}
-            <div className="feature-item">
+            {/* <div className="feature-item">
               <img
                 src={Cornelius}
                 alt="Cornelius fawn male"
                 className="feature-image"
               />
               <p>Cornelius Casa di Andrey</p>
-            </div>
+            </div> */}
             {/* <div className="feature-item">
               <img
                 src={Claudius}
