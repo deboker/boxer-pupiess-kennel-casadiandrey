@@ -308,15 +308,22 @@ header.dark-mode .toggler--slider {
   color: #d5d4d8;
 }
 
+.dark-mode.main-image {
+  filter: brightness(0.6);
+}
+
 header.dark-mode,
 .section-two.dark-mode,
+.feature-image.dark-mode,
+.section-two-image-container.dark-mode,
 footer.dark-mode {
   background-color: #23212d;
   color: whitesmoke;
+  filter: brightness(0.8);
 }
 
 .nav-link.dark-mode {
-  color: #918e9b;
+  color: #acacac;
 }
 
 .btn.dark-mode {

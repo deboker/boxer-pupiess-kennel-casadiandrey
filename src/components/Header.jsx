@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import Logo from "../assets/CASADIANDREY-logo.svg";
+import LogoW from "../assets/CASADIANDREYWHITE-logo.svg";
 
 export default function Header(props) {
   return (
@@ -8,7 +9,11 @@ export default function Header(props) {
       <header className={props.darkMode ? "dark-mode" : ""}>
         <div className="container header">
           <h1>
-            <img src={Logo} alt="Logo" className="logo" />
+            <img
+              src={props.darkMode ? LogoW : Logo}
+              alt="Logo"
+              className="logo"
+            />
             German Boxer Puppies for Sale!
             <div>
               <div className="toggler">

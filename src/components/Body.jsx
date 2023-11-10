@@ -62,7 +62,11 @@ export default function Body(props) {
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
-          <img src={meting} alt="Meeting" className="main-image" />
+          <img
+            src={meting}
+            alt="Meeting"
+            className={`main-image ${props.darkMode ? "dark-mode" : ""}`}
+          />
           <h3>Shipping available worldwide!</h3>
           <p>
             Thank you for gracing Casa di Andrey Kennel with your presence. For
@@ -96,9 +100,19 @@ export default function Body(props) {
             Discover our selection of charming fawn male puppies ready to bring
             joy and companionship into your life.
           </h2>
-          <img src={Allfour} alt="all fawn male" className="feature-image" />
-          <div className="section-two-image-container">
-            <div className="feature-item">
+          <img
+            src={Allfour}
+            alt="all fawn male"
+            className={`feature-image ${props.darkMode ? "dark-mode" : ""}`}
+          />
+          <div
+            className={`section-two-image-container ${
+              props.darkMode ? "dark-mode" : ""
+            }`}
+          >
+            <div
+              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
+            >
               <img
                 src={Caesar}
                 alt="Caesar fawn male"
@@ -106,7 +120,9 @@ export default function Body(props) {
               />
               <p>Caesar Casa di Andrey</p>
             </div>
-            <div className="feature-item">
+            <div
+              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
+            >
               <img
                 src={Cornelius}
                 alt="Cornelius fawn male"
@@ -114,7 +130,9 @@ export default function Body(props) {
               />
               <p>Cornelius Casa di Andrey</p>
             </div>
-            <div className="feature-item">
+            <div
+              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
+            >
               <img
                 src={Claudius}
                 alt="Claudius fawn male"
@@ -122,7 +140,9 @@ export default function Body(props) {
               />
               <p>Claudius Casa di Andrey</p>
             </div>
-            <div className="feature-item">
+            <div
+              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
+            >
               <img
                 src={Commodus}
                 alt="Commodus fawn male"
