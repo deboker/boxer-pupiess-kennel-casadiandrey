@@ -6,6 +6,12 @@ import Loader from "./components/Loader/Loader";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [darkMode, setDarkmode] = useState(false);
+
+  function toggleDarkMode() {
+    console.log("clicked");
+    setDarkmode((prevState) => !prevState);
+  }
 
   useEffect(() => {
     const fakeDataFech = () => {
@@ -20,9 +26,9 @@ export default function App() {
     <Loader />
   ) : (
     <div>
-      <Header />
-      <Body />
-      <Footer />
+      <Header handleClick={toggleDarkMode} darkMode={darkMode} />
+      <Body darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
     </div>
   );
 }

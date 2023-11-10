@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import meting from "../assets/meting.jpg";
 import Cornelius from "../assets/1694111226823.jpg";
-// import Caesar from "../assets/1693313751087.jpg";
+import Caesar from "../assets/1693313389728.jpg";
 import Claudius from "../assets/1694111209281.jpg";
 import Commodus from "../assets/1694111174036.jpg";
-import Allfour from "../assets/1694111307972.jpg";
+import Allfour from "../assets/1693593267855.jpg";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
-export default function Body() {
+export default function Body(props) {
   useEffect(() => {
     const handleFirstTab = (e) => {
       if (e.key === "Tab") {
@@ -58,7 +58,7 @@ export default function Body() {
   }, []);
 
   return (
-    <div>
+    <div className={props.darkMode ? "dark-mode" : ""}>
       <section>
         <div className="container">
           <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
@@ -90,46 +90,46 @@ export default function Body() {
         </div>
       </section>
 
-      <section className="section-two">
+      <section className={`section-two ${props.darkMode ? "dark-mode" : ""}`}>
         <div className="container">
-          {/* <h2>
+          <h2>
             Discover our selection of charming fawn male puppies ready to bring
             joy and companionship into your life.
-          </h2> */}
-          {/* <img src={Allfour} alt="all fawn male" className="feature-image" /> */}
+          </h2>
+          <img src={Allfour} alt="all fawn male" className="feature-image" />
           <div className="section-two-image-container">
-            {/* <div className="feature-item">
+            <div className="feature-item">
               <img
                 src={Caesar}
                 alt="Caesar fawn male"
                 className="feature-image"
               />
               <p>Caesar Casa di Andrey</p>
-            </div> */}
-            {/* <div className="feature-item">
+            </div>
+            <div className="feature-item">
               <img
                 src={Cornelius}
                 alt="Cornelius fawn male"
                 className="feature-image"
               />
               <p>Cornelius Casa di Andrey</p>
-            </div> */}
-            {/* <div className="feature-item">
+            </div>
+            <div className="feature-item">
               <img
                 src={Claudius}
                 alt="Claudius fawn male"
                 className="feature-image"
               />
               <p>Claudius Casa di Andrey</p>
-            </div> */}
-            {/* <div className="feature-item">
+            </div>
+            <div className="feature-item">
               <img
                 src={Commodus}
                 alt="Commodus fawn male"
                 className="feature-image"
               />
               <p>Commodus Casa di Andrey</p>
-            </div> */}
+            </div>
           </div>
           <a
             target="_blank"

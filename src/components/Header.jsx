@@ -2,20 +2,29 @@ import React from "react";
 import { AiFillFacebook } from "react-icons/ai";
 import Logo from "../assets/CASADIANDREY-logo.svg";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div>
-      <header>
+      <header className={props.darkMode ? "dark-mode" : ""}>
         <div className="container header">
           <h1>
             <img src={Logo} alt="Logo" className="logo" />
             German Boxer Puppies for Sale!
-            <a
-              target="_blank"
-              href="https://www.facebook.com/andrej.andrasik.7"
-            >
-              <AiFillFacebook />
-            </a>
+            <div>
+              <div className="toggler">
+                <p className="toggler--light">Light</p>
+                <div className="toggler--slider" onClick={props.handleClick}>
+                  <div className="toggler--slider--circle"></div>
+                </div>
+                <p className="toggler--dark">Dark</p>
+              </div>
+              {/* <a
+                target="_blank"
+                href="https://www.facebook.com/andrej.andrasik.7"
+              >
+                <AiFillFacebook />
+              </a> */}
+            </div>
           </h1>
           <span className="subheading">
             "CASA DI ANDREY" Breeders of European Top Quality Boxer Puppies
