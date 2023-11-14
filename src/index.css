@@ -247,59 +247,27 @@ body:not(.user-is-tabbing) a:focus {
 .toggler {
   display: flex;
   align-items: center;
+  margin-bottom: -2rem;
 }
 
-.toggler p {
-  font-size: 0.625rem;
-  font-weight: 600;
-}
-
-.toggler--slider {
-  width: 25px;
-  height: 13px;
-  background-color: #2b283a;
-  border-radius: 2rem;
-  margin-inline: 7px;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border: 1px solid black;
-  box-sizing: content-box;
-}
-
-header.dark-mode .toggler--slider {
+header.dark-mode {
   border-color: white;
   background-color: #f5f5f5;
 }
 
-.toggler--slider--circle {
-  height: 13px;
-  width: 13px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-header.dark-mode .toggler--slider--circle {
+header.dark-mode {
   background-color: black;
 }
 
-.toggler--light {
-  color: #2b283a;
-}
-
-header.dark-mode .toggler--light {
+header.dark-mode {
   color: #918e9b;
 }
 
-.toggler--dark-mode {
-  color: #d5d4d8;
-}
-header.dark .toggler-dark {
+header.dark {
   color: #ffffff;
 }
 
-header.dark-mode .toggler--slider {
+header.dark-mode {
   justify-content: flex-end;
 }
 /* Dark Mode Styles */
@@ -323,7 +291,7 @@ footer.dark-mode {
 }
 
 .nav-link.dark-mode {
-  color: #acacac;
+  color: whitesmoke;
 }
 
 .btn.dark-mode {
@@ -335,5 +303,5 @@ footer.dark-mode {
 .btn-mid.dark-mode:hover,
 .btn-mess.dark-mode:hover {
   background-color: #206d9a;
-  color: #fff;
+  color: whitesmoke;
 }
