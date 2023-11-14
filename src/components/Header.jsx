@@ -3,6 +3,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import Logo from "../assets/CASADIANDREY-logo.svg";
 import LogoW from "../assets/CASADIANDREYWHITE-logo.svg";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import "react-toggle-dark-mode/dist/toggle-style.css";
 
 export default function Header(props) {
   return (
