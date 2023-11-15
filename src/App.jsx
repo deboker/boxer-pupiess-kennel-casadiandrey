@@ -9,7 +9,6 @@ export default function App() {
   const [darkMode, setDarkmode] = useState(false);
 
   function toggleDarkMode() {
-    console.log("clicked");
     setDarkmode((prevState) => !prevState);
   }
 
