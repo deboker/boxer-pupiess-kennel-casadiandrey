@@ -172,11 +172,25 @@ header,
 }
 
 .feature-item {
+  position: relative;
   flex: 1 260px;
   text-align: center;
   background-color: #fff;
   font-size: 1.125rem;
   border-radius: 4.6px;
+}
+
+.reserved-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 5px;
+  background-color: #f97777;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 footer {

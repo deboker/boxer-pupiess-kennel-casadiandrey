@@ -118,6 +118,7 @@ export default function Body(props) {
                 alt="Caesar fawn male"
                 className="feature-image"
               />
+              <p className="reserved-label">Puppy Reserved</p>
               <p>Caesar Casa di Andrey</p>
             </div>
             <div
@@ -128,6 +129,7 @@ export default function Body(props) {
                 alt="Cornelius fawn male"
                 className="feature-image"
               />
+              <p className="reserved-label">Puppy Reserved</p>
               <p>Cornelius Casa di Andrey</p>
             </div>
             <div
@@ -138,6 +140,7 @@ export default function Body(props) {
                 alt="Claudius fawn male"
                 className="feature-image"
               />
+              <p className="reserved-label">Puppy Reserved</p>
               <p>Claudius Casa di Andrey</p>
             </div>
             <div
@@ -148,6 +151,7 @@ export default function Body(props) {
                 alt="Commodus fawn male"
                 className="feature-image"
               />
+              <p className="reserved-label">Puppy Reserved</p>
               <p>Commodus Casa di Andrey</p>
             </div>
           </div>
