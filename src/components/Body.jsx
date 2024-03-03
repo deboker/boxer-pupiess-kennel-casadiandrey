@@ -4,6 +4,7 @@ import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
 import AdamRuns from "../assets/adam-runs.webp";
 import AdamPuppy1 from "../assets/adam-puppy.webp";
+import AdamVideo from "../assets/video-adam.mp4";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import {
@@ -122,6 +123,22 @@ export default function Body(props) {
               props.darkMode ? "dark-mode" : ""
             }`}
           >
+            <div
+              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
+            >
+              <video
+                className="feature-image"
+                autoPlay
+                loop
+                muted
+                playsInline
+                src={AdamVideo} // Replace with the actual path to your video file
+                alt="Adam d'black Casa di Andrey"
+              ></video>
+              {/* <p className="reserved-label">Puppy Reserved</p> */}
+              <p className="available-label">Available</p>
+              <p>Adam d'black Casa di Andrey</p>
+            </div>
             <div
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
