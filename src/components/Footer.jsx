@@ -5,7 +5,7 @@ export default function Footer(props) {
     <div>
       <h3>
         <footer className={props.darkMode ? "dark-mode" : ""}>
-          <p>&copy; 2023 Andrey</p>
+          <p>&copy; 2024 Andrey</p>
         </footer>
       </h3>
     </div>

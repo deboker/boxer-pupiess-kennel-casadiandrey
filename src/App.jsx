@@ -8,9 +8,9 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [darkMode, setDarkmode] = useState(false);
 
-  function toggleDarkMode() {
+  const toggleDarkMode = () => {
     setDarkmode((prevState) => !prevState);
-  }
+  };
 
   useEffect(() => {
     const fakeDataFech = () => {

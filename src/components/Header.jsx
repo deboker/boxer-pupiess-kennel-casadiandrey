@@ -15,7 +15,7 @@ export default function Header(props) {
               alt="Logo"
               className="logo"
             />
-            German Boxer Puppies for Sale!
+            CASA DI ANDREY
             <div className="toggler">
               <DarkModeSwitch
                 style={{ marginBottom: "2rem" }}
@@ -26,7 +26,7 @@ export default function Header(props) {
             </div>
           </h1>
           <span className="subheading">
-            "CASA DI ANDREY" Breeders of European Top Quality Boxer Puppies
+            "CASA DI ANDREY" Breeders of European Top Quality Boxer dogs
           </span>
         </div>
       </header>

@@ -47,7 +47,7 @@ h3 {
 p {
   line-height: 1.5;
   color: rgb(75, 75, 75);
-  margin-top: 1.5rem;
+  margin-top: 0.6rem;
 }
 
 .subheading {
@@ -187,6 +187,19 @@ header,
   margin: 10px;
   padding: 5px;
   background-color: #f97777;
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.available-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 5px;
+  background-color: #154b3b;
   color: whitesmoke;
   font-size: 14px;
   font-weight: bold;

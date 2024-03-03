@@ -1,13 +1,17 @@
 import React, { useEffect } from "react";
-import meting from "../assets/meting.jpg";
-import Cornelius from "../assets/1694111226823.jpg";
-import Caesar from "../assets/1693313389728.jpg";
-import Claudius from "../assets/1694111209281.jpg";
-import Commodus from "../assets/1694111174036.jpg";
-import Allfour from "../assets/1693593267855.jpg";
+import meting from "../assets/cartier&free.webp";
+import AdamHead from "../assets/adam-head.webp";
+import AdamSide from "../assets/adam-side.webp";
+import AdamRuns from "../assets/adam-runs.webp";
+import AdamPuppy1 from "../assets/adam-puppy.webp";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
-import { FaViber, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
+import {
+  FaViber,
+  FaWhatsapp,
+  FaFacebookMessenger,
+  FaEnvelope,
+} from "react-icons/fa";
 
 export default function Body(props) {
   useEffect(() => {
@@ -61,7 +65,10 @@ export default function Body(props) {
     <div className={props.darkMode ? "dark-mode" : ""}>
       <section>
         <div className="container">
-          <h2>Thrilling News from "CASA DI ANDREY": Introducing Litter C </h2>
+          <h2>
+            Thrilling News from "CASA DI ANDREY": Introducing Litter A born
+            18.12.2022.{" "}
+          </h2>
           <img
             src={meting}
             alt="Meeting"
@@ -78,16 +85,16 @@ export default function Body(props) {
             pup. Feel free to explore our pedigre database:
             <a
               target="_blank"
-              href="https://www.pedigreedatabase.com/boxer/dog.html?id=2916967-aleksandar-serbian-diamond?_v=20230820162815"
+              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3123121-cartier-vaf-e-pluribus-unium?_v=20220707113256"
             >
-              Aleksandar Serbian Diamond
+              Cartier Vaf E Pluribus Unium
             </a>
             <span style={{ margin: "0 5px" }}>and</span>
             <a
               target="_blank"
-              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3233248-aprillia-von-der-drachenwiese?_v=20230820163345"
+              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3216115-free-v-zaxhaus?_v=20240108034706"
             >
-              Aprillia Von der Drachenwiese
+              Free von Zaxhaus
             </a>
             .
           </p>
@@ -97,14 +104,19 @@ export default function Body(props) {
       <section className={`section-two ${props.darkMode ? "dark-mode" : ""}`}>
         <div className="container">
           <h2>
-            Discover our selection of charming fawn male puppies ready to bring
-            joy and companionship into your life.
+            Meet Adam d'Black, our exceptional Boxer dog ready for a loving
+            home. His dark golden brindle coat with white markings showcases the
+            Boxer breed's strength and grace. More than his striking appearance,
+            Adam brings joy and companionship, ready to be a loyal friend. A
+            descendant of champions, he offers intelligence, vitality, and a
+            daily adventure. Embrace the unique joy, protection, and love Adam
+            d'Black brings into your life.
           </h2>
-          <img
+          {/* <img
             src={Allfour}
             alt="all fawn male"
             className={`feature-image ${props.darkMode ? "dark-mode" : ""}`}
-          />
+          /> */}
           <div
             className={`section-two-image-container ${
               props.darkMode ? "dark-mode" : ""
@@ -114,47 +126,58 @@ export default function Body(props) {
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
               <img
-                src={Caesar}
-                alt="Caesar fawn male"
+                src={AdamHead}
+                alt="Adam d black head"
                 className="feature-image"
               />
-              <p className="reserved-label">Puppy Reserved</p>
-              <p>Caesar Casa di Andrey</p>
+              {/* <p className="reserved-label">Puppy Reserved</p> */}
+              <p className="available-label">Available</p>
+              <p>Adam d'black Casa di Andrey</p>
             </div>
             <div
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
               <img
-                src={Cornelius}
-                alt="Cornelius fawn male"
+                src={AdamSide}
+                alt="Adam d black side"
                 className="feature-image"
               />
-              <p className="reserved-label">Puppy Reserved</p>
-              <p>Cornelius Casa di Andrey</p>
+              {/* <p className="reserved-label">Puppy Reserved</p> */}
+              <p className="available-label">Available</p>
+              <p>Adam d'black Casa di Andrey</p>
             </div>
             <div
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
               <img
-                src={Claudius}
-                alt="Claudius fawn male"
+                src={AdamRuns}
+                alt="Adam d black runs"
                 className="feature-image"
               />
-              <p className="reserved-label">Puppy Reserved</p>
-              <p>Claudius Casa di Andrey</p>
+              {/* <p className="reserved-label">Puppy Reserved</p> */}
+              <p className="available-label">Available</p>
+              <p>Adam d'black Casa di Andrey</p>
             </div>
             <div
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
               <img
-                src={Commodus}
-                alt="Commodus fawn male"
+                src={AdamPuppy1}
+                alt="Adam d black puppy1"
                 className="feature-image"
               />
-              <p className="reserved-label">Puppy Reserved</p>
-              <p>Commodus Casa di Andrey</p>
+              {/* <p className="reserved-label">Puppy Reserved</p> */}
+              {/* <p className="available-label">Available</p> */}
+              <p>Puppy Adam d'black Casa di Andrey</p>
             </div>
           </div>
+          <a
+            target="_blank"
+            href="mailto:casadiandrey@gmail.com"
+            className="btn btn-mess"
+          >
+            <FaEnvelope /> Email Us
+          </a>
           <a
             target="_blank"
             href="https://www.facebook.com/messages/t/andrej.andrasik.7"
@@ -177,11 +200,12 @@ export default function Body(props) {
             <FaViber /> Viber
           </a>
           <p>
-            Reserve Your Puppy Now! Contact us for more photos and adorable
-            short videos showcasing our puppies. Discover Your New Furry Friend
-            Explore our available puppies and get ready to welcome a new member
-            to your family. Stay tuned for our upcoming litters too!
+            Reserve Your Dog Now! Contact us for more photos, short videos
+            showcasing the dog, health certificates, and a rating list from
+            exhibitions. We also offer images of prize cups our champions have
+            won. Discover Your New Furry Friend and embark on a journey.
           </p>
+          <p>Stay tuned for our upcoming litters too!</p>
           <a href="#top" className="back-to-top" title="Back to Top">
             <img src={arrow} alt="Back to Top" class="back-to-top__image" />
           </a>
