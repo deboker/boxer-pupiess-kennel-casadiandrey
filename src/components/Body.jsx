@@ -127,7 +127,7 @@ export default function Body(props) {
               className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
             >
               <video
-                className="feature-image"
+                className="feature-video"
                 autoPlay
                 loop
                 muted
