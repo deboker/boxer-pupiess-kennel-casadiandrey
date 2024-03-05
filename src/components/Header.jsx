@@ -26,7 +26,7 @@ export default function Header(props) {
             </div>
           </h1>
           <span className="subheading">
-            "CASA DI ANDREY" Breeders of European Top Quality Boxer dogs
+            "CASA DI ANDREY" Breeders of European <br /> Top Quality Boxer dogs
           </span>
         </div>
       </header>
