@@ -19,7 +19,7 @@ export default function App() {
       }, 4000);
     };
     fakeDataFech();
-  });
+  }, []);
 
   return isLoading ? (
     <Loader />

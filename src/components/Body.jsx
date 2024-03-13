@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import meting from "../assets/cartier&free.webp";
 import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
@@ -63,47 +64,46 @@ export default function Body(props) {
   }, []);
 
   return (
-    <div className={props.darkMode ? "dark-mode" : ""}>
-      <section>
-        <div className="container">
-          <h2>
-            Thrilling News from "CASA DI ANDREY": Introducing Litter A born
-            18.12.2022.{" "}
-          </h2>
-          <img
-            src={meting}
-            alt="Meeting"
-            className={`main-image ${props.darkMode ? "dark-mode" : ""}`}
-          />
-          <h3>Shipping available worldwide!</h3>
-          <p>
-            Thank you for gracing Casa di Andrey Kennel with your presence. For
-            nearly three decades, we've poured our love into these magnificent
-            creatures. Our commitment is unwavering, offering exceptional boxer
-            puppies to loving families. Whether destined for show or a cozy
-            home, our puppies are chosen from the best European bloodlines. With
-            health-tested sires and dams, we prioritize the well-being of each
-            pup. Feel free to explore our pedigre database:
-            <a
-              target="_blank"
-              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3123121-cartier-vaf-e-pluribus-unium?_v=20220707113256"
-            >
-              Cartier Vaf E Pluribus Unium
-            </a>
-            <span style={{ margin: "0 5px" }}>and</span>
-            <a
-              target="_blank"
-              href="https://www.pedigreedatabase.com/boxer/dog.html?id=3216115-free-v-zaxhaus?_v=20240108034706"
-            >
-              Free von Zaxhaus
-            </a>
-            .
-          </p>
-        </div>
+    <div>
+      <section className={`meeting ${props.darkMode ? "dark-mode" : ""}`}>
+        <h2>From "CASA DI ANDREY": Introducing Litter A born 18.12.2022.</h2>
+        <img
+          src={meting}
+          alt="Meeting"
+          className={`main-image ${props.darkMode ? "dark-mode" : ""}`}
+        />
+        <h3>Shipping available worldwide!</h3>
+        <p>
+          Thank you for gracing Casa di Andrey Kennel with your presence. For
+          nearly three decades, we've poured our love into these magnificent
+          creatures. Our commitment is unwavering, offering exceptional boxer
+          puppies to loving families. Whether destined for show or a cozy home,
+          our puppies are chosen from the best European bloodlines. With
+          health-tested sires and dams, we prioritize the well-being of each
+          pup.
+        </p>
+        <p>
+          Feel free to explore pedigre database:
+          <a
+            target="_blank"
+            href="https://www.pedigreedatabase.com/boxer/dog.html?id=3123121-cartier-vaf-e-pluribus-unium?_v=20220707113256"
+          >
+            Cartier Vaf E Pluribus Unium
+          </a>
+          <span style={{ margin: "0 5px" }}>and</span>
+          <a
+            target="_blank"
+            href="https://www.pedigreedatabase.com/boxer/dog.html?id=3216115-free-v-zaxhaus?_v=20240108034706"
+          >
+            Free von Zaxhaus
+          </a>
+          .
+        </p>
       </section>
 
-      <section className={`section-two ${props.darkMode ? "dark-mode" : ""}`}>
-        <div className="container">
+      <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
+        <h1>AVAILABLE DOG</h1>
+        <div className="video-galery">
           <h2>
             Meet Adam d'Black, our exceptional Boxer dog ready for a loving
             home. His dark golden brindle coat with white markings showcases the
@@ -113,109 +113,61 @@ export default function Body(props) {
             daily adventure. Embrace the unique joy, protection, and love Adam
             d'Black brings into your life.
           </h2>
-          {/* <img
-            src={Allfour}
-            alt="all fawn male"
-            className={`feature-image ${props.darkMode ? "dark-mode" : ""}`}
-          /> */}
-          <div
-            className={`section-two-image-container ${
-              props.darkMode ? "dark-mode" : ""
-            }`}
-          >
-            <div
-              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
-            >
-              <video
-                className="feature-video"
-                autoPlay
-                loop
-                muted
-                playsInline
-                src={AdamVideo} // Replace with the actual path to your video file
-                alt="Adam d'black Casa di Andrey"
-              ></video>
-              {/* <p className="reserved-label">Puppy Reserved</p> */}
-              <p className="available-label">Available</p>
-              <p>Adam d'black Casa di Andrey</p>
-            </div>
-            <div
-              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
-            >
-              <img
-                src={AdamHead}
-                alt="Adam d black head"
-                className="feature-image"
-              />
-              {/* <p className="reserved-label">Puppy Reserved</p> */}
-              <p className="available-label">Available</p>
-              <p>Adam d'black Casa di Andrey</p>
-            </div>
-            <div
-              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
-            >
-              <img
-                src={AdamSide}
-                alt="Adam d black side"
-                className="feature-image"
-              />
-              {/* <p className="reserved-label">Puppy Reserved</p> */}
-              <p className="available-label">Available</p>
-              <p>Adam d'black Casa di Andrey</p>
-            </div>
-            <div
-              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
-            >
-              <img
-                src={AdamRuns}
-                alt="Adam d black runs"
-                className="feature-image"
-              />
-              {/* <p className="reserved-label">Puppy Reserved</p> */}
-              <p className="available-label">Available</p>
-              <p>Adam d'black Casa di Andrey</p>
-            </div>
-            <div
-              className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}
-            >
-              <img
-                src={AdamPuppy1}
-                alt="Adam d black puppy1"
-                className="feature-image"
-              />
-              {/* <p className="reserved-label">Puppy Reserved</p> */}
-              {/* <p className="available-label">Available</p> */}
-              <p>Puppy Adam d'black Casa di Andrey</p>
-            </div>
-          </div>
-          <a
-            target="_blank"
-            href="mailto:casadiandrey@gmail.com"
-            className="btn btn-mess"
-          >
-            <FaEnvelope /> Email Us
-          </a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/messages/t/andrej.andrasik.7"
-            className="btn btn-mess"
-          >
-            <FaFacebookMessenger /> Messanger
-          </a>
-          <a
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=+381638878655&text=Hi%20There!"
-            className="btn btn-light"
-          >
-            <FaWhatsapp /> WhatsApp
-          </a>
-          <a
-            target="_blank"
-            href="viber://contact?number=%2B381638878655"
-            className="btn btn-mid"
-          >
-            <FaViber /> Viber
-          </a>
+
+          <video
+            className="feature-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={AdamVideo}
+            alt="Adam d'black Casa di Andrey"
+          ></video>
+          {/* <p className="available-label">Available</p> */}
+        </div>
+
+        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
+          <img
+            src={AdamHead}
+            alt="Adam d black head"
+            className="feature-image"
+          />
+
+          {/* <p className="reserved-label">Puppy Reserved</p> */}
+          {/* <p className="available-label">Available</p> */}
+          <p>Adam d'black Casa di Andrey</p>
+        </div>
+        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
+          <img
+            src={AdamSide}
+            alt="Adam d black side"
+            className="feature-image"
+          />
+          {/* <p className="reserved-label">Puppy Reserved</p> */}
+          {/* <p className="available-label">Available</p> */}
+          <p>Adam d'black Casa di Andrey</p>
+        </div>
+        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
+          <img
+            src={AdamRuns}
+            alt="Adam d black runs"
+            className="feature-image"
+          />
+          {/* <p className="reserved-label">Puppy Reserved</p> */}
+          {/* <p className="available-label">Available</p> */}
+          <p>Adam d'black Casa di Andrey</p>
+        </div>
+        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
+          <img
+            src={AdamPuppy1}
+            alt="Adam d black puppy1"
+            className="feature-image"
+          />
+          {/* <p className="reserved-label">Puppy Reserved</p> */}
+          {/* <p className="available-label">Available</p> */}
+          <p>Puppy Adam d'black Casa di Andrey</p>
+        </div>
+        <div>
           <p>
             Reserve Your Dog Now! Contact us for more photos, short videos
             showcasing the dog, health certificates, and a rating list from
@@ -223,11 +175,63 @@ export default function Body(props) {
             won. Discover Your New Furry Friend and embark on a journey.
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
-          <a href="#top" className="back-to-top" title="Back to Top">
-            <img src={arrow} alt="Back to Top" class="back-to-top__image" />
-          </a>
         </div>
       </section>
+
+      <div className={`contact ${props.darkMode ? "dark-mode" : ""}`}>
+        <a
+          target="_blank"
+          href="mailto:casadiandrey@gmail.com"
+          className="btn btn-mess"
+        >
+          <FaEnvelope /> Email Us
+        </a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/messages/t/andrej.andrasik.7"
+          className="btn btn-mess"
+        >
+          <FaFacebookMessenger /> Messanger
+        </a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=+381638878655&text=Hi%20There!"
+          className="btn btn-light"
+        >
+          <FaWhatsapp /> WhatsApp
+        </a>
+        <a
+          target="_blank"
+          href="viber://contact?number=%2B381638878655"
+          className="btn btn-mid"
+        >
+          <FaViber /> Viber
+        </a>
+      </div>
+
+      <div className={`social-media ${props.darkMode ? "dark-mode" : ""}`}>
+        <p>Folow us</p>
+        <div className="social-links">
+          <a
+            href="https://www.facebook.com/andrej.andrasik.7/"
+            className="facebook-icon"
+            aria-label="Follow us on Facebook"
+          >
+            <AiFillFacebook size={30} />
+          </a>
+          <a
+            href="https://www.instagram.com/casa_di_andrey/"
+            className="facebook-icon"
+            aria-label="Follow us on Instagram"
+          >
+            <AiFillInstagram size={30} />
+          </a>
+        </div>
+      </div>
+
+      <a href="#top" className="back-to-top" title="Back to Top">
+        <img src={arrow} alt="Back to Top" class="back-to-top__image" />
+      </a>
     </div>
   );
 }

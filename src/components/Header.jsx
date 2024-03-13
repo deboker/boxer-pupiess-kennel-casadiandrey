@@ -6,30 +6,28 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export default function Header(props) {
   return (
-    <div>
-      <header className={props.darkMode ? "dark-mode" : ""}>
-        <div className="container header">
-          <h1>
-            <img
-              src={props.darkMode ? LogoW : Logo}
-              alt="Logo"
-              className="logo"
-            />
-            CASA DI ANDREY
-            <div className="toggler">
-              <DarkModeSwitch
-                style={{ marginBottom: "2rem" }}
-                size={40}
-                checked={props.darkMode}
-                onClick={props.handleClick}
-              />
-            </div>
-          </h1>
-          <span className="subheading">
-            "CASA DI ANDREY" Breeders of European <br /> Top Quality Boxer dogs
-          </span>
+    <header className={`header ${props.darkMode ? "dark-mode" : ""}`}>
+      <div className="header-container">
+        <img
+          src={props.darkMode ? LogoW : Logo}
+          alt="Casa di Andrey Kennel Logo"
+          className="logo"
+        />
+        <div>
+          <h1 className="kennel-name">CASA DI ANDREY</h1>
+          <p className="subheading">
+            Breeders of European Top Quality Boxer Dogs
+          </p>
         </div>
-      </header>
-    </div>
+        <div className="toggle-container">
+          <DarkModeSwitch
+            size={40}
+            checked={props.darkMode}
+            onClick={props.handleClick}
+            aria-label="Toggle dark mode"
+          />
+        </div>
+      </div>
+    </header>
   );
 }
