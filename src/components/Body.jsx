@@ -189,7 +189,7 @@ export default function Body(props) {
         </a>
         <a
           target="_blank"
-          href="https://www.facebook.com/messages/t/andrej.andrasik.7"
+          href="https://m/me/andrej.andrasik.7"
           className="btn btn-mess"
         >
           <FaFacebookMessenger /> Messanger
