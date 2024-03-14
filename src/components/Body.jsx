@@ -135,7 +135,7 @@ export default function Body(props) {
 
           {/* <p className="reserved-label">Puppy Reserved</p> */}
           {/* <p className="available-label">Available</p> */}
-          <p>Adam d'black Casa di Andrey</p>
+          <p className="image-text">Adam d'black Casa di Andrey</p>
         </div>
         <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
           <img
@@ -145,7 +145,7 @@ export default function Body(props) {
           />
           {/* <p className="reserved-label">Puppy Reserved</p> */}
           {/* <p className="available-label">Available</p> */}
-          <p>Adam d'black Casa di Andrey</p>
+          <p className="image-text">Adam d'black Casa di Andrey</p>
         </div>
         <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
           <img
@@ -155,7 +155,7 @@ export default function Body(props) {
           />
           {/* <p className="reserved-label">Puppy Reserved</p> */}
           {/* <p className="available-label">Available</p> */}
-          <p>Adam d'black Casa di Andrey</p>
+          <p className="image-text">Adam d'black Casa di Andrey</p>
         </div>
         <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
           <img
@@ -165,9 +165,9 @@ export default function Body(props) {
           />
           {/* <p className="reserved-label">Puppy Reserved</p> */}
           {/* <p className="available-label">Available</p> */}
-          <p>Puppy Adam d'black Casa di Andrey</p>
+          <p className="image-text">Puppy Adam d'black Casa di Andrey</p>
         </div>
-        <div>
+        <div className="reserve-text">
           <p>
             Reserve Your Dog Now! Contact us for more photos, short videos
             showcasing the dog, health certificates, and a rating list from

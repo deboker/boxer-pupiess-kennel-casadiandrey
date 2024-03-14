@@ -160,11 +160,16 @@ p {
   text-align: center;
 }
 
-.feature-item p {
+.reserve-text {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 2rem;
   font-size: 1.4rem;
+}
+
+.image-text {
+  padding-top: 0;
+  margin-bottom: 1rem;
 }
 
 .reserved-label {
@@ -228,6 +233,7 @@ p {
   background-color: #4e8ec1;
   color: #fff;
   gap: 0.3rem;
+  box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
 }
 
 .btn,
@@ -267,17 +273,22 @@ p {
 
 .facebook-icon {
   color: #4e8ec1;
-  width: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----- FOOTER ----- */
 
-footer {
+.footer-container {
   text-align: center;
   background: var(--bg-color);
   color: var(--text-color);
-  font-size: 0.8rem;
   padding: 1.2rem;
+}
+
+.footer-container p {
+  font-size: 1rem;
 }
 
 /* ----- NAVIGATION ----- */
@@ -417,13 +428,17 @@ body:not(.user-is-tabbing) a:focus {
   }
 
   .meeting p {
-    padding: 0 1.6rem 1rem 1.6rem;
+    padding: 0 1rem 1rem 1rem;
     font-size: 1.2rem;
   }
 
   .available h1 {
     padding: 0 0 1rem 0;
     font-size: 1.8rem;
+  }
+
+  .available {
+    padding: 1rem;
   }
 
   .available h2 {
@@ -439,22 +454,20 @@ body:not(.user-is-tabbing) a:focus {
   }
 
   .feature-video {
-    width: 100%;
+    width: 90%;
   }
 
-  .feature-item {
-    padding: 0;
-    width: 100%;
+  .feature-image {
+    width: 90%;
+  }
+
+  .reserve-text p {
+    padding: 0.5rem 0 1rem 0;
     font-size: 1rem;
   }
-
-  .feature-item p {
-    font-size: 1rem;
-  }
-
-  .available p {
-    padding: 1rem 0 1rem 0;
-    font-size: 1.2rem;
+  .image-text {
+    font-size: 0.7rem;
+    padding-top: 0;
   }
 
   .contact h1 {
