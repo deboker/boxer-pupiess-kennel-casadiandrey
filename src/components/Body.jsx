@@ -179,6 +179,7 @@ export default function Body(props) {
       </section>
 
       <div className={`contact ${props.darkMode ? "dark-mode" : ""}`}>
+        <h1>Contact us</h1>
         <a
           target="_blank"
           href="mailto:casadiandrey@gmail.com"

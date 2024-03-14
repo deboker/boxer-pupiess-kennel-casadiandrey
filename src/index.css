@@ -208,6 +208,10 @@ p {
   align-items: center;
 }
 
+.contact h1 {
+  padding-bottom: 1rem;
+}
+
 .btn {
   width: 60%;
 
@@ -321,18 +325,6 @@ body:not(.user-is-tabbing) a:focus {
   height: 70%;
 }
 
-@media (max-width: 900px) {
-  .back-to-top {
-    right: 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .back-to-top {
-    right: 1rem;
-  }
-}
-
 /* toggler */
 
 .toggler {
@@ -341,7 +333,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* Dark Mode Styles */
+
 .dark-mode {
+  color: var(--text-color-dark-mode);
+}
+
+.header.dark-mode,
+.available.dark-mode {
   background-image: linear-gradient(
     to bottom,
     var(--bg-color-dark-mode),
@@ -350,24 +348,21 @@ body:not(.user-is-tabbing) a:focus {
   color: var(--text-color-dark-mode);
 }
 
-.dark-mode footer {
+.meeting.dark-mode,
+.social-media.dark-mode {
   background-image: linear-gradient(
     to top,
     var(--bg-color-dark-mode),
     var(--second-bg-color-dark-mode)
   );
-  color: var(--text-color-dark-mode);
 }
 
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode p,
-.dark-mode .subheading {
-  color: #d5d4d8;
+.contact.dark-mode {
+  background: var(--second-bg-color-dark-mode);
 }
 
-.nav-link.dark-mode {
-  color: whitesmoke;
+.footer-container.dark-mode {
+  background: var(--bg-color-dark-mode);
 }
 
 .btn.dark-mode {
@@ -382,19 +377,104 @@ body:not(.user-is-tabbing) a:focus {
   color: whitesmoke;
 }
 
-.fb-logo {
-  width: 2rem;
-}
-
 @media (max-width: 768px) {
-  .video-galery {
-    flex-direction: column;
+  .header {
+    padding: 0;
   }
+
+  .header-container {
+    padding: 0.8rem;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .subheading {
+    font-size: 0.6rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .meeting {
+    padding: 0;
+  }
+
+  .meeting h2 {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .main-image {
+    padding: 1rem;
+    width: 80%;
+    filter: brightness(0.7);
+  }
+
+  .meeting h3 {
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .meeting p {
+    padding: 0 1.6rem 1rem 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .available h1 {
+    padding: 0 0 1rem 0;
+    font-size: 1.8rem;
+  }
+
   .available h2 {
+    font-size: 1rem;
     max-width: 100%;
     padding: 0;
   }
+
+  .video-galery {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
   .feature-video {
-    width: 70%;
+    width: 100%;
+  }
+
+  .feature-item {
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .feature-item p {
+    font-size: 1rem;
+  }
+
+  .available p {
+    padding: 1rem 0 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .contact h1 {
+    font-size: 1.4rem;
+  }
+
+  .footer-container p {
+    font-size: 0.6rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .back-to-top {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .back-to-top {
+    right: 1rem;
   }
 }
