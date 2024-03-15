@@ -30,12 +30,22 @@ html {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 1rem;
   background-image: linear-gradient(
     to bottom,
     var(--bg-color),
     var(--second-bg-color)
   );
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better visual separation from the content below */
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .header h1 {
@@ -46,13 +56,17 @@ html {
 .header-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1.8rem;
 }
 
+.logo-container {
+  padding: 0;
+}
+
 .logo {
-  width: 10%;
+  width: 1.8rem;
 }
 
 .subheading {
@@ -291,26 +305,29 @@ p {
   font-size: 1rem;
 }
 
+/* ----- MENU ----- */
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
 /* ----- NAVIGATION ----- */
 
-nav a {
-  color: #3d13f6;
-  text-decoration: none;
+.navbar a {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: 0.3s;
 }
 
-button:focus,
-a:focus {
-  outline: 2px solid var(--pink);
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
 }
 
-body:not(.user-is-tabbing) button:focus,
-body:not(.user-is-tabbing) a:focus {
-  outline: none;
-}
-
-.link:hover {
-  color: var(--pink);
-}
+/* ----- SCROLL BACK TO TOP DART ----- */
 
 .back-to-top {
   position: fixed;
@@ -389,6 +406,32 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1 rem rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+
   .header {
     padding: 0;
   }
@@ -398,7 +441,7 @@ body:not(.user-is-tabbing) a:focus {
   }
 
   .header h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .subheading {

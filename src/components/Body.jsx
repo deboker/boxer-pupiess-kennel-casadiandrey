@@ -28,7 +28,6 @@ export default function Body(props) {
 
     const handleMouseDownOnce = () => {
       document.body.classList.remove("user-is-tabbing");
-
       window.removeEventListener("mousedown", handleMouseDownOnce);
       window.addEventListener("keydown", handleFirstTab);
     };
@@ -178,7 +177,10 @@ export default function Body(props) {
         </div>
       </section>
 
-      <div className={`contact ${props.darkMode ? "dark-mode" : ""}`}>
+      <div
+        className={`contact ${props.darkMode ? "dark-mode" : ""}`}
+        id="contact"
+      >
         <h1>Contact us</h1>
         <a
           target="_blank"
