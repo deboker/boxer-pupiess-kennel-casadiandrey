@@ -367,6 +367,7 @@ p {
 }
 
 .header.dark-mode,
+.dark-mode .navbar,
 .available.dark-mode {
   background-image: linear-gradient(
     to bottom,
@@ -405,9 +406,14 @@ p {
   color: whitesmoke;
 }
 
+.dark-mode #menu-icon {
+  color: var(--text-color-dark-mode);
+}
+
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
+    font-size: 3rem;
   }
 
   .navbar {
