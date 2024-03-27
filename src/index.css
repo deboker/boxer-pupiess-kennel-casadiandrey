@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* ----- RESET ----- */
+
+html {
+  font-family: "Tilt Neon", cursive !important;
+}
 
 * {
   box-sizing: border-box;
@@ -18,6 +25,14 @@
   --second-bg-color-dark-mode: #4c669f; /* Gradient Middle - Cobalt Blue */
   --text-color: #333; /* Dark Grey for light mode text */
   --text-color-dark-mode: #d5d4d8; /* Light Grey for dark mode text */
+}
+
+.gradient-background {
+  background-image: linear-gradient(
+    to top,
+    var(--bg-color),
+    var(--second-bg-color)
+  );
 }
 
 html {

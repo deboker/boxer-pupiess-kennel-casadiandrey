@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import ContactForm from "./Form/ContactForm";
 import meting from "../assets/cartier&free.webp";
 import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
@@ -217,6 +218,8 @@ export default function Body(props) {
           <FaViber /> Viber
         </a>
       </div>
+
+      <ContactForm />
 
       <div className={`social-media ${props.darkMode ? "dark-mode" : ""}`}>
         <p>Folow us</p>
