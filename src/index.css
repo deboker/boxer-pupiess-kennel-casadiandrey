@@ -322,9 +322,8 @@ p {
   transition: 0.3s;
 }
 
-.navbar a:hover,
-.navbar a.active {
-  color: var(--text-color);
+.navbar a:hover {
+  color: var(--text-color-dark-mode);
 }
 
 /* ----- SCROLL BACK TO TOP DART ----- */
@@ -367,7 +366,6 @@ p {
 }
 
 .header.dark-mode,
-.dark-mode .navbar,
 .available.dark-mode {
   background-image: linear-gradient(
     to bottom,
@@ -434,6 +432,24 @@ p {
 
   .navbar.active {
     display: block;
+    color: var(--text-color);
+  }
+
+  .dark-mode .navbar a {
+    color: var(--text-color-dark-mode);
+  }
+
+  .dark-mode .navbar a:hover {
+    color: var(--text-color);
+  }
+
+  .dark-mode .navbar {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color-dark-mode),
+      var(--second-bg-color-dark-mode)
+    );
+    color: var(--text-color-dark-mode);
   }
 
   .navbar a {
