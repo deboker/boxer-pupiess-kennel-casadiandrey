@@ -64,7 +64,10 @@ export default function Body(props) {
 
   return (
     <div>
-      <section className={`meeting ${props.darkMode ? "dark-mode" : ""}`}>
+      <section
+        className={`meeting ${props.darkMode ? "dark-mode" : ""}`}
+        id="meeting"
+      >
         <h2>From "CASA DI ANDREY": Introducing Litter A born 18.12.2022.</h2>
         <img
           src={meting}
@@ -100,7 +103,10 @@ export default function Body(props) {
         </p>
       </section>
 
-      <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
+      <section
+        className={`available ${props.darkMode ? "dark-mode" : ""}`}
+        id="available"
+      >
         <h1>AVAILABLE DOG</h1>
         <div className="video-galery">
           <h2>
