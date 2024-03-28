@@ -173,7 +173,7 @@ export default function Body(props) {
           {/* <p className="available-label">Available</p> */}
           <p className="image-text">Puppy Adam d'black Casa di Andrey</p>
         </div>
-        <div className="reserve-text">
+        {/* <div className="reserve-text">
           <p>
             Reserve Your Dog Now! Contact us for more photos, short videos
             showcasing the dog, health certificates, and a rating list from
@@ -181,10 +181,10 @@ export default function Body(props) {
             won. Discover Your New Furry Friend and embark on a journey.
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
-        </div>
+        </div>*/}
       </section>
 
-      <div
+      {/* <div
         className={`contact ${props.darkMode ? "dark-mode" : ""}`}
         id="contact"
       >
@@ -217,7 +217,7 @@ export default function Body(props) {
         >
           <FaViber /> Viber
         </a>
-      </div>
+      </div> */}
 
       <ContactForm />
 

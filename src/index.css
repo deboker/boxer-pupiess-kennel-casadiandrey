@@ -25,11 +25,20 @@ html {
   --second-bg-color-dark-mode: #4c669f; /* Gradient Middle - Cobalt Blue */
   --text-color: #333; /* Dark Grey for light mode text */
   --text-color-dark-mode: #d5d4d8; /* Light Grey for dark mode text */
+  --btn-color: #4e8ec1;
 }
 
-.gradient-background {
+.gradient-background-top {
   background-image: linear-gradient(
     to top,
+    var(--bg-color),
+    var(--second-bg-color)
+  );
+}
+
+.gradient-background-botton {
+  background-image: linear-gradient(
+    to bottom,
     var(--bg-color),
     var(--second-bg-color)
   );

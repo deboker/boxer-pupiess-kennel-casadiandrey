@@ -3,39 +3,46 @@ import React from "react";
 const ContactForm = () => {
   return (
     <>
-      <section className="gradient-background">
+      <section className="gradient-background-top" id="contact">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
-              <p className="max-w-xl text-lg">
-                At the same time, the fact that we are wholly owned and totally
-                independent from manufacturer and other group control gives you
-                confidence that we will only recommend what is right for you.
-              </p>
-
-              <div className="mt-8">
+              <div className="mt-8 text-center">
                 <a href="#" className="text-2xl font-bold text-pink-600">
                   {" "}
-                  0151 475 4450{" "}
+                  Contact us{" "}
                 </a>
-
-                <address className="mt-2 not-italic">
-                  282 Kevin Brook, Imogeneborough, CA 58517
-                </address>
               </div>
+              <p className="max-w-xl text-lg">
+                Reserve Your Dog Now! Contact us for more photos, short videos
+                showcasing the dog, health certificates, and a rating list from
+                exhibitions. We also offer images of prize cups our champions
+                have won. Discover Your New Furry Friend and embark on a
+                journey.
+              </p>
             </div>
 
             <div className="gradient-background rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form action="#" className="space-y-4">
+              <form
+                action="#"
+                className="space-y-4"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit="submit"
+                netlify
+              >
                 <div>
-                  <label className="gradient-background sr-only" htmlFor="name">
+                  <label className="sr-only" htmlFor="name">
                     Name
                   </label>
                   <input
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Name"
                     type="text"
                     id="name"
+                    required
                   />
                 </div>
 
@@ -45,10 +52,11 @@ const ContactForm = () => {
                       Email
                     </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Email address"
                       type="email"
                       id="email"
+                      required
                     />
                   </div>
 
@@ -57,7 +65,7 @@ const ContactForm = () => {
                       Phone
                     </label>
                     <input
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
@@ -65,7 +73,7 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+                {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
                   <div>
                     <label
                       htmlFor="Option1"
@@ -119,7 +127,7 @@ const ContactForm = () => {
                       <span className="text-sm"> Option 3 </span>
                     </label>
                   </div>
-                </div>
+                </div> */}
 
                 <div>
                   <label className="sr-only" htmlFor="message">
@@ -127,17 +135,18 @@ const ContactForm = () => {
                   </label>
 
                   <textarea
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="resize-none gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Message"
                     rows="8"
                     id="message"
+                    required
                   ></textarea>
                 </div>
 
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-blue px-5 py-3 font-medium text-white sm:w-auto"
+                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Enquiry
                   </button>
