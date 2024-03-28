@@ -24,13 +24,12 @@ const ContactForm = () => {
 
             <div className="gradient-background rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form
-                action="#"
-                className="space-y-4"
                 name="contact"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit="submit"
+                className="space-y-4"
                 netlify
               >
                 <div>
