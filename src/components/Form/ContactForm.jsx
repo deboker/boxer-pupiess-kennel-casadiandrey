@@ -37,6 +37,7 @@ const ContactForm = () => {
                     Name
                   </label>
                   <input
+                    name="name"
                     className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Name"
                     type="text"
@@ -51,6 +52,7 @@ const ContactForm = () => {
                       Email
                     </label>
                     <input
+                      name="email"
                       className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Email address"
                       type="email"
@@ -64,6 +66,7 @@ const ContactForm = () => {
                       Phone
                     </label>
                     <input
+                      name="phone"
                       className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Phone Number"
                       type="tel"
@@ -78,6 +81,7 @@ const ContactForm = () => {
                   </label>
 
                   <textarea
+                    name="message"
                     className="resize-none gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Message"
                     rows="8"
