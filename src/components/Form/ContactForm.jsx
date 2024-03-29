@@ -29,7 +29,6 @@ const ContactForm = () => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 className="contact space-y-4"
-                encType="application/x-www-form-urlencoded"
               >
                 <input type="hidden" name="bot-field" />
 
