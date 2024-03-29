@@ -242,7 +242,7 @@ export default function Body(props) {
       </div>
 
       <a href="#top" className="back-to-top" title="Back to Top">
-        <img src={arrow} alt="Back to Top" class="back-to-top__image" />
+        <img src={arrow} alt="Back to Top" className="back-to-top__image" />
       </a>
     </div>
   );
