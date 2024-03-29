@@ -6,7 +6,7 @@ import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
 import AdamRuns from "../assets/adam-runs.webp";
 import AdamPuppy1 from "../assets/adam-puppy.webp";
-import AdamVideo from "../assets/video-adam.mp4";
+import AdamVideo from "../assets/VID_20240328_181109.mp4";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import {

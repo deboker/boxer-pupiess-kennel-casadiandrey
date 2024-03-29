@@ -24,13 +24,10 @@ const ContactForm = () => {
 
             <div className="gradient-background rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form
-                name="contact"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                onSubmit="submit"
-                className="space-y-4"
-                netlify
+                className="contact space-y-4"
               >
                 <div>
                   <label className="sr-only" htmlFor="name">
@@ -71,62 +68,6 @@ const ContactForm = () => {
                     />
                   </div>
                 </div>
-
-                {/* <div className="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                  <div>
-                    <label
-                      htmlFor="Option1"
-                      className="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="Option1"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
-
-                      <span className="text-sm"> Option 1 </span>
-                    </label>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="Option2"
-                      className="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="Option2"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
-
-                      <span className="text-sm"> Option 2 </span>
-                    </label>
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="Option3"
-                      className="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
-                      tabIndex="0"
-                    >
-                      <input
-                        className="sr-only"
-                        id="Option3"
-                        type="radio"
-                        tabIndex="-1"
-                        name="option"
-                      />
-
-                      <span className="text-sm"> Option 3 </span>
-                    </label>
-                  </div>
-                </div> */}
 
                 <div>
                   <label className="sr-only" htmlFor="message">
