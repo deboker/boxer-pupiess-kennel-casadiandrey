@@ -1068,6 +1068,7 @@ html {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* Optional: Adds a shadow for better visual separation from the content below */
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  max-height: 8rem;
 }
 
 .header h1 {
@@ -1080,7 +1081,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1.8rem;
+  padding: 0;
 }
 
 .logo-container {
