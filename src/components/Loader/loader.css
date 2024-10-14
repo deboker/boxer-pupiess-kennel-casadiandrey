@@ -11,8 +11,12 @@
   align-items: center;
 }
 
-.loader svg {
-  width: 20%;
+img {
+  width: 80%;
+}
+
+.svg-wrapper .loader svg {
+  width: 30rem;
   border-radius: 0.6rem;
 }
 

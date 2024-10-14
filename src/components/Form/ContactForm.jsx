@@ -3,7 +3,10 @@ import React from "react";
 const ContactForm = () => {
   return (
     <>
-      <section className="gradient-background-top" id="contact">
+      <section
+        className="bg-red-600 text-red-400 bg-gradient-top dark:bg-gradient-top-dark"
+        id="contact"
+      >
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
@@ -13,7 +16,7 @@ const ContactForm = () => {
                   Contact us{" "}
                 </a>
               </div>
-              <p className="max-w-xl text-lg">
+              <p className="max-w-xl text-lg text-red-700">
                 Reserve Your Dog Now! Contact us for more photos, short videos
                 showcasing the dog, health certificates, and a rating list from
                 exhibitions. We also offer images of prize cups our champions
@@ -22,7 +25,7 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <div className="gradient-background rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <div className=" rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form
                 name="contact"
                 method="POST"
@@ -39,7 +42,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     name="name"
-                    className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className=" w-full rounded-lg border-gray-200 p-3 text-sm focus:bg-blue-400"
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -54,7 +57,7 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="email"
-                      className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Email address"
                       type="email"
                       id="email"
@@ -68,7 +71,7 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="phone"
-                      className="gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
+                      className="bg-gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
@@ -83,7 +86,7 @@ const ContactForm = () => {
 
                   <textarea
                     name="message"
-                    className="resize-none gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
+                    className="resize-none bg-gradient-top w-full rounded-lg border-gray-200 p-3 text-sm"
                     placeholder="Message"
                     rows="8"
                     id="message"
