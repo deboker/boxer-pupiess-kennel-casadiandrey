@@ -1089,7 +1089,7 @@ html {
 }
 
 .logo {
-  width: 1.8rem;
+  width: 3.5rem;
 }
 
 .subheading {
@@ -1108,6 +1108,7 @@ html {
     var(--bg-color),
     var(--second-bg-color)
   );
+  padding-top: 2rem;
 }
 
 .meeting h2 {
