@@ -42,7 +42,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     name="name"
-                    className=" w-full rounded-lg border-gray-200 p-3 text-sm focus:bg-blue-400"
+                    className=" w-full rounded-lg border-gray-200 p-3 text-sm dark:bg-gray-800 dark:text-white"
                     placeholder="Name"
                     type="text"
                     id="name"
