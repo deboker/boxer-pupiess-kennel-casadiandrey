@@ -1443,6 +1443,10 @@ p {
     font-size: 1rem;
     padding: 0.2rem;
   }
+
+  .logo {
+    width: 2.8rem;
+  }
 }
 
 @media (max-width: 768px) {
