@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import ContactForm from "./Form/ContactForm";
-import meting from "../assets/cartier&free.webp";
+import meting from "../assets/cartier&free.jpg";
 import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
 import AdamRuns from "../assets/adam-runs.webp";

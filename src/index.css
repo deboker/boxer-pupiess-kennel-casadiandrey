@@ -1187,6 +1187,7 @@ p {
   padding: 2rem;
   border-radius: 0.3rem 0.3rem 0 0;
   filter: brightness(0.8);
+  max-height: 50rem;
 }
 
 .feature-image {
