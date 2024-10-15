@@ -114,9 +114,14 @@ export default function Body(props) {
             Meet Adam d'Black, our exceptional Boxer dog ready for a loving
             home. His dark golden brindle coat with white markings showcases the
             Boxer breed's strength and grace. More than his striking appearance,
-            Adam brings joy and companionship, ready to be a loyal friend. A
-            descendant of champions, he offers intelligence, vitality, and a
-            daily adventure. Embrace the unique joy, protection, and love Adam
+            Adam brings joy, companionship, and unwavering loyalty. A natural
+            guardian, Adam is well-behaved, never causing a mess in the yard,
+            and he respects the space of your home garden. As a descendant of
+            champions, he offers intelligence, vitality, and a daily sense of
+            adventure. Adam has also passed all essential health tests with
+            flying colors: his heart is rated A (Heart - 0), his hips are in
+            excellent condition (HD-A), and he has no signs of spondylosis
+            (Spon. - 0). Embrace the unique joy, protection, and love Adam
             d'Black brings into your life.
           </h2>
 
