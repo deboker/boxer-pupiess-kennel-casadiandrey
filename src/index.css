@@ -1017,7 +1017,7 @@ html {
   );
 }
 
-.gradient-background-botton {
+.gradient-background-bottom {
   background-image: linear-gradient(
     to bottom,
     var(--bg-color),
