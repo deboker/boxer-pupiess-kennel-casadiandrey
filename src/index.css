@@ -1170,8 +1170,9 @@ p {
 }
 
 .available h2 {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem 3rem;
   max-width: 50%;
+  font-size: 1.6rem;
 }
 
 .video-galery {
