@@ -21,14 +21,7 @@ const ContactForm = () => {
                 showcasing the dog, health certificates, and a rating list from
                 exhibitions. We also offer images of prize cups our champions
                 have won. Discover Your New Furry Friend and embark on a
-                journey. Adam is not only an exceptional companion but also a
-                great guardian dog. He is well-mannered, does not create a mess
-                in the yard, and respects the boundaries of the home garden.
-                Health-wise, Adam has passed all key tests with flying colors,
-                including excellent heart health with a rating of A (Heart - 0),
-                perfect hip scores (HD-A), and no signs of spondylosis (Spon. -
-                0). You can be assured that Adam comes from a strong and healthy
-                bloodline, making him a wonderful addition to any family.
+                journey.
               </p>
             </div>
 
@@ -104,7 +97,7 @@ const ContactForm = () => {
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white sm:w-auto dark:bg-gray-700"
+                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Enquiry
                   </button>
