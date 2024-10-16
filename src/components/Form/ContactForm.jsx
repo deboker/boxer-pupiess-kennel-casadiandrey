@@ -1,6 +1,23 @@
 import React from "react";
 
 const ContactForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        window.location.href = "/thank-you";
+      })
+      .catch((error) => alert("Form submission error: " + error));
+  };
+
   return (
     <>
       <section
@@ -25,12 +42,12 @@ const ContactForm = () => {
             <div className="rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form
                 name="contact"
-                netlify
                 method="POST"
-                action="/thank-you"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 id="contact-form"
+                onSubmit={handleSubmit}
+                netlify
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden">
