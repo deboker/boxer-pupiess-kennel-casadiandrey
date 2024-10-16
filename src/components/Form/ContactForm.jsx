@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactForm = () => {
-  const handleSubmit = (event) => {
+  const submit = (event) => {
     event.preventDefault();
 
     const form = event.target;
@@ -46,7 +46,7 @@ const ContactForm = () => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 id="contact-form"
-                onSubmit={handleSubmit}
+                onSubmit={submit}
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden">
