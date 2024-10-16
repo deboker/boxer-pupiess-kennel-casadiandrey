@@ -1062,6 +1062,7 @@ html {
     var(--second-bg-color)
   );
   transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .header.sticky {
