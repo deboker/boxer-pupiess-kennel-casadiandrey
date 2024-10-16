@@ -23,20 +23,86 @@ const ContactForm = () => {
             </div>
 
             <div className="rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
-              <form name="contact" netlify>
-                <p>
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                id="contact-form"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
                   <label>
-                    Name <input type="text" name="name" />
+                    Don’t fill this out if you're human:{" "}
+                    <input name="bot-field" />
                   </label>
                 </p>
-                <p>
-                  <label>
-                    Email <input type="email" name="email" />
+
+                <div className="w-9/12 mx-auto">
+                  <label className="sr-only" htmlFor="name">
+                    Name
                   </label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
+                  <input
+                    name="name"
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                    placeholder="Full Name"
+                    type="text"
+                    id="name"
+                    required
+                  />
+                </div>
+
+                <div className="w-9/12 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <div>
+                    <label className="sr-only" htmlFor="email">
+                      Email
+                    </label>
+                    <input
+                      name="email"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                      placeholder="Email Address"
+                      type="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="sr-only" htmlFor="phone">
+                      Phone
+                    </label>
+                    <input
+                      name="phone"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                      placeholder="Phone Number"
+                      type="tel"
+                      id="phone"
+                    />
+                  </div>
+                </div>
+
+                <div className="w-9/12 mx-auto">
+                  <label className="sr-only" htmlFor="message">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    className="resize-none w-full rounded-lg border-gray-200 p-3 text-sm bg-gradient-top dark:bg-gradient-top-dark dark:text-white"
+                    placeholder="Your Message"
+                    rows="8"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div className="mt-4">
+                  <button
+                    type="submit"
+                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white dark:bg-gray-700 sm:w-auto"
+                  >
+                    Send Message
+                  </button>
+                </div>
               </form>
             </div>
           </div>
