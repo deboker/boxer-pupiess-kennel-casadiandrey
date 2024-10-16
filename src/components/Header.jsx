@@ -5,21 +5,24 @@ import LogoW from "../assets/CASADIANDREYWHITE-logo.svg";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export default function Header(props) {
+  const [isNavActive, setIsNavActive] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
+  const toggleNav = () => {
+    setIsNavActive(!isNavActive);
+  };
+
+  const handleNavClick = () => {
+    setIsNavActive(false); // This will hide the navbar
+  };
+
   useEffect(() => {
-    let lastScrollY = window.scrollY;
-
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > 100) {
+      if (window.scrollY > 100) {
         setIsSticky(true);
-      } else if (currentScrollY < 100) {
+      } else {
         setIsSticky(false);
       }
-
-      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +40,7 @@ export default function Header(props) {
     >
       <div className="header-container">
         <div className="logo-container">
-          <a href="#top">
+          <a href="#top" onClick={handleNavClick}>
             <img
               src={props.darkMode ? LogoW : Logo}
               alt="Casa di Andrey Kennel Logo"
@@ -61,6 +64,23 @@ export default function Header(props) {
             aria-label="Toggle dark mode"
           />
         </div>
+        <i
+          className={`bx bx-menu ${isNavActive ? "bx-x" : ""}`}
+          id="menu-icon"
+          onClick={toggleNav}
+        ></i>
+
+        <nav className={`navbar ${isNavActive ? "active" : ""}`}>
+          <a href="#meeting" className="active" onClick={handleNavClick}>
+            Home
+          </a>
+          <a href="#available" onClick={handleNavClick}>
+            Services
+          </a>
+          <a href="#contact" onClick={handleNavClick}>
+            Contact
+          </a>
+        </nav>
       </div>
     </header>
   );
