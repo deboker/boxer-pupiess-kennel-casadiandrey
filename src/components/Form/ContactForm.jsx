@@ -44,7 +44,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     name="name"
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-primary-dark dark:text-white"
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
                     placeholder="Full Name"
                     type="text"
                     id="name"
@@ -59,7 +59,7 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="email"
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
                       placeholder="Email Address"
                       type="email"
                       id="email"
@@ -73,7 +73,7 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="phone"
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
@@ -87,7 +87,7 @@ const ContactForm = () => {
                   </label>
                   <textarea
                     name="message"
-                    className="resize-none w-full rounded-lg border-gray-200 p-3 text-sm bg-gradient-top dark:bg-gradient-top-dark dark:text-white"
+                    className="resize-none w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
                     placeholder="Your Message"
                     rows="8"
                     id="message"
