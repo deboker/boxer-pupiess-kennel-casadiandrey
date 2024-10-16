@@ -12,8 +12,7 @@ const ContactForm = () => {
             <div className="lg:col-span-2 lg:py-12">
               <div className="mt-8 text-center">
                 <a href="#" className="text-2xl font-bold text-pink-600">
-                  {" "}
-                  Contact us{" "}
+                  Contact us
                 </a>
               </div>
               <p className="max-w-xl text-lg text-red-700">
@@ -25,73 +24,80 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <div className=" rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <div className="rounded-lg p-8 shadow-lg lg:col-span-3 lg:p-12">
               <form
                 name="contact"
                 method="POST"
                 action="/thanks"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                className="contact space-y-4"
+                className="space-y-4"
               >
                 <input type="hidden" name="form-name" value="contact" />
 
-                <div className="w-9/12">
-                  <label className="sr-only" htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    name="name"
-                    className=" w-full rounded-lg border-gray-200 p-3 text-sm dark:bg-gray-800 dark:text-white"
-                    placeholder="Name"
-                    type="text"
-                    id="name"
-                    required
-                  />
-                </div>
-
-                <div className="w-9/12 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div>
-                    <label className="sr-only" htmlFor="email">
-                      Email
+                {/* Wrap the div with max-w-full to make the width more flexible */}
+                <div className="max-w-full">
+                  <div className="w-9/12 mx-auto">
+                    <label className="sr-only" htmlFor="name">
+                      Name
                     </label>
                     <input
-                      name="email"
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Email address"
-                      type="email"
-                      id="email"
+                      name="name"
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm dark:bg-gray-800 dark:text-white"
+                      placeholder="Name"
+                      type="text"
+                      id="name"
                       required
                     />
                   </div>
+                </div>
 
-                  <div>
-                    <label className="sr-only" htmlFor="phone">
-                      Phone
-                    </label>
-                    <input
-                      name="phone"
-                      className="bg-gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm"
-                      placeholder="Phone Number"
-                      type="tel"
-                      id="phone"
-                    />
+                <div className="max-w-full">
+                  <div className="w-9/12 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div>
+                      <label className="sr-only" htmlFor="email">
+                        Email
+                      </label>
+                      <input
+                        name="email"
+                        className="w-full rounded-lg border-gray-200 p-3 text-sm dark:bg-gray-800 dark:text-white"
+                        placeholder="Email address"
+                        type="email"
+                        id="email"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label className="sr-only" htmlFor="phone">
+                        Phone
+                      </label>
+                      <input
+                        name="phone"
+                        className="bg-gradient-background-botton w-full rounded-lg border-gray-200 p-3 text-sm dark:bg-gray-800 dark:text-white"
+                        placeholder="Phone Number"
+                        type="tel"
+                        id="phone"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="w-9/12">
-                  <label className="sr-only" htmlFor="message">
-                    Message
-                  </label>
+                <div className="max-w-full">
+                  <div className="w-9/12 mx-auto">
+                    <label className="sr-only" htmlFor="message">
+                      Message
+                    </label>
 
-                  <textarea
-                    name="message"
-                    className="resize-none bg-gradient-top w-full rounded-lg border-gray-200 p-3 text-sm"
-                    placeholder="Message"
-                    rows="8"
-                    id="message"
-                    required
-                  ></textarea>
+                    <textarea
+                      name="message"
+                      className="resize-none w-full rounded-lg border-gray-200 p-3 text-sm bg-gradient-top dark:bg-gradient-top-dark dark:text-white"
+                      placeholder="Message"
+                      rows="8"
+                      id="message"
+                      required
+                    ></textarea>
+                  </div>
                 </div>
 
                 <div className="mt-4">
