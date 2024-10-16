@@ -38,8 +38,8 @@ const ContactForm = () => {
                   </label>
                 </p>
 
-                <div className="w-9/12 mx-auto">
-                  <label className="sr-only pb-8" htmlFor="name">
+                <div className="w-9/12 mx-auto pb-8">
+                  <label className="sr-only" htmlFor="name">
                     Name
                   </label>
                   <input
