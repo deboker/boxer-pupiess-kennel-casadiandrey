@@ -52,7 +52,7 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <div className="w-9/12 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="w-9/12 pb-8 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <label className="sr-only" htmlFor="email">
                       Email
