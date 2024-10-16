@@ -1073,7 +1073,6 @@ html {
   z-index: 999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* Optional: Adds a shadow for better visual separation from the content below */
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
   max-height: 8rem;
   transition: all 0.3s ease-in-out;
 }
