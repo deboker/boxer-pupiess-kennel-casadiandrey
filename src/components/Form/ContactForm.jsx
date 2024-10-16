@@ -38,7 +38,7 @@ const ContactForm = () => {
                   </label>
                 </p>
 
-                <div className="w-9/12 mx-auto pb-8">
+                <div className="w-full mx-auto pb-8">
                   <label className="sr-only" htmlFor="name">
                     Name
                   </label>
@@ -52,7 +52,7 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <div className="w-9/12 pb-8 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="w-full pb-8 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <label className="sr-only" htmlFor="email">
                       Email
@@ -81,7 +81,7 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div className="w-9/12 mx-auto">
+                <div className="w-full mx-auto">
                   <label className="sr-only" htmlFor="message">
                     Message
                   </label>
