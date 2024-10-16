@@ -1408,13 +1408,16 @@ p {
   color: var(--text-color-dark-mode);
 }
 
-.meeting.dark-mode,
-.social-media.dark-mode {
+.meeting.dark-mode {
   background-image: linear-gradient(
     to top,
     var(--bg-color-dark-mode),
     var(--second-bg-color-dark-mode)
   );
+}
+
+.social-media.dark-mode {
+  background-color: var(--bg-color-dark-mode);
 }
 
 .contact.dark-mode {
