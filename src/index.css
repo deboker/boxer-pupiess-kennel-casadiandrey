@@ -1010,7 +1010,7 @@ html {
   /* Dark Grey for light mode text */
   --text-color-dark-mode: #d5d4d8;
   /* Light Grey for dark mode text */
-  --btn-color: #4e8ec1;
+  --btn-color: #6790b9;
 }
 
 .gradient-background-top {
@@ -1146,13 +1146,13 @@ p {
 }
 
 .meeting a {
-  color: #4e8ec1;
+  color: #6790b9;
   text-decoration: none;
 }
 
 .meeting a:hover,
 .meeting a:active {
-  color: #206d9a;
+  color: #7597b9;
 }
 
 /* ----- AVAILABLE SECTION ----- */
