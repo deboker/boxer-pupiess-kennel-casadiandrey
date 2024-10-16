@@ -16,10 +16,10 @@ export default {
         'text-color-dark': 'var(--text-color-dark-mode)',
       },
       backgroundColor: {
-        'gradient-top': 'linear-gradient(to top, var(--bg-color), var(--second-bg-color))',
-        'gradient-bottom': 'linear-gradient(to bottom, var(--bg-color), var(--second-bg-color))',
-        'gradient-top-dark': 'linear-gradient(to top, var(--bg-color-dark-mode), var(--second-bg-color-dark-mode))',
-        'gradient-bottom-dark': 'linear-gradient(to bottom, var(--bg-color-dark-mode), var(--second-bg-color-dark-mode))',
+        'tw-gradient-top': 'linear-gradient(to top, var(--bg-color), var(--second-bg-color))',
+        'tw-gradient-bottom': 'linear-gradient(to bottom, var(--bg-color), var(--second-bg-color))',
+        'tw-gradient-top-dark': 'linear-gradient(to top, var(--bg-color-dark-mode), var(--second-bg-color-dark-mode))',
+        'tw-gradient-bottom-dark': 'linear-gradient(to bottom, var(--bg-color-dark-mode), var(--second-bg-color-dark-mode))',
       }
     }
   },
