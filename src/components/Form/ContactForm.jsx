@@ -36,7 +36,7 @@ const ContactForm = () => {
               >
                 <input type="hidden" name="form-name" value="contact" />
 
-                <div>
+                <div className="w-9/12">
                   <label className="sr-only" htmlFor="name">
                     Name
                   </label>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div className="w-9/12 grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div>
                     <label className="sr-only" htmlFor="email">
                       Email
@@ -79,7 +79,7 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="w-9/12">
                   <label className="sr-only" htmlFor="message">
                     Message
                   </label>
