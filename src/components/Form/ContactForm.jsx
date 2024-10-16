@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <>
       <section
-        className="bg-gradient-top dark:bg-gradient-top-dark"
+        className="tw-gradient-top dark:tw-gradient-top-dark"
         id="contact"
       >
         <div className="bg-tw-gradient-top mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
