@@ -98,7 +98,7 @@ const ContactForm = () => {
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white dark:bg-gray-700 sm:w-auto"
+                    className="inline-block w-full rounded-lg bg-btn-color px-5 py-3 font-medium text-white sm:w-auto"
                   >
                     Send Message
                   </button>
