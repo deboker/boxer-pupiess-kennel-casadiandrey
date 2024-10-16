@@ -1370,7 +1370,7 @@ p {
   align-items: center;
   height: 4.5rem;
   width: 4.5rem;
-  background-color: #4e8ec1;
+  background-color: #6790b9;
   border-radius: 50%;
   z-index: 10;
   visibility: hidden;
@@ -1378,7 +1378,7 @@ p {
 }
 
 .back-to-top:hover {
-  background-color: #206d9a;
+  background-color: #7897b7;
 }
 
 .back-to-top__image {
