@@ -15,7 +15,7 @@ const ContactForm = () => {
                   Contact us
                 </a>
               </div>
-              <p className="max-w-xl text-lg text-text-color">
+              <p className="max-w-xl text-lg text-text-color dark:text-text-color-dark">
                 Reserve Your Dog Now! Contact us for more photos, short videos,
                 health certificates, and a rating list from exhibitions. We also
                 offer images of prize cups our champions have won.
@@ -44,7 +44,7 @@ const ContactForm = () => {
                   </label>
                   <input
                     name="name"
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-gray-900 dark:text-white"
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-white dark:bg-primary-dark dark:text-white"
                     placeholder="Full Name"
                     type="text"
                     id="name"
