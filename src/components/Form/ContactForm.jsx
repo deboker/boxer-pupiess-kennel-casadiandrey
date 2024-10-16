@@ -39,7 +39,7 @@ const ContactForm = () => {
                 </p>
 
                 <div className="w-9/12 mx-auto">
-                  <label className="sr-only" htmlFor="name">
+                  <label className="sr-only pb-8" htmlFor="name">
                     Name
                   </label>
                   <input
