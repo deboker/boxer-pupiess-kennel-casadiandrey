@@ -26,6 +26,7 @@ const ContactForm = () => {
               <form
                 name="contact"
                 method="POST"
+                action="/thank-you"  {/* This is the redirection after submission */}
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 id="contact-form"
