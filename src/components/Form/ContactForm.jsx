@@ -11,11 +11,11 @@ const ContactForm = () => {
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">
               <div className="mt-8 text-center">
-                <a href="#" className="text-2xl font-bold text-primary">
+                <a href="#" className="text-2xl font-bold text-text-color">
                   Contact us
                 </a>
               </div>
-              <p className="max-w-xl text-lg text-primary">
+              <p className="max-w-xl text-lg text-text-color">
                 Reserve Your Dog Now! Contact us for more photos, short videos,
                 health certificates, and a rating list from exhibitions. We also
                 offer images of prize cups our champions have won.
