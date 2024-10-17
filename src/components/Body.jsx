@@ -239,7 +239,7 @@ export default function Body(props) {
           >
             <Lottie
               animationData={facebookIconAnimation}
-              style={{ width: 30, height: 30 }} // Set icon size
+              style={{ width: 20, height: 20 }} // Set icon size
               loop={true}
             />
           </a>
@@ -250,7 +250,7 @@ export default function Body(props) {
           >
             <Lottie
               animationData={intstagramIconAnimation}
-              style={{ width: 30, height: 30 }} // Set icon size
+              style={{ width: 20, height: 20 }} // Set icon size
               loop={true}
             />
           </a>
