@@ -1065,6 +1065,7 @@ html {
     var(--second-bg-color)
   );
   transition: all 0.3s ease-in-out;
+  transform: translateY(0);
 }
 
 .header.sticky {
@@ -1077,6 +1078,7 @@ html {
   /* Optional: Adds a shadow for better visual separation from the content below */
   max-height: 8rem;
   transition: all 0.3s ease-in-out;
+  transform: translateY(0);
 }
 
 .header h1 {

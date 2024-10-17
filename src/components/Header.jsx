@@ -18,10 +18,18 @@ export default function Header(props) {
 
   useEffect(() => {
     const handleScroll = () => {
+      const meetingSection = document.querySelector(".meeting");
+
       if (window.scrollY > 0) {
         setIsSticky(true);
+        if (meetingSection) {
+          meetingSection.style.paddingTop = "10rem";
+        }
       } else {
         setIsSticky(false);
+        if (meetingSection) {
+          meetingSection.style.paddingTop = "0";
+        }
       }
     };
 
