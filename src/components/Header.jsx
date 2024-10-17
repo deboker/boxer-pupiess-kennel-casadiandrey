@@ -28,7 +28,7 @@ export default function Header(props) {
       } else {
         setIsSticky(false);
         if (meetingSection) {
-          meetingSection.style.paddingTop = "0";
+          meetingSection.style.paddingTop = "2rem";
         }
       }
     };
