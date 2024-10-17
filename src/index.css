@@ -1657,6 +1657,9 @@ p {
   .navbar a {
     font-size: 1.2rem;
   }
+  .available h2 {
+    font-size: 1.2rem;
+  }
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
