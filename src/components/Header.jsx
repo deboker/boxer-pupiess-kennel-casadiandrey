@@ -23,7 +23,7 @@ export default function Header(props) {
       if (window.scrollY > 0) {
         setIsSticky(true);
         if (meetingSection) {
-          meetingSection.style.paddingTop = "12rem";
+          meetingSection.style.paddingTop = "10rem";
         }
       } else {
         setIsSticky(false);
