@@ -1460,8 +1460,6 @@ p {
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2rem;
-    position: relative;
-    z-index: 10;
   }
 
   .subheading {
@@ -1526,6 +1524,8 @@ p {
 
   .header {
     padding: 0;
+    position: relative;
+    z-index: 10;
   }
 
   .header-container {
