@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
+import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
 import ContactForm from "./Form/ContactForm";
 import meting from "../assets/cartier&free.jpg";
 import AdamHead from "../assets/adam-head.webp";
@@ -247,7 +248,11 @@ export default function Body(props) {
             className="facebook-icon"
             aria-label="Follow us on Instagram"
           >
-            <AiFillInstagram size={30} />
+            <Lottie
+              animationData={intstagramIconAnimation}
+              style={{ width: 30, height: 30 }} // Set icon size
+              loop={true}
+            />
           </a>
         </div>
       </div>
