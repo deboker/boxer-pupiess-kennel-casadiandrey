@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Lottie } from "lottie-react";
+import Lottie from "lottie-react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import ContactForm from "./Form/ContactForm";
