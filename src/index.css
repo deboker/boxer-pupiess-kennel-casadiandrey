@@ -1648,6 +1648,12 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .subheading {
+    font-size: 1rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
