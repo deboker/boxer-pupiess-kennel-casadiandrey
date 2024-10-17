@@ -1119,7 +1119,7 @@ html {
     var(--second-bg-color)
   );
   padding-top: 2rem;
-  transition: padding-top 0.3s ease-in-out;
+  transition: padding-top 0.1s ease-in-out;
 }
 
 .meeting h2 {
