@@ -81,7 +81,7 @@ export default function Body(props) {
           puppies to loving families. Whether destined for show or a cozy home,
           our puppies are chosen from the best European bloodlines. With
           health-tested sires and dams, we prioritize the well-being of each
-          pup.
+          pup..
         </p>
       </section>
 
