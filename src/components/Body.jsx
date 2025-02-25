@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
-import Lottie from "lottie-react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
-import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
-import ContactForm from "./Form/ContactForm";
-import meting from "../assets/cartier&free.jpg";
+import meting from "../assets/cartier&free.webp";
 import AdamHead from "../assets/adam-head.webp";
 import AdamSide from "../assets/adam-side.webp";
 import AdamRuns from "../assets/adam-runs.webp";
 import AdamPuppy1 from "../assets/adam-puppy.webp";
-import AdamVideo from "../assets/VID_20240914_114922.mp4";
+import AdamVideo from "../assets/video-adam.mp4";
 import arrow from "../assets/arrow-up.svg";
 import "../index.css";
 import {
@@ -68,10 +64,7 @@ export default function Body(props) {
 
   return (
     <div>
-      <section
-        className={`meeting ${props.darkMode ? "dark-mode" : ""}`}
-        id="meeting"
-      >
+      <section className={`meeting ${props.darkMode ? "dark-mode" : ""}`}>
         <h2>From "CASA DI ANDREY": Introducing Litter A born 18.12.2022.</h2>
         <img
           src={meting}
@@ -107,25 +100,17 @@ export default function Body(props) {
         </p>
       </section>
 
-      <section
-        className={`available ${props.darkMode ? "dark-mode" : ""}`}
-        id="available"
-      >
+      <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
         <h1>AVAILABLE DOG</h1>
         <div className="video-galery">
           <h2>
-            Meet Adam d'Black, born 18.12.2022, our exceptional Boxer dog ready
-            for a loving home. His dark golden brindle coat with white markings
-            showcases the Boxer breed's strength and grace. More than his
-            striking appearance, Adam brings joy, companionship, and unwavering
-            loyalty. A natural guardian, Adam is well-behaved, never causing a
-            mess in the yard, and he respects the space of your home garden. As
-            a descendant of champions, he offers intelligence, vitality, and a
-            daily sense of adventure. Adam has also passed all essential health
-            tests with flying colors: his heart is rated A (Heart - 0), his hips
-            are in excellent condition (HD-A), and he has no signs of
-            spondylosis (Spon. - 0). Embrace the unique joy, protection, and
-            love Adam d'Black brings into your life.
+            Meet Adam d'Black, our exceptional Boxer dog ready for a loving
+            home. His dark golden brindle coat with white markings showcases the
+            Boxer breed's strength and grace. More than his striking appearance,
+            Adam brings joy and companionship, ready to be a loyal friend. A
+            descendant of champions, he offers intelligence, vitality, and a
+            daily adventure. Embrace the unique joy, protection, and love Adam
+            d'Black brings into your life.
           </h2>
 
           <video
@@ -181,7 +166,7 @@ export default function Body(props) {
           {/* <p className="available-label">Available</p> */}
           <p className="image-text">Puppy Adam d'black Casa di Andrey</p>
         </div>
-        {/* <div className="reserve-text">
+        <div className="reserve-text">
           <p>
             Reserve Your Dog Now! Contact us for more photos, short videos
             showcasing the dog, health certificates, and a rating list from
@@ -189,10 +174,10 @@ export default function Body(props) {
             won. Discover Your New Furry Friend and embark on a journey.
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
-        </div>*/}
+        </div>
       </section>
 
-      {/* <div
+      <div
         className={`contact ${props.darkMode ? "dark-mode" : ""}`}
         id="contact"
       >
@@ -225,9 +210,7 @@ export default function Body(props) {
         >
           <FaViber /> Viber
         </a>
-      </div> */}
-
-      <ContactForm />
+      </div>
 
       <div className={`social-media ${props.darkMode ? "dark-mode" : ""}`}>
         <p>Folow us</p>
@@ -237,28 +220,20 @@ export default function Body(props) {
             className="facebook-icon"
             aria-label="Follow us on Facebook"
           >
-            <Lottie
-              animationData={facebookIconAnimation}
-              style={{ width: 20, height: 20 }} // Set icon size
-              loop={true}
-            />
+            <AiFillFacebook size={30} />
           </a>
           <a
             href="https://www.instagram.com/casa_di_andrey/"
             className="facebook-icon"
             aria-label="Follow us on Instagram"
           >
-            <Lottie
-              animationData={intstagramIconAnimation}
-              style={{ width: 20, height: 20 }} // Set icon size
-              loop={true}
-            />
+            <AiFillInstagram size={30} />
           </a>
         </div>
       </div>
 
       <a href="#top" className="back-to-top" title="Back to Top">
-        <img src={arrow} alt="Back to Top" className="back-to-top__image" />
+        <img src={arrow} alt="Back to Top" class="back-to-top__image" />
       </a>
     </div>
   );

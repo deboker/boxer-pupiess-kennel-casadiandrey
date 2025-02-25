@@ -12,24 +12,13 @@ export default function Header(props) {
     setIsNavActive(!isNavActive);
   };
 
-  const handleNavClick = () => {
-    setIsNavActive(false); // This will hide the navbar
-  };
-
   useEffect(() => {
     const handleScroll = () => {
-      const meetingSection = document.querySelector(".meeting");
-
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         setIsSticky(true);
-        if (meetingSection) {
-          meetingSection.style.paddingTop = "10rem";
-        }
       } else {
         setIsSticky(false);
-        if (meetingSection) {
-          meetingSection.style.paddingTop = "2rem";
-        }
+        setIsNavActive(false);
       }
     };
 
@@ -48,7 +37,7 @@ export default function Header(props) {
     >
       <div className="header-container">
         <div className="logo-container">
-          <a href="#top" onClick={handleNavClick}>
+          <a href="#top">
             <img
               src={props.darkMode ? LogoW : Logo}
               alt="Casa di Andrey Kennel Logo"
@@ -79,15 +68,11 @@ export default function Header(props) {
         ></i>
 
         <nav className={`navbar ${isNavActive ? "active" : ""}`}>
-          <a href="#meeting" className="active" onClick={handleNavClick}>
+          <a href="#home" className="active">
             Home
           </a>
-          <a href="#available" onClick={handleNavClick}>
-            Services
-          </a>
-          <a href="#contact" onClick={handleNavClick}>
-            Contact
-          </a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
