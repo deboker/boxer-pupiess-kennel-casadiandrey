@@ -1124,7 +1124,7 @@ html {
     var(--bg-color),
     var(--second-bg-color)
   );
-  padding-top: 2rem;
+  padding: 2rem 4rem;
 }
 
 .meeting h2 {
