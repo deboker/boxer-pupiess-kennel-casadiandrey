@@ -17,6 +17,8 @@ import {
   FaWhatsapp,
   FaFacebookMessenger,
   FaEnvelope,
+  FaMars,
+  FaVenus,
 } from "react-icons/fa";
 
 export default function Body(props) {
@@ -26,28 +28,33 @@ export default function Body(props) {
       note: "male fawn, wide white blaze, white chest, white socks",
       video: maleFawnVideo,
       reserved: true,
+      gender: "male",
     },
     {
       name: "Eos Aurora Casa di Andrey",
       note: "female dark brindle with a white chest",
       video: femaleBrindleVideo,
       reserved: true,
+      gender: "female",
     },
     {
       name: "Elysia Nova Casa di Andrey",
       note: "female fawn, white blaze and white chest",
       video: femaleFawnVideo,
       reserved: true,
+      gender: "female",
     },
     {
       name: "Eros Titan Casa di Andrey",
       note: "male golden brindle, white blaze and white chest",
       video: maleBrindleVideo,
+      gender: "male",
     },
     {
       name: "Eros Magnus Casa di Andrey",
       note: "male golden brindle, wide white blaze, white chest, white socks",
       video: maleBrindleWhiteMaskVideo,
+      gender: "male",
     },
   ];
 
@@ -149,6 +156,12 @@ export default function Body(props) {
                 controls
               />
               <p className="puppy-name">{puppy.name}</p>
+              <span
+                className="gender-icon"
+                aria-label={puppy.gender === "female" ? "Female" : "Male"}
+              >
+                {puppy.gender === "female" ? <FaVenus /> : <FaMars />}
+              </span>
               <p className="puppy-note">{puppy.note}</p>
             </div>
           ))}
