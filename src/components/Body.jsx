@@ -167,10 +167,9 @@ export default function Body(props) {
 
         <div className="reserve-text">
           <p>
-            Reserve Your Dog Now! Contact us for more photos, short videos
+            Reserve your dog now! Contact us for more photos, short videos
             showcasing the dog, health certificates, and a rating list from
-            exhibitions. We also offer images of prize cups our champions have
-            won. Discover your new furry friend and embark on a journey.
+            exhibitions. Discover your new furry friend and embark on a journey.
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
         </div>
