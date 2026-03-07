@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./Form/ContactForm";
-import meting from "../assets/aria&xxx.jpg";
+import meting from "../assets/aria_vlajko.webp";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
@@ -68,7 +68,7 @@ export default function Body(props) {
         className={`meeting ${props.darkMode ? "dark-mode" : ""}`}
         id="meeting"
       >
-        <h2>From "CASA DI ANDREY": Introducing Litter D born 26.12.2024.</h2>
+        <h2>From "CASA DI ANDREY": Introducing Litter F born 26.02.2026.</h2>
         <img
           src={meting}
           alt="Meeting"
