@@ -122,27 +122,8 @@ export default function Body(props) {
       <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
         <h1>AVAILABLE PUPPIES</h1>
         <p className="available-lead">
-          Pozrite si nové videá šteniatok. Dve videá vedľa seba, pod nimi info o
-          každom z piatich šteniat.
+          Watch the newest puppy clips and get to know each of our five pups.
         </p>
-
-        <div className="video-grid">
-          {puppies.slice(0, 2).map((puppy) => (
-            <div className="video-card" key={puppy.name}>
-              <video
-                className="feature-video"
-                src={puppy.video}
-                poster={meting}
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-              />
-              <p className="video-caption">{puppy.name}</p>
-            </div>
-          ))}
-        </div>
 
         <div className="puppy-grid">
           {puppies.map((puppy) => (
