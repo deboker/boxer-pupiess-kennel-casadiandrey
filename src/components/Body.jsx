@@ -167,9 +167,9 @@ export default function Body(props) {
 
         <div className="reserve-text">
           <p>
-            Reserve your dog now! Contact us for more photos, short videos
-            showcasing the dog, health certificates, and a rating list from
-            exhibitions. Discover your new furry friend and embark on a journey.
+            Interested in a puppy? Write us for fresh photos, short videos,
+            health certificates, and show ratings. We’ll confirm availability
+            and next steps.
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
         </div>

@@ -50,9 +50,9 @@ const ContactForm = () => {
                 </a>
               </div>
               <p className="max-w-xl text-lg text-text-color dark:text-text-color-dark">
-                Reserve Your Dog Now! Contact us for more photos, short videos,
-                health certificates, and a rating list from exhibitions. We also
-                offer images of prize cups our champions have won.
+                Tell us which puppy you like and we’ll share current photos,
+                short videos, health certificates, and show ratings. We’re happy
+                to guide you through transport and reservation.
               </p>
             </div>
 
