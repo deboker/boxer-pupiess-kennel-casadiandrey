@@ -12,7 +12,7 @@ const ContactForm = () => {
 
     if (!name) nextErrors.name = "Name is required.";
 
-    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) nextErrors.email = "Email is required.";
     else if (!emailRegex.test(email)) nextErrors.email = "Please enter a valid email.";
 
@@ -95,12 +95,12 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="email"
-                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
-                    placeholder="Email Address"
-                    type="email"
-                    id="email"
-                    required
-                  />
+                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
+                      placeholder="Email Address"
+                      type="email"
+                      id="email"
+                      required
+                    />
                     {errors.email && <p className="error-text">{errors.email}</p>}
                   </div>
 
