@@ -1414,6 +1414,10 @@ p {
   color: var(--text-color-dark-mode);
 }
 
+.facebook-icon svg path {
+  fill: currentColor !important;
+}
+
 /* ----- FOOTER ----- */
 
 .footer-container {
