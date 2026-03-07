@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [errors, setErrors] = useState({});
+
+  const validate = (form) => {
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const phone = form.phone.value.trim();
+    const message = form.message.value.trim();
+    const nextErrors = {};
+
+    if (!name) nextErrors.name = "Name is required.";
+
+    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    if (!email) nextErrors.email = "Email is required.";
+    else if (!emailRegex.test(email)) nextErrors.email = "Please enter a valid email.";
+
+    if (!phone) nextErrors.phone = "Phone is required.";
+    if (!message) nextErrors.message = "Message is required.";
+
+    return nextErrors;
+  };
+
+  const handleSubmit = (e) => {
+    const nextErrors = validate(e.target);
+    if (Object.keys(nextErrors).length > 0) {
+      e.preventDefault();
+      setErrors(nextErrors);
+    } else {
+      setErrors({});
+    }
+  };
+
   return (
     <>
       <section
@@ -32,6 +63,7 @@ const ContactForm = () => {
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 id="contact-form"
+                onSubmit={handleSubmit}
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <p className="hidden">
@@ -53,6 +85,7 @@ const ContactForm = () => {
                     id="name"
                     required
                   />
+                  {errors.name && <p className="error-text">{errors.name}</p>}
                 </div>
 
                 <div className="w-full pb-8 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -62,12 +95,13 @@ const ContactForm = () => {
                     </label>
                     <input
                       name="email"
-                      className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
-                      placeholder="Email Address"
-                      type="email"
-                      id="email"
-                      required
-                    />
+                    className="w-full rounded-lg border-gray-200 p-3 text-sm bg-primary dark:bg-primary-dark dark:text-white"
+                    placeholder="Email Address"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                    {errors.email && <p className="error-text">{errors.email}</p>}
                   </div>
 
                   <div>
@@ -80,7 +114,9 @@ const ContactForm = () => {
                       placeholder="Phone Number"
                       type="tel"
                       id="phone"
+                      required
                     />
+                    {errors.phone && <p className="error-text">{errors.phone}</p>}
                   </div>
                 </div>
 
@@ -96,6 +132,9 @@ const ContactForm = () => {
                     id="message"
                     required
                   ></textarea>
+                  {errors.message && (
+                    <p className="error-text">{errors.message}</p>
+                  )}
                 </div>
 
                 <div className="mt-4">

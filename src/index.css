@@ -1231,6 +1231,12 @@ p {
   background: #000;
 }
 
+.error-text {
+  color: #e35d3d;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+
 .video-caption {
   font-weight: 600;
 }
