@@ -104,7 +104,7 @@ export default function Body(props) {
         className={`meeting ${props.darkMode ? "dark-mode" : ""}`}
         id="meeting"
       >
-        <h2>From "CASA DI ANDREY": Introducing Litter E born 26.02.2026.</h2>
+        <h2>Casa di Andrey · Litter E born 26.02.2026</h2>
         <img
           src={meting}
           alt="Meeting"
@@ -112,13 +112,10 @@ export default function Body(props) {
         />
         <h3>Shipping available worldwide!</h3>
         <p>
-          Thank you for gracing Casa di Andrey Kennel with your presence. For
-          nearly three decades, we've poured our love into these magnificent
-          creatures. Our commitment is unwavering, offering exceptional boxer
-          puppies to loving families. Whether destined for show or a cozy home,
-          our puppies are chosen from the best European bloodlines. With
-          health-tested sires and dams, we prioritize the well-being of each
-          pup..
+          Welcome to Casa di Andrey Kennel. For almost three decades we have
+          raised European boxer champions and loving family companions. Litter E
+          comes from fully health-tested parents and top European bloodlines.
+          Shipping available worldwide.
         </p>
       </section>
 
