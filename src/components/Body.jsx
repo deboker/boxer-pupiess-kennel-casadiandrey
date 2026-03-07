@@ -22,30 +22,30 @@ import {
 export default function Body(props) {
   const puppies = [
     {
-      name: "Male fawn",
+      name: "Egon Imperius Casa di Andrey",
       note: "male fawn, clean lines",
       video: maleFawnVideo,
       reserved: true,
     },
     {
-      name: "Female brindle",
+      name: "Eos Aurora Casa di Andrey",
       note: "female brindle, white chest & socks",
       video: femaleBrindleVideo,
       reserved: true,
     },
     {
-      name: "Flashy fawn girl",
+      name: "Elysia Nova Casa di Andrey",
       note: "female fawn, flashy white blaze",
       video: femaleFawnVideo,
       reserved: true,
     },
     {
-      name: "Male brindle",
+      name: "Eros Titan Casa di Andrey",
       note: "male brindle, black mask",
       video: maleBrindleVideo,
     },
     {
-      name: "Male brindle white mask",
+      name: "Eros Magnus Casa di Andrey",
       note: "male brindle, white mask detail",
       video: maleBrindleWhiteMaskVideo,
     },
