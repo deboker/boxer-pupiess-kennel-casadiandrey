@@ -1410,6 +1410,10 @@ p {
   align-items: center;
 }
 
+.dark-mode .facebook-icon {
+  color: var(--text-color-dark-mode);
+}
+
 /* ----- FOOTER ----- */
 
 .footer-container {
