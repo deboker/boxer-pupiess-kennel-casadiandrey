@@ -130,10 +130,10 @@ export default function Body(props) {
         id="available"
         className={`available ${props.darkMode ? "dark-mode" : ""}`}
       >
-        <h1>AVAILABLE PUPPIES</h1>
+        <h1>SOON AVAILABLE FOR RESERVATION</h1>
         <p className="available-lead">
-          Watch the newest puppy clips and get to know each of our five pups 10
-          days old.
+          Watch the newest puppy clips and get to know each of our five pups;
+          reservations open soon.
         </p>
 
         <div className="puppy-grid">
@@ -143,7 +143,7 @@ export default function Body(props) {
               key={puppy.name}
             >
               {puppy.reserved && (
-                <span className="reserved-badge">Reserved</span>
+                <span className="reserved-badge">Soon</span>
               )}
               <video
                 className="card-video"
