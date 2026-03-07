@@ -15,6 +15,34 @@ import {
 } from "react-icons/fa";
 
 export default function Body(props) {
+  const puppies = [
+    {
+      name: "Brindle boy",
+      note: "male brindle, more white chest & socks",
+      video: "/videos/puppy1.mp4",
+    },
+    {
+      name: "Flashy fawn girl",
+      note: "female fawn, flashy white blaze",
+      video: "/videos/puppy2.mp4",
+    },
+    {
+      name: "Dark brindle girl",
+      note: "female brindle, minimal white",
+      video: "/videos/puppy3.mp4",
+    },
+    {
+      name: "Classic fawn boy",
+      note: "male fawn, black mask",
+      video: "/videos/puppy4.mp4",
+    },
+    {
+      name: "Brindle girl",
+      note: "female brindle, white chest spot",
+      video: "/videos/puppy5.mp4",
+    },
+  ];
+
   useEffect(() => {
     const handleFirstTab = (e) => {
       if (e.key === "Tab") {
@@ -88,46 +116,42 @@ export default function Body(props) {
 
       <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
         <h1>AVAILABLE PUPPIES</h1>
-        <div className="video-galery">
-          <h2>Meet Adam d'Black.</h2>
+        <p className="available-lead">
+          Pozrite si nové videá šteniatok. Dve videá vedľa seba, pod nimi info o
+          každom z piatich šteniat.
+        </p>
 
-          <img
-            className="feature-video"
-            src={meting}
-            alt="Adam d'Black Casa di Andrey"
-          />
-          {/* <p className="available-label">Available</p> */}
+        <div className="video-grid">
+          {puppies.slice(0, 2).map((puppy) => (
+            <div className="video-card" key={puppy.name}>
+              <video
+                className="feature-video"
+                src={puppy.video}
+                poster={meting}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
+              <p className="video-caption">{puppy.name}</p>
+            </div>
+          ))}
         </div>
 
-        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
-          <img src={meting} alt="Adam d black head" className="feature-image" />
+        <div className="puppy-grid">
+          {puppies.map((puppy) => (
+            <div
+              className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
+              key={puppy.name}
+            >
+              <img src={meting} alt={puppy.name} className="feature-image" />
+              <p className="puppy-name">{puppy.name}</p>
+              <p className="puppy-note">{puppy.note}</p>
+            </div>
+          ))}
+        </div>
 
-          {/* <p className="reserved-label">Puppy Reserved</p> */}
-          {/* <p className="available-label">Available</p> */}
-          <p className="image-text"> Casa di Andrey</p>
-        </div>
-        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
-          <img src={meting} alt="Adam d black side" className="feature-image" />
-          {/* <p className="reserved-label">Puppy Reserved</p> */}
-          {/* <p className="available-label">Available</p> */}
-          <p className="image-text"> Casa di Andrey</p>
-        </div>
-        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
-          <img src={meting} alt="Adam d black runs" className="feature-image" />
-          {/* <p className="reserved-label">Puppy Reserved</p> */}
-          {/* <p className="available-label">Available</p> */}
-          <p className="image-text"> Casa di Andrey</p>
-        </div>
-        <div className={`feature-item ${props.darkMode ? "dark-mode" : ""}`}>
-          <img
-            src={meting}
-            alt="Adam d black puppy1"
-            className="feature-image"
-          />
-          {/* <p className="reserved-label">Puppy Reserved</p> */}
-          {/* <p className="available-label">Available</p> */}
-          <p className="image-text">Puppy Casa di Andrey</p>
-        </div>
         <div className="reserve-text">
           <p>
             Reserve Your Dog Now! Contact us for more photos, short videos

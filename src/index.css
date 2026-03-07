@@ -1193,6 +1193,25 @@ p {
   font-size: 1.6rem;
 }
 
+.available-lead {
+  padding: 0 3rem 1rem 3rem;
+  font-size: 1.2rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .video-galery {
   display: flex;
   align-items: center;
@@ -1201,16 +1220,52 @@ p {
 .feature-video {
   position: relative;
   flex: auto;
-  width: 30%;
-  padding: 2rem;
+  width: 100%;
+  padding: 0.5rem;
   border-radius: 0.3rem 0.3rem 0 0;
   filter: brightness(0.8);
   max-height: 50rem;
 }
 
+.video-caption {
+  font-weight: 600;
+}
+
+.puppy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
 .feature-image {
-  width: 60%;
+  width: 100%;
   border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.puppy-card {
+  background: var(--bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 0.6rem;
+  padding: 1rem 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.puppy-card.dark-mode {
+  background: var(--bg-color-dark-mode);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.puppy-name {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.puppy-note {
+  color: #4e8ec1;
+  font-size: 0.95rem;
 }
 
 .feature-item {
