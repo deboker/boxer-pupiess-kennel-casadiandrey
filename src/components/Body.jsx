@@ -176,6 +176,8 @@ export default function Body(props) {
             href="https://www.facebook.com/andrej.andrasik.7/"
             className="facebook-icon"
             aria-label="Follow us on Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Lottie
               animationData={facebookIconAnimation}
@@ -187,6 +189,8 @@ export default function Body(props) {
             href="https://www.instagram.com/casa_di_andrey/"
             className="facebook-icon"
             aria-label="Follow us on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Lottie
               animationData={intstagramIconAnimation}
