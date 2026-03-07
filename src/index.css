@@ -1194,6 +1194,7 @@ p {
 .available-lead {
   padding: 0 3rem 1rem 3rem;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .video-grid {
@@ -1469,8 +1470,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   background-color: var(--btn-color);
   border-radius: 50%;
   z-index: 10;
