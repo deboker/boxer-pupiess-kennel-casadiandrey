@@ -83,7 +83,7 @@ export default function Header(props) {
             Home
           </a>
           <a href="#available" onClick={handleNavClick}>
-            Services
+            Puppies
           </a>
           <a href="#contact" onClick={handleNavClick}>
             Contact

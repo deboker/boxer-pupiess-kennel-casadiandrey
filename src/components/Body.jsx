@@ -119,7 +119,10 @@ export default function Body(props) {
         </p>
       </section>
 
-      <section className={`available ${props.darkMode ? "dark-mode" : ""}`}>
+      <section
+        id="available"
+        className={`available ${props.darkMode ? "dark-mode" : ""}`}
+      >
         <h1>AVAILABLE PUPPIES</h1>
         <p className="available-lead">
           Watch the newest puppy clips and get to know each of our five pups.
