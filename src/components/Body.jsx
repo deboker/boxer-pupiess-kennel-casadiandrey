@@ -25,16 +25,19 @@ export default function Body(props) {
       name: "Male fawn",
       note: "male fawn, clean lines",
       video: maleFawnVideo,
+      reserved: true,
     },
     {
       name: "Female brindle",
       note: "female brindle, white chest & socks",
       video: femaleBrindleVideo,
+      reserved: true,
     },
     {
       name: "Flashy fawn girl",
       note: "female fawn, flashy white blaze",
       video: femaleFawnVideo,
+      reserved: true,
     },
     {
       name: "Male brindle",
@@ -134,6 +137,7 @@ export default function Body(props) {
               className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
               key={puppy.name}
             >
+              {puppy.reserved && <span className="reserved-badge">Reserved</span>}
               <video
                 className="card-video"
                 src={puppy.video}
