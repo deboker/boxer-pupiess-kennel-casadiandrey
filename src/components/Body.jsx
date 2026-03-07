@@ -142,9 +142,7 @@ export default function Body(props) {
               className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
               key={puppy.name}
             >
-              {puppy.reserved && (
-                <span className="reserved-badge">Soon</span>
-              )}
+              <span className="reserved-badge">Soon</span>
               <video
                 className="card-video"
                 src={puppy.video}
