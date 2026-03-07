@@ -23,30 +23,30 @@ export default function Body(props) {
   const puppies = [
     {
       name: "Egon Imperius Casa di Andrey",
-      note: "male fawn, clean lines",
+      note: "male fawn, wide white blaze, white chest, white socks",
       video: maleFawnVideo,
       reserved: true,
     },
     {
       name: "Eos Aurora Casa di Andrey",
-      note: "female brindle, white chest & socks",
+      note: "female dark brindle with a white chest",
       video: femaleBrindleVideo,
       reserved: true,
     },
     {
       name: "Elysia Nova Casa di Andrey",
-      note: "female fawn, flashy white blaze",
+      note: "female fawn, white blaze and white chest",
       video: femaleFawnVideo,
       reserved: true,
     },
     {
       name: "Eros Titan Casa di Andrey",
-      note: "male brindle, black mask",
+      note: "male golden brindle, white blaze and white chest",
       video: maleBrindleVideo,
     },
     {
       name: "Eros Magnus Casa di Andrey",
-      note: "male brindle, white mask detail",
+      note: "male golden brindle, wide white blaze, white chest, white socks",
       video: maleBrindleWhiteMaskVideo,
     },
   ];
@@ -128,7 +128,8 @@ export default function Body(props) {
       >
         <h1>AVAILABLE PUPPIES</h1>
         <p className="available-lead">
-          Watch the newest puppy clips and get to know each of our five pups.
+          Watch the newest puppy clips and get to know each of our five pups 10
+          days old.
         </p>
 
         <div className="puppy-grid">
@@ -137,7 +138,9 @@ export default function Body(props) {
               className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
               key={puppy.name}
             >
-              {puppy.reserved && <span className="reserved-badge">Reserved</span>}
+              {puppy.reserved && (
+                <span className="reserved-badge">Reserved</span>
+              )}
               <video
                 className="card-video"
                 src={puppy.video}
