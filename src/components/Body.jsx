@@ -68,7 +68,7 @@ export default function Body(props) {
         className={`meeting ${props.darkMode ? "dark-mode" : ""}`}
         id="meeting"
       >
-        <h2>From "CASA DI ANDREY": Introducing Litter F born 26.02.2026.</h2>
+        <h2>From "CASA DI ANDREY": Introducing Litter E born 26.02.2026.</h2>
         <img
           src={meting}
           alt="Meeting"
