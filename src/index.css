@@ -1227,6 +1227,12 @@ p {
   max-height: 50rem;
 }
 
+.card-video {
+  width: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: #000;
+}
+
 .video-caption {
   font-weight: 600;
 }

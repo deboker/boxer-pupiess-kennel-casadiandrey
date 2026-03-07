@@ -2,6 +2,11 @@ import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./Form/ContactForm";
 import meting from "../assets/aria_vlajko.webp";
+import maleFawnVideo from "../assets/male_fawn.mp4";
+import femaleBrindleVideo from "../assets/female_brindle.mp4";
+import femaleFawnVideo from "../assets/female_fawn.mp4";
+import maleBrindleVideo from "../assets/male_brindle.mp4";
+import maleBrindleWhiteMaskVideo from "../assets/male_brindle_white_mask.mp4";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
@@ -17,29 +22,29 @@ import {
 export default function Body(props) {
   const puppies = [
     {
-      name: "Brindle boy",
-      note: "male brindle, more white chest & socks",
-      video: "/videos/puppy1.mp4",
+      name: "Male fawn",
+      note: "male fawn, clean lines",
+      video: maleFawnVideo,
+    },
+    {
+      name: "Female brindle",
+      note: "female brindle, white chest & socks",
+      video: femaleBrindleVideo,
     },
     {
       name: "Flashy fawn girl",
       note: "female fawn, flashy white blaze",
-      video: "/videos/puppy2.mp4",
+      video: femaleFawnVideo,
     },
     {
-      name: "Dark brindle girl",
-      note: "female brindle, minimal white",
-      video: "/videos/puppy3.mp4",
+      name: "Male brindle",
+      note: "male brindle, black mask",
+      video: maleBrindleVideo,
     },
     {
-      name: "Classic fawn boy",
-      note: "male fawn, black mask",
-      video: "/videos/puppy4.mp4",
-    },
-    {
-      name: "Brindle girl",
-      note: "female brindle, white chest spot",
-      video: "/videos/puppy5.mp4",
+      name: "Male brindle white mask",
+      note: "male brindle, white mask detail",
+      video: maleBrindleWhiteMaskVideo,
     },
   ];
 
@@ -145,7 +150,16 @@ export default function Body(props) {
               className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
               key={puppy.name}
             >
-              <img src={meting} alt={puppy.name} className="feature-image" />
+              <video
+                className="card-video"
+                src={puppy.video}
+                poster={meting}
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
               <p className="puppy-name">{puppy.name}</p>
               <p className="puppy-note">{puppy.note}</p>
             </div>
