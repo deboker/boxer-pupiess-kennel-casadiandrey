@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./Form/ContactForm";
-import meting from "../assets/aria-vlajko-meet.webp";
+import meting from "../assets/aria-vlajko-meet-new.webp";
 import maleFawnVideo from "../assets/male_fawn.mp4";
 import femaleBrindleVideo from "../assets/female_brindle.mp4";
 import femaleFawnVideo from "../assets/female_fawn.mp4";
