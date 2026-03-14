@@ -5,7 +5,7 @@ import meting from "../assets/aria-vlajko-meet-new.webp";
 import maleFawnVideo from "../assets/male_egon.mp4";
 import femaleBrindleVideo from "../assets/female_brindle.mp4";
 import femaleFawnVideo from "../assets/female_fawn.mp4";
-import maleBrindleVideo from "../assets/male_brindle.mp4";
+import maleBrindleVideo from "../assets/male_titan.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/male_magnus.mp4";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
