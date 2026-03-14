@@ -4,7 +4,7 @@ import ContactForm from "./Form/ContactForm";
 import meting from "../assets/aria-vlajko-meet-new.webp";
 import maleFawnVideo from "../assets/male_egon.mp4";
 import femaleBrindleVideo from "../assets/female_aurora.mp4";
-import femaleFawnVideo from "../assets/female_nova.mp4";
+import femaleFawnVideo from "../assets/female_e_nova.mp4";
 import maleBrindleVideo from "../assets/male_titan.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/male_magnus.mp4";
 
