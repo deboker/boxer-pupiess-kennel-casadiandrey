@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./Form/ContactForm";
 import meting from "../assets/aria-vlajko-meet-new.webp";
-import maleFawnVideo from "../assets/male_egon.mp4";
-import femaleBrindleVideo from "../assets/female_aurora.mp4";
-import femaleFawnVideo from "../assets/female_e_nova.mp4";
-import maleBrindleVideo from "../assets/male_titan.mp4";
-import maleBrindleWhiteMaskVideo from "../assets/male_magnus.mp4";
+import maleFawnVideo from "../assets/M-f.mp4";
+import femaleBrindleVideo from "../assets/F-b.mp4";
+import femaleFawnVideo from "../assets/F-f.mp4";
+import maleBrindleVideo from "../assets/M-bd.mp4";
+import maleBrindleWhiteMaskVideo from "../assets/M-bw.mp4";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
@@ -132,8 +132,8 @@ export default function Body(props) {
       >
         <h1>SOON AVAILABLE FOR RESERVATION</h1>
         <p className="available-lead">
-          Watch the newest puppy clips and get to know each of our five pups;
-          reservations open soon.
+          Watch the newest puppy clips and get to know each of our five pups,
+          now 3 weeks old; reservations open soon.
         </p>
 
         <div className="puppy-grid">
