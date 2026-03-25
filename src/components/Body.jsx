@@ -7,6 +7,8 @@ import femaleBrindleVideo from "../assets/F-b.mp4";
 import femaleFawnVideo from "../assets/F-f.mp4";
 import maleBrindleVideo from "../assets/M-bd.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/M-bw.mp4";
+import puppiesOneMonthVideo from "../assets/puppies_1month.mp4";
+import puppiesPoster from "../assets/aria_puppy.webp";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
@@ -163,6 +165,28 @@ export default function Body(props) {
               <p className="puppy-note">{puppy.note}</p>
             </div>
           ))}
+        </div>
+
+        <div
+          className={`litter-video-block ${props.darkMode ? "dark-mode" : ""}`}
+        >
+          <div className="litter-copy">
+            <h3>One-Month Pup Update</h3>
+            <p>
+              Our little ones are 1 month old—curious, growing fast, and showing
+              more of their gentle personalities every day.
+            </p>
+          </div>
+          <video
+            className="litter-video"
+            src={puppiesOneMonthVideo}
+            poster={puppiesPoster}
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         </div>
 
         <div className="reserve-text">

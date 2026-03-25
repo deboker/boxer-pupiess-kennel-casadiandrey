@@ -1315,6 +1315,41 @@ p {
   font-size: 1.4rem;
 }
 
+.litter-video-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto 1rem;
+  text-align: left;
+}
+
+.litter-copy {
+  max-width: 520px;
+}
+
+.litter-video-block h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.8rem;
+}
+
+.litter-video-block p {
+  max-width: 720px;
+  font-size: 1.1rem;
+  color: var(--btn-color);
+}
+
+.litter-video {
+  width: 55%;
+  max-width: 1100px;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  background: #0d0d10;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
 .image-text {
   padding-top: 0;
   margin-bottom: 1rem;
@@ -1701,6 +1736,28 @@ p {
 
   .reserve-text p {
     padding: 0.5rem 0 1rem 0;
+    font-size: 1rem;
+  }
+
+  .litter-video-block {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .litter-copy {
+    max-width: 100%;
+  }
+
+  .litter-video {
+    width: 100%;
+  }
+
+  .litter-video-block h3 {
+    font-size: 1.4rem;
+  }
+
+  .litter-video-block p {
     font-size: 1rem;
   }
 
