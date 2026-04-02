@@ -135,7 +135,7 @@ export default function Body(props) {
         <h1>SOON AVAILABLE FOR RESERVATION</h1>
         <p className="available-lead">
           Watch the newest puppy clips and get to know each of our five pups,
-          now 3 weeks old; reservations open soon.
+          now 5 weeks old; reservations open soon.
         </p>
 
         <div className="puppy-grid">
@@ -173,7 +173,7 @@ export default function Body(props) {
           <div className="litter-copy">
             <h3>One-Month Pup Update</h3>
             <p>
-              Our little ones are 1 month old—curious, growing fast, and showing
+              Our little ones are 1 month old—curious, growing fast and showing
               more of their gentle personalities every day.
             </p>
           </div>
