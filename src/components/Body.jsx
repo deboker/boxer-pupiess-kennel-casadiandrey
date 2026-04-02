@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import ContactForm from "./Form/ContactForm";
 import meting from "../assets/aria-vlajko-meet-new.webp";
-import maleFawnVideo from "../assets/M-f.mp4";
-import femaleBrindleVideo from "../assets/F-b.mp4";
-import femaleFawnVideo from "../assets/F-f.mp4";
-import maleBrindleVideo from "../assets/M-bd.mp4";
-import maleBrindleWhiteMaskVideo from "../assets/M-bw.mp4";
+import maleFawnVideo from "../assets/egon_5weeks.mp4";
+import femaleBrindleVideo from "../assets/aurora_5weeks.mp4";
+import femaleFawnVideo from "../assets/nova_5weeks.mp4";
+import maleBrindleVideo from "../assets/titan_5weeks.mp4";
+import maleBrindleWhiteMaskVideo from "../assets/magnus_5weeks.mp4";
 import puppiesOneMonthVideo from "../assets/puppies_1month.mp4";
 import puppiesPoster from "../assets/aria_puppy.webp";
 
