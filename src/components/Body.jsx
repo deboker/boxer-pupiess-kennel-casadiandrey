@@ -9,7 +9,7 @@ import maleBrindleVideo from "../assets/titan_5weeks.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/magnus_5weeks.mp4";
 import oneMonthClipOne from "../assets/video_1.mp4";
 import oneMonthClipTwo from "../assets/video_2.mp4";
-import oneMonthClipThree from "../assets/video_2.mp4";
+import oneMonthClipThree from "../assets/video_3.mp4";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
