@@ -7,8 +7,9 @@ import femaleBrindleVideo from "../assets/aurora_5weeks.mp4";
 import femaleFawnVideo from "../assets/nova_5weeks.mp4";
 import maleBrindleVideo from "../assets/titan_5weeks.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/magnus_5weeks.mp4";
-import puppiesOneMonthVideo from "../assets/puppies_1month.mp4";
-import puppiesPoster from "../assets/aria_puppy.webp";
+import oneMonthClipOne from "../assets/WhatsApp Video 2026-04-18 at 12.09.03.mp4";
+import oneMonthClipTwo from "../assets/WhatsApp Video 2026-04-18 at 12.09.13.mp4";
+import oneMonthClipThree from "../assets/WhatsApp Video 2026-04-18 at 12.09.18.mp4";
 
 import facebookIconAnimation from "../assets/lottieflow-social-networks-15-3-000000-easey.json";
 import intstagramIconAnimation from "../assets/lottieflow-social-networks-15-5-000000-easey.json";
@@ -58,6 +59,12 @@ export default function Body(props) {
       video: maleBrindleWhiteMaskVideo,
       gender: "male",
     },
+  ];
+
+  const oneMonthUpdateVideos = [
+    oneMonthClipOne,
+    oneMonthClipTwo,
+    oneMonthClipThree,
   ];
 
   useEffect(() => {
@@ -171,22 +178,33 @@ export default function Body(props) {
           className={`litter-video-block ${props.darkMode ? "dark-mode" : ""}`}
         >
           <div className="litter-copy">
-            <h3>One-Month Pup Update</h3>
+            <h3>7-weeks Pup Update</h3>
             <p>
-              Our little ones are 1 month old—curious, growing fast and showing
-              more of their gentle personalities every day.
+              Our little ones are 7 weeks old, curious and growing fast, with
+              more of their sweet personalities showing every day.
             </p>
           </div>
-          <video
-            className="litter-video"
-            src={puppiesOneMonthVideo}
-            poster={puppiesPoster}
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+          <div className="litter-video-row">
+            {oneMonthUpdateVideos.map((video, index) => (
+              <video
+                key={video}
+                className="litter-video"
+                src={video}
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label={`One-month puppy update clip ${index + 1}`}
+              />
+            ))}
+          </div>
+          <div className="litter-copy litter-copy-bottom">
+            <p>
+              Three fresh clips below capture their playful energy,
+              calm temperaments and how nicely they are developing.
+            </p>
+          </div>
         </div>
 
         <div className="reserve-text">

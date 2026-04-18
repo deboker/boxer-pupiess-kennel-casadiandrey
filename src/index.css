@@ -1317,16 +1317,29 @@ p {
 
 .litter-video-block {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 2rem auto 1rem;
-  text-align: left;
+  text-align: center;
+  width: min(100%, 1180px);
 }
 
 .litter-copy {
-  max-width: 520px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.litter-copy-bottom {
+  margin-top: -0.25rem;
+}
+
+.litter-video-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
 }
 
 .litter-video-block h3 {
@@ -1341,8 +1354,7 @@ p {
 }
 
 .litter-video {
-  width: 55%;
-  max-width: 1100px;
+  width: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
   background: #0d0d10;
@@ -1747,6 +1759,10 @@ p {
 
   .litter-copy {
     max-width: 100%;
+  }
+
+  .litter-video-row {
+    grid-template-columns: 1fr;
   }
 
   .litter-video {
