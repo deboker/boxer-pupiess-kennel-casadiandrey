@@ -142,11 +142,7 @@ export default function Body(props) {
         <h1>SOON AVAILABLE FOR RESERVATION</h1>
         <p className="available-lead">
           Watch the newest puppy clips and get to know each of our five pups,
-<<<<<<< HEAD
           now 7 weeks old; reservations open soon.
-=======
-          now 5 weeks old; reservations open soon.
->>>>>>> 23d9e4b309bc5d5d7f937755bf7b84ec44b8b986
         </p>
 
         <div className="puppy-grid">
