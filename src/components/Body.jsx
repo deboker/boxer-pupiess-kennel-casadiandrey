@@ -5,7 +5,7 @@ import meting from "../assets/aria-vlajko-meet-new.webp";
 import maleFawnVideo from "../assets/egon_5weeks.mp4";
 import femaleBrindleVideo from "../assets/aurora_7weeks.mp4";
 import femaleFawnVideo from "../assets/nova_5weeks.mp4";
-import maleBrindleVideo from "../assets/titan_7weeks.mp4";
+import maleBrindleVideo from "../assets/titian_7weeks.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/magnus_7weeks.mp4";
 import oneMonthClipOne from "../assets/video_1.mp4";
 import oneMonthClipTwo from "../assets/video_2.mp4";
