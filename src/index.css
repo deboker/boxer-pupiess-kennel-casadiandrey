@@ -1231,6 +1231,26 @@ p {
   background: #000;
 }
 
+.card-video-placeholder {
+  min-height: 29rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  color: #f5f1e8;
+  background:
+    linear-gradient(rgba(11, 13, 17, 0.45), rgba(11, 13, 17, 0.72)),
+    url("./assets/aria-vlajko-meet-new.webp") center/cover no-repeat;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.card-video-placeholder.dark-mode {
+  color: #fff8ec;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
 .error-text {
   color: #e35d3d;
   font-size: 0.9rem;
@@ -1313,6 +1333,10 @@ p {
   padding-top: 0;
   padding-bottom: 2rem;
   font-size: 1.4rem;
+}
+
+.available-follow-up {
+  padding-top: 0;
 }
 
 .litter-video-block {

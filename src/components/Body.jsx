@@ -7,6 +7,10 @@ import femaleBrindleVideo from "../assets/aurora_7weeks.mp4";
 import femaleFawnVideo from "../assets/nova_7weeks.mp4";
 import maleBrindleVideo from "../assets/titian_7weeks.mp4";
 import maleBrindleWhiteMaskVideo from "../assets/magnus_7weeks.mp4";
+import auroraEightWeeksVideo from "../assets/aurora_8weeks.mp4";
+import titanEightWeeksVideo from "../assets/titan_8weeks.mp4";
+import magnusEightWeeksVideo from "../assets/magnus_8weeks.mp4";
+
 import oneMonthClipOne from "../assets/video_1.mp4";
 import oneMonthClipTwo from "../assets/video_2.mp4";
 import oneMonthClipThree from "../assets/video_3.mp4";
@@ -25,7 +29,7 @@ import {
 } from "react-icons/fa";
 
 export default function Body(props) {
-  const puppies = [
+  const sevenWeekPuppies = [
     {
       name: "Egon Imperius Casa di Andrey",
       note: "male fawn, wide white blaze, white chest, white socks",
@@ -61,11 +65,86 @@ export default function Body(props) {
     },
   ];
 
+  const eightWeekPuppies = [
+    {
+      name: "Egon Imperius Casa di Andrey",
+      note: "8 weeks update video coming soon",
+      reserved: true,
+      gender: "male",
+    },
+    {
+      name: "Eos Aurora Casa di Andrey",
+      note: "female dark brindle with a white chest",
+      video: auroraEightWeeksVideo,
+      reserved: true,
+      gender: "female",
+    },
+    {
+      name: "Elysia Nova Casa di Andrey",
+      note: "8 weeks update video coming soon",
+      reserved: true,
+      gender: "female",
+    },
+    {
+      name: "Eros Titan Casa di Andrey",
+      note: "male golden brindle, white blaze and white chest",
+      video: titanEightWeeksVideo,
+      reserved: true,
+      gender: "male",
+    },
+    {
+      name: "Eros Magnus Casa di Andrey",
+      note: "8 weeks update video coming soon",
+      video: magnusEightWeeksVideo,
+      reserved: true,
+      gender: "male",
+    },
+  ];
+
   const oneMonthUpdateVideos = [
     oneMonthClipOne,
     oneMonthClipTwo,
     oneMonthClipThree,
   ];
+
+  const renderPuppyCards = (puppies) =>
+    puppies.map((puppy) => (
+      <div
+        className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
+        key={puppy.name}
+      >
+        <span className="reserved-badge">Soon</span>
+        {puppy.video ? (
+          <video
+            className="card-video"
+            src={puppy.video}
+            poster={meting}
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+          />
+        ) : (
+          <div
+            className={`card-video card-video-placeholder ${
+              props.darkMode ? "dark-mode" : ""
+            }`}
+            aria-label={`${puppy.name} 8 weeks video placeholder`}
+          >
+            <span>8 weeks video coming soon</span>
+          </div>
+        )}
+        <p className="puppy-name">{puppy.name}</p>
+        <span
+          className="gender-icon"
+          aria-label={puppy.gender === "female" ? "Female" : "Male"}
+        >
+          {puppy.gender === "female" ? <FaVenus /> : <FaMars />}
+        </span>
+        <p className="puppy-note">{puppy.note}</p>
+      </div>
+    ));
 
   useEffect(() => {
     const handleFirstTab = (e) => {
@@ -145,34 +224,7 @@ export default function Body(props) {
           now 7 weeks old; reservations open soon.
         </p>
 
-        <div className="puppy-grid">
-          {puppies.map((puppy) => (
-            <div
-              className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
-              key={puppy.name}
-            >
-              <span className="reserved-badge">Soon</span>
-              <video
-                className="card-video"
-                src={puppy.video}
-                poster={meting}
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-              />
-              <p className="puppy-name">{puppy.name}</p>
-              <span
-                className="gender-icon"
-                aria-label={puppy.gender === "female" ? "Female" : "Male"}
-              >
-                {puppy.gender === "female" ? <FaVenus /> : <FaMars />}
-              </span>
-              <p className="puppy-note">{puppy.note}</p>
-            </div>
-          ))}
-        </div>
+        <div className="puppy-grid">{renderPuppyCards(sevenWeekPuppies)}</div>
 
         <div
           className={`litter-video-block ${props.darkMode ? "dark-mode" : ""}`}
@@ -215,6 +267,21 @@ export default function Body(props) {
           </p>
           <p>Stay tuned for our upcoming litters too!</p>
         </div>
+      </section>
+
+      <section
+        id="available-8weeks"
+        className={`available available-follow-up ${
+          props.darkMode ? "dark-mode" : ""
+        }`}
+      >
+        <h1>8 WEEKS OLD PUPPIES</h1>
+        <p className="available-lead">
+          Another fresh set of clips from week 8. Two videos are live now and
+          the remaining three slots are ready for your uploads.
+        </p>
+
+        <div className="puppy-grid">{renderPuppyCards(eightWeekPuppies)}</div>
       </section>
 
       {/* Contact Form */}
