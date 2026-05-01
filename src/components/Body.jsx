@@ -11,6 +11,7 @@ import auroraEightWeeksVideo from "../assets/aurora_8weeks.mp4";
 import titanEightWeeksVideo from "../assets/titan_8weeks.mp4";
 import magnusEightWeeksVideo from "../assets/magnus_8weeks.mp4";
 import egonEightWeeksVideo from "../assets/egon_8weeks.mp4";
+import novaEightWeeksVideo from "../assets/nova_8weeks.mp4";
 
 import oneMonthClipOne from "../assets/video_1.mp4";
 import oneMonthClipTwo from "../assets/video_2.mp4";
@@ -84,6 +85,7 @@ export default function Body(props) {
     {
       name: "Elysia Nova Casa di Andrey",
       note: "8 weeks update video coming soon",
+      video: novaEightWeeksVideo,
       reserved: true,
       gender: "female",
     },
