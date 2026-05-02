@@ -263,15 +263,7 @@ export default function Body(props) {
           </div>
         </div>
 
-        <div className="reserve-text">
-          <p>
-            Interested in a puppy? Write us for fresh photos, short videos,
-            health certificates, and show ratings. We’ll confirm availability
-            and next steps.
-          </p>
-          <p>Stay tuned for our upcoming litters too!</p>
-        </div>
-      </section>
+        </section>
 
       <section
         id="available-8weeks"
@@ -281,11 +273,21 @@ export default function Body(props) {
       >
         <h1>8 WEEKS OLD PUPPIES</h1>
         <p className="available-lead">
-          Another fresh set of clips from week 8. Two videos are live now and
-          the remaining three slots are ready for your uploads.
+          The puppies are now 8 weeks old and growing beautifully. 
+          Watch the latest videos and see their playful personalities.
         </p>
 
         <div className="puppy-grid">{renderPuppyCards(eightWeekPuppies)}</div>
+
+        <div className="reserve-text">
+          <p>
+            Interested in a puppy? Write us for fresh photos, short videos,
+            health certificates, and show ratings. We’ll confirm availability
+            and next steps.
+          </p>
+          <p>Stay tuned for our upcoming litters too!</p>
+        </div>
+
       </section>
 
       {/* Contact Form */}
