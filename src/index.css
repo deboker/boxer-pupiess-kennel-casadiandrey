@@ -1293,12 +1293,19 @@ p {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  background: #f6d14a;
-  color: #1f2a36;
+  color: #fff;
   padding: 0.25rem 0.6rem;
   border-radius: 0.4rem;
   font-size: 0.8rem;
   font-weight: 700;
+}
+
+.reserved-badge--reserved {
+  background: #d85a64;
+}
+
+.reserved-badge--available {
+  background: #1b7a54;
 }
 
 .puppy-name {

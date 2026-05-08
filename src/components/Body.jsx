@@ -93,14 +93,14 @@ export default function Body(props) {
       name: "Eros Titan Casa di Andrey",
       note: "male golden brindle, white blaze and white chest",
       video: titanEightWeeksVideo,
-      reserved: true,
+      reserved: false,
       gender: "male",
     },
     {
       name: "Eros Magnus Casa di Andrey",
       note: "8 weeks update video coming soon",
       video: magnusEightWeeksVideo,
-      reserved: true,
+      reserved: false,
       gender: "male",
     },
   ];
@@ -112,12 +112,23 @@ export default function Body(props) {
   ];
 
   const renderPuppyCards = (puppies) =>
-    puppies.map((puppy) => (
-      <div
-        className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
-        key={puppy.name}
-      >
-        <span className="reserved-badge">Soon</span>
+    puppies.map((puppy) => {
+      const isReserved = puppy.reserved === true;
+
+      return (
+        <div
+          className={`puppy-card ${props.darkMode ? "dark-mode" : ""}`}
+          key={puppy.name}
+        >
+          <span
+            className={`reserved-badge ${
+              isReserved
+                ? "reserved-badge--reserved"
+                : "reserved-badge--available"
+            }`}
+          >
+            {isReserved ? "Reserved" : "Available"}
+          </span>
         {puppy.video ? (
           <video
             className="card-video"
@@ -148,7 +159,8 @@ export default function Body(props) {
         </span>
         <p className="puppy-note">{puppy.note}</p>
       </div>
-    ));
+      );
+    });
 
   useEffect(() => {
     const handleFirstTab = (e) => {
@@ -222,10 +234,10 @@ export default function Body(props) {
         id="available"
         className={`available ${props.darkMode ? "dark-mode" : ""}`}
       >
-        <h1>SOON AVAILABLE FOR RESERVATION</h1>
+        <h1>AVAILABLE FOR RESERVATION</h1>
         <p className="available-lead">
           Watch the newest puppy clips and get to know each of our five pups,
-          now 7 weeks old; reservations open soon.
+          now 7 weeks old; available puppies can be reserved now.
         </p>
 
         <div className="puppy-grid">{renderPuppyCards(sevenWeekPuppies)}</div>
