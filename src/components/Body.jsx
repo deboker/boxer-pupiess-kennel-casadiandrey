@@ -100,7 +100,7 @@ export default function Body(props) {
       name: "Eros Magnus Casa di Andrey",
       note: "8 weeks update video coming soon",
       video: magnusEightWeeksVideo,
-      reserved: false,
+      reserved: true,
       gender: "male",
     },
   ];
