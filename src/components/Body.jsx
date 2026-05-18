@@ -63,6 +63,7 @@ export default function Body(props) {
       name: "Eros Magnus Casa di Andrey",
       note: "male golden brindle, wide white blaze, white chest, white socks",
       video: maleBrindleWhiteMaskVideo,
+      reserved: true,
       gender: "male",
     },
   ];
