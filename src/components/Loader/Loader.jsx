@@ -1,4 +1,3 @@
-import React from "react";
 import "./loader.css";
 import LogoSvg from "../../assets/CASADIANDREYWHITE-logo.svg"; // Import your custom SVG
 
