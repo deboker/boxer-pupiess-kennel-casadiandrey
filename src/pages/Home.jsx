@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
-import heroImage from "../assets/aria-vlajko-meet-new.webp";
+import introLogo from "../assets/CASADIANDREY-logo.svg";
+import heroImage from "../assets/banner_aria_puppy.webp";
 import boxerImage from "../assets/aria-vlajko-meet.webp";
-import puppyImage from "../assets/aria_puppy.webp";
+import puppyImage from "../assets/aria-vlajko-meet-new.webp";
 import { kennelInfo } from "../data/kennel";
 import { litters } from "../data/litters";
 import { currentPuppies } from "../data/puppies";
@@ -22,12 +23,12 @@ export default function Home() {
       <section className="hero" id="meeting">
         <img src={heroImage} alt="Casa di Andrey German Boxer dogs" />
         <div className="hero__content">
-          <p className="eyebrow">German Boxer Kennel</p>
-          <h1>Casa di Andrey</h1>
-          <p>German Boxers raised with purpose, character, and heart.</p>
+          <p className="eyebrow">European Boxer Kennel</p>
+          <h1>Bred with purpose. Raised as family.</h1>
+          <p>Health-tested German Boxers from carefully selected European bloodlines.</p>
           <div className="button-row">
             <Link className="button button--primary" to="/puppies">
-              View puppies
+              Discover our puppies
             </Link>
             <Link className="button button--secondary" to="/about">
               About the kennel
@@ -37,14 +38,22 @@ export default function Home() {
       </section>
 
       <section className="section section--intro">
-        <div className="section__eyebrow">Casa di Andrey</div>
+        <div className="section__intro-mark">
+          <div className="section__eyebrow">Casa di Andrey</div>
+          <img
+            className="section__intro-logo"
+            src={introLogo}
+            alt="Casa di Andrey logo"
+            loading="lazy"
+          />
+        </div>
         <div className="editorial-text">
           <h2>{kennelInfo.shippingHeadline}</h2>
           <p>{kennelInfo.introText}</p>
         </div>
       </section>
 
-      <section className="section split-section">
+      <section className="section split-section section--soft">
         <div>
           <p className="eyebrow">Current litter</p>
           <h2>{currentLitter.name}</h2>

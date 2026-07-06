@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@200;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -122,9 +122,13 @@ p {
   display: none;
 }
 
+.hero__content .eyebrow {
+  color: var(--color-background);
+} 
+
 .eyebrow,
 .section__eyebrow {
-  color: var(--color-accent-dark);
+  color: var(--color-muted);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -190,6 +194,7 @@ p {
 
 .brand strong {
   font-size: 0.92rem;
+  font-weight: 200;
   letter-spacing: 0.12em;
 }
 
@@ -210,7 +215,18 @@ p {
   position: relative;
   color: currentColor;
   opacity: 0.78;
-  transition: opacity var(--transition), color var(--transition);
+  transition:
+    opacity var(--transition),
+    color var(--transition);
+}
+
+.site-header--home:not(.site-header--solid) .site-nav__link {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.58);
+}
+
+.site-header--home:not(.site-header--solid) .site-nav__link:hover,
+.site-header--home:not(.site-header--solid) .site-nav__link--active {
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.72);
 }
 
 .site-nav__link:hover,
@@ -249,7 +265,8 @@ p {
 }
 
 .hero {
-  min-height: min(880px, 100vh);
+  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
   display: grid;
   align-items: end;
@@ -269,10 +286,14 @@ p {
 
 .hero > img {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top right;
 }
 
 .hero__content {
@@ -289,6 +310,7 @@ p {
   color: rgba(255, 255, 255, 0.84);
   font-size: clamp(1.15rem, 2vw, 1.45rem);
   margin-top: 1.2rem;
+  font-weight: 200;
 }
 
 .hero--art::after {
@@ -321,11 +343,31 @@ p {
   gap: clamp(2rem, 6vw, 5rem);
 }
 
+.section__intro-mark {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+}
+
+.section__intro-logo {
+  width: min(125px, 70vw);
+  max-width: 125px;
+  height: auto;
+  filter: grayscale(1) contrast(1.12);
+}
+
+.section--soft {
+  background: #fbf8f3;
+  border: 1px solid rgba(217, 209, 199, 0.72);
+  border-radius: var(--radius-md);
+}
+
 .editorial-text p,
 .split-section p,
 .philosophy-band p,
 .art-preview p {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 200;
 }
 
 .button-row,
@@ -452,6 +494,10 @@ p {
   border-radius: var(--radius-md);
 }
 
+.cta-section {
+  margin-bottom: 4rem;
+}
+
 .philosophy-band p,
 .cta-section p,
 .art-preview p {
@@ -474,6 +520,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .puppy-grid {
