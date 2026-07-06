@@ -145,7 +145,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  line-height: 1.2;
+  line-height: 1.1em;
   font-weight: 600;
   letter-spacing: 0;
 }
