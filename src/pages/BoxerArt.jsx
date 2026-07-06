@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
 import novaPortrait from "../assets/nova_cda_portret.webp";
-import ariaPortrait from "../assets/aria-vlajko-meet-new.webp";
-import ariaClassic from "../assets/aria_vlajko.webp";
-import cartierFree from "../assets/cartier&free.webp";
-import ariaCompanion from "../assets/aria&xxx.jpg";
+import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
+import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
+import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
+import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
+import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
 
 // Future Gelato order creation, price retrieval, and checkout must be handled
 // through a secure backend or serverless function. Secret credentials must never
@@ -30,13 +31,13 @@ const artworks = [
     checkoutEnabled: false,
   },
   {
-    id: "art-aria-portrait",
-    slug: "aria-portrait",
-    title: "Quiet Strength",
+    id: "art-aria-regal",
+    slug: "aria-regal-digital-art",
+    title: "Regal Interior",
     dogName: "Aria",
-    image: ariaPortrait,
-    alt: "Casa di Andrey Boxer portrait prepared as future wall art",
-    description: "A warm portrait direction focused on the Boxer expression and gentle strength.",
+    image: ariaDigitalArt,
+    alt: "Digital fine-art portrait of Aria Casa di Andrey as a regal brindle Boxer in a grand interior",
+    description: "A dramatic digital portrait concept with warm bronze tones and a refined gallery mood.",
     featured: false,
     printAvailable: false,
     gelatoProductId: null,
@@ -49,13 +50,13 @@ const artworks = [
     checkoutEnabled: false,
   },
   {
-    id: "art-aria-classic",
-    slug: "aria-classic",
-    title: "Classic Boxer Study",
-    dogName: "Aria",
-    image: ariaClassic,
-    alt: "Vertical Casa di Andrey Boxer portrait study for future art print",
-    description: "A classic portrait composition for a timeless Casa di Andrey wall piece.",
+    id: "art-daenerys-terrace",
+    slug: "daenerys-khaleesi-sunlit-terrace",
+    title: "Sunlit Terrace",
+    dogName: "Daenerys Khaleesi",
+    image: daenerysTerrace,
+    alt: "Digital fine-art portrait of Daenerys Khaleesi relaxing on a sunlit terrace",
+    description: "A warm terrace portrait concept with soft light, calm presence, and an elegant home-art feeling.",
     featured: false,
     printAvailable: false,
     gelatoProductId: null,
@@ -68,13 +69,13 @@ const artworks = [
     checkoutEnabled: false,
   },
   {
-    id: "art-cartier-free",
-    slug: "cartier-free",
-    title: "Companions",
-    dogName: "Cartier and Free",
-    image: cartierFree,
-    alt: "Two Casa di Andrey Boxers photographed together for future fine-art print",
-    description: "A composed double portrait concept with a calm, family-focused character.",
+    id: "art-adam-d-black-guardian",
+    slug: "adam-d-black-noble-guardian",
+    title: "Noble Guardian",
+    dogName: "Adam D Black",
+    image: adamGuardian,
+    alt: "Digital fine-art portrait of Adam D Black as a noble Boxer guardian",
+    description: "A strong guardian portrait concept with a composed expression and classic fine-art atmosphere.",
     featured: false,
     printAvailable: false,
     gelatoProductId: null,
@@ -87,13 +88,32 @@ const artworks = [
     checkoutEnabled: false,
   },
   {
-    id: "art-aria-companion",
-    slug: "aria-companion",
-    title: "Golden Companion",
-    dogName: "Casa di Andrey Boxer",
-    image: ariaCompanion,
-    alt: "Vertical Boxer portrait photograph selected for a future Casa di Andrey artwork",
-    description: "A character-led portrait concept planned for the growing art collection.",
+    id: "art-adam-d-black-puppy",
+    slug: "adam-d-black-puppy-classical-setting",
+    title: "Classical Puppy Portrait",
+    dogName: "Adam D Black",
+    image: adamPuppy,
+    alt: "Digital fine-art puppy portrait of Adam D Black in a classical setting",
+    description: "A tender puppy portrait concept with classical styling, warm tones, and a soft gallery mood.",
+    featured: false,
+    printAvailable: false,
+    gelatoProductId: null,
+    productUid: null,
+    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
+    availableSizes: [],
+    frameOptions: [],
+    price: null,
+    currency: null,
+    checkoutEnabled: false,
+  },
+  {
+    id: "art-adam-d-black-sweet-puppy",
+    slug: "adam-d-black-sweet-puppy-portrait",
+    title: "Blue-Eyed Puppy Portrait",
+    dogName: "Adam D Black",
+    image: adamSweetPuppy,
+    alt: "Digital fine-art portrait of Adam D Black as a very young Boxer puppy with blue eyes",
+    description: "A soft puppy portrait inspired by Adam D Black when he was tiny and still had blue eyes.",
     featured: false,
     printAvailable: false,
     gelatoProductId: null,
