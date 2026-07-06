@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
 import introLogo from "../assets/CASADIANDREY-logo.svg";
 import heroImage from "../assets/banner_aria_puppy.webp";
-import boxerImage from "../assets/aria-vlajko-meet.webp";
+import boxerImage from "../assets/aria_08.01.2024.webp";
 import puppyImage from "../assets/aria-vlajko-meet-new.webp";
 import { kennelInfo } from "../data/kennel";
 import { litters } from "../data/litters";
@@ -10,7 +10,27 @@ import { currentPuppies } from "../data/puppies";
 
 export default function Home() {
   const currentLitter = litters[0];
-  const puppyPreview = currentPuppies.slice(0, 3);
+  const puppyPreview = [
+    {
+      name: "Eros Titan Casa di Andrey",
+      status: "Available",
+    },
+    {
+      name: "Elysia Nova Casa di Andrey",
+      status: "Stays in kennel",
+      note: "Selected to stay with Casa di Andrey.",
+    },
+    {
+      name: "Egon Imperius Casa di Andrey",
+      status: "In Zaxhause kennel",
+      note: "Now part of Zaxhause kennel.",
+    },
+  ]
+    .map((preview) => {
+      const puppy = currentPuppies.find((item) => item.name === preview.name);
+      return puppy ? { ...puppy, ...preview } : null;
+    })
+    .filter(Boolean);
 
   return (
     <>
@@ -85,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section split-section split-section--reverse">
+      <section className="section split-section split-section--reverse section--boxers-preview">
         <img src={boxerImage} alt="Casa di Andrey adult Boxers" loading="lazy" />
         <div>
           <p className="eyebrow">Our Boxers</p>

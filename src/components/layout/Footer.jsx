@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import LogoWhite from "../../assets/CASADIANDREYWHITE-logo.svg";
 import { kennelInfo } from "../../data/kennel";
 import { socialLinks } from "../../data/socialLinks";
 
@@ -8,7 +9,12 @@ export default function Footer() {
       <div className="site-footer__inner">
         <div>
           <p className="eyebrow">Casa di Andrey</p>
-          <h2>German Boxers raised with character and heart.</h2>
+          <img
+            className="site-footer__logo"
+            src={LogoWhite}
+            alt="Casa di Andrey logo"
+            loading="lazy"
+          />
         </div>
         <div className="site-footer__links">
           <Link to="/puppies">Puppies</Link>

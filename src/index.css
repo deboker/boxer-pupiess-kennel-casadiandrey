@@ -323,7 +323,7 @@ p {
 .page-hero {
   max-width: var(--width-page);
   margin: 0 auto;
-  padding: clamp(4.5rem, 9vw, 8rem) var(--space-page);
+  padding: clamp(4.5rem, 9vw, 6rem) var(--space-page);
 }
 
 .page-hero {
@@ -454,6 +454,10 @@ p {
 
 .split-section img {
   aspect-ratio: 4 / 5;
+}
+
+.section--boxers-preview img {
+  aspect-ratio: 4 / 3;
 }
 
 .preview-grid,
@@ -753,8 +757,11 @@ p {
   gap: 2rem;
 }
 
-.site-footer h2 {
-  max-width: 560px;
+.site-footer__logo {
+  width: min(125px, 70vw);
+  max-width: 125px;
+  height: auto;
+  margin-top: 1rem;
 }
 
 .site-footer__links {
