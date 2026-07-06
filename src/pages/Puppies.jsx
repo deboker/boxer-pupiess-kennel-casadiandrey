@@ -1,20 +1,57 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Meta from "../components/Meta";
 import PuppyCard from "../components/home/PuppyCard";
+import puppyImage from "../assets/aria_puppy.webp";
+import puppyMeetingImage from "../assets/aria-vlajko-meet-new.webp";
+import puppyFamilyImage from "../assets/1000082034.jpg";
 import { kennelInfo } from "../data/kennel";
 import { currentPuppies, sevenWeekPuppies } from "../data/puppies";
 
 export default function Puppies() {
   const location = useLocation();
+  const [selectedImage, setSelectedImage] = useState(null);
+  const erosTitan = currentPuppies.find(
+    (puppy) => puppy.name === "Eros Titan Casa di Andrey"
+  );
+  const erosGallery = [
+    {
+      src: puppyImage,
+      alt: "Eros Titan Casa di Andrey puppy portrait",
+    },
+    {
+      src: puppyMeetingImage,
+      alt: "Casa di Andrey Boxer puppy family moment",
+    },
+    {
+      src: puppyFamilyImage,
+      alt: "Casa di Andrey puppy outdoor moment",
+    },
+  ];
 
   useEffect(() => {
-    if (location.hash === "#available-8weeks") {
+    if (location.hash === "#available-8weeks" || location.hash === "#eros-titan") {
+      const targetId =
+        location.hash === "#eros-titan" ? "eros-titan" : "available-8weeks";
+
       document
-        .getElementById("available-8weeks")
+        .getElementById(targetId)
         ?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [location.hash]);
+
+  useEffect(() => {
+    if (!selectedImage) return undefined;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage]);
 
   return (
     <>
@@ -31,6 +68,73 @@ export default function Puppies() {
           for fresh photos, health certificates, show ratings, and next steps.
         </p>
       </section>
+
+      {erosTitan && (
+        <section className="section puppy-available-feature" id="eros-titan">
+          <div className="puppy-available-feature__copy">
+            <p className="eyebrow">Available now</p>
+            <h2>{erosTitan.name}</h2>
+            <p className="lead">{erosTitan.note}</p>
+            <p>
+              Eros Titan is a golden brindle male Boxer puppy from Litter E,
+              with a white blaze and white chest. He is still available for a
+              carefully selected family that understands the breed, values
+              character, and wants a loyal companion raised inside the Casa di
+              Andrey world.
+            </p>
+            <Link className="button button--primary" to="/contact">
+              Ask about Eros Titan
+            </Link>
+          </div>
+          <div className="puppy-available-feature__media">
+            <video
+              src={erosTitan.video}
+              controls
+              muted
+              playsInline
+              preload="metadata"
+              poster="/aria_puppy.webp"
+            />
+          </div>
+          <div className="puppy-available-gallery">
+            {erosGallery.map((image) => (
+              <button
+                className="puppy-available-gallery__button"
+                type="button"
+                key={image.src}
+                onClick={() => setSelectedImage(image)}
+                aria-label={`Open larger view: ${image.alt}`}
+              >
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {selectedImage && (
+        <div
+          className="image-lightbox"
+          role="dialog"
+          aria-modal="true"
+          aria-label={selectedImage.alt}
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="image-lightbox__close"
+            type="button"
+            onClick={() => setSelectedImage(null)}
+            aria-label="Close image"
+          >
+            Close
+          </button>
+          <img
+            src={selectedImage.src}
+            alt={selectedImage.alt}
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
 
       <section className="section" id="available">
         <div className="section-heading">

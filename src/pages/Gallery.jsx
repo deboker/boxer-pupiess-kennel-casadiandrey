@@ -5,9 +5,13 @@ import boxerImage from "../assets/aria-vlajko-meet.webp";
 import ariaImage from "../assets/aria_vlajko.webp";
 import cartierImage from "../assets/cartier&free.webp";
 import adamPoseImage from "../assets/adam_dblack_pose_fhotosuting.jpg";
+import galleryImage2034 from "../assets/1000082034.jpg";
+import galleryImage491 from "../assets/491736440_3417355075068771_8053323267358177835_n.jpg";
 import { currentPuppies } from "../data/puppies";
 
 const galleryImages = [
+  { src: galleryImage491, alt: "Casa di Andrey Boxer outdoor portrait" },
+  { src: galleryImage2034, alt: "Casa di Andrey Boxer family moment" },
   { src: adamPoseImage, alt: "Adam D Black posing during a Casa di Andrey photoshooting" },
   { src: heroImage, alt: "Casa di Andrey Boxers together" },
   { src: puppyImage, alt: "Casa di Andrey Boxer puppy" },

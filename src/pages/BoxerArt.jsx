@@ -206,34 +206,23 @@ const orderingSteps = [
   },
 ];
 
-const customSteps = [
-  "Send several clear photographs.",
-  "Choose an artistic direction.",
-  "Review and approve the portrait.",
-  "Receive the digital version or request a printed version.",
-];
-
-const portraitConcepts = [
-  "Classic Boxer portrait",
-  "Puppy portrait",
-  "Memorial portrait",
-  "Breeder and kennel artwork",
-  "Digital artwork",
-  "Physical wall print",
-];
-
 const brandValues = [
   "Based on real photographs",
   "Personally reviewed",
   "Created with respect for the breed",
 ];
 
+const protectedImageProps = {
+  draggable: "false",
+  onContextMenu: (event) => event.preventDefault(),
+};
+
 export default function BoxerArt() {
   return (
     <div className="boxer-art-page">
       <Meta
         title="Boxer Art"
-        description="Fine-art Casa di Andrey Boxer portraits, planned physical prints, and custom Boxer portrait inquiries."
+        description="Fine-art Casa di Andrey Boxer portraits prepared as future framed prints, posters, and canvas wall art."
         path="/boxer-art"
       />
 
@@ -243,27 +232,32 @@ export default function BoxerArt() {
           <h1>Real Boxers. Timeless Portraits.</h1>
           <p>
             Fine-art portraits inspired by real Casa di Andrey Boxers, their
-            character, and their stories. Discover existing artwork or create a
-            personalised portrait of your own Boxer.
+            character, and their stories. Discover our digital art gallery and
+            ask about future framed prints, posters, and canvas wall art.
           </p>
           <div className="boxer-art-actions">
             <a className="button button--primary" href="#art-collection">
               Explore the collection
             </a>
-            <a className="button button--secondary" href="#custom-portrait">
-              Create a custom portrait
-            </a>
+            <Link className="button button--secondary" to="/contact">
+              Ask about prints
+            </Link>
           </div>
         </div>
         <figure className="boxer-art-hero__visual">
-          <img src={featuredArtwork.image} alt={featuredArtwork.alt} />
+          <img src={featuredArtwork.image} alt={featuredArtwork.alt} {...protectedImageProps} />
           <figcaption>{featuredArtwork.title}</figcaption>
         </figure>
       </section>
 
       <section className="boxer-art-featured" id="featured-artwork" aria-labelledby="featured-artwork-title">
         <div className="boxer-art-featured__image">
-          <img src={featuredArtwork.image} alt={featuredArtwork.alt} loading="lazy" />
+          <img
+            src={featuredArtwork.image}
+            alt={featuredArtwork.alt}
+            loading="lazy"
+            {...protectedImageProps}
+          />
         </div>
         <div className="boxer-art-featured__content">
           <p className="boxer-art-eyebrow">Featured portrait</p>
@@ -275,14 +269,6 @@ export default function BoxerArt() {
           </p>
           <span className="boxer-art-label">Created from an original Casa di Andrey photograph</span>
           <div className="boxer-art-actions">
-            <a
-              className="button button--secondary"
-              href={featuredArtwork.image}
-              target="_blank"
-              rel="noreferrer"
-            >
-              View artwork
-            </a>
             <Link className="button button--primary" to="/contact">
               Ask about this print
             </Link>
@@ -304,7 +290,12 @@ export default function BoxerArt() {
           {artworks.map((artwork) => (
             <article className="boxer-art-card" id={artwork.id} key={artwork.id}>
               <div className="boxer-art-card__image">
-                <img src={artwork.image} alt={artwork.alt} loading="lazy" />
+                <img
+                  src={artwork.image}
+                  alt={artwork.alt}
+                  loading="lazy"
+                  {...protectedImageProps}
+                />
               </div>
               <div className="boxer-art-card__body">
                 <span className="boxer-art-label">Fine-art print planned</span>
@@ -312,9 +303,6 @@ export default function BoxerArt() {
                 <p className="boxer-art-card__dog">{artwork.dogName}</p>
                 <p>{artwork.description}</p>
                 <div className="boxer-art-card__actions">
-                  <a className="text-link" href={artwork.image} target="_blank" rel="noreferrer">
-                    View artwork
-                  </a>
                   <Link className="text-link" to="/contact">
                     Ask about this print
                   </Link>
@@ -374,45 +362,6 @@ export default function BoxerArt() {
         </div>
       </section>
 
-      <section className="boxer-art-custom" id="custom-portrait" aria-labelledby="custom-portrait-title">
-        <div className="boxer-art-custom__content">
-          <p className="boxer-art-eyebrow">Your Boxer. Your story.</p>
-          <h2 id="custom-portrait-title">Create a custom Boxer portrait</h2>
-          <p>
-            Send us several clear photographs of your Boxer. Together, we choose
-            the visual direction before your personalised artwork is created.
-          </p>
-          <div className="boxer-art-actions">
-            <Link className="button button--primary" to="/contact">
-              Start your portrait
-            </Link>
-            <a className="button button--secondary" href="#custom-process">
-              View the process
-            </a>
-          </div>
-        </div>
-        <div className="boxer-art-concepts" aria-label="Available portrait concepts">
-          {portraitConcepts.map((concept) => (
-            <span key={concept}>{concept}</span>
-          ))}
-        </div>
-      </section>
-
-      <section className="boxer-art-section" id="custom-process" aria-labelledby="custom-process-title">
-        <div className="boxer-art-section__heading">
-          <p className="boxer-art-eyebrow">Custom process</p>
-          <h2 id="custom-process-title">From photograph to portrait</h2>
-        </div>
-        <div className="boxer-art-steps boxer-art-steps--custom">
-          {customSteps.map((step, index) => (
-            <article key={step}>
-              <span>{index + 1}</span>
-              <p>{step}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
       <section className="boxer-art-values" aria-labelledby="art-values-title">
         <div>
           <h2 id="art-values-title">Created from real stories</h2>
@@ -433,17 +382,14 @@ export default function BoxerArt() {
       </section>
 
       <section className="boxer-art-final" aria-labelledby="art-final-title">
-        <h2 id="art-final-title">Turn your Boxer&apos;s character into art.</h2>
+        <h2 id="art-final-title">Bring Casa di Andrey art into your home.</h2>
         <p>
-          Ask about an existing Casa di Andrey print or begin a custom portrait
-          created from your own photographs.
+          Ask about an existing Casa di Andrey digital artwork prepared for a
+          future framed print, poster, or canvas.
         </p>
         <div className="boxer-art-actions">
           <Link className="button button--primary" to="/contact">
             Ask about a print
-          </Link>
-          <Link className="button button--secondary" to="/contact">
-            Create a custom portrait
           </Link>
         </div>
       </section>

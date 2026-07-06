@@ -5,6 +5,8 @@ import heroImage from "../assets/banner_aria_puppy.webp";
 import boxerImage from "../assets/aria_08.01.2024.webp";
 import puppyImage from "../assets/aria-vlajko-meet-new.webp";
 import adamPoseImage from "../assets/adam_dblack_pose_fhotosuting.jpg";
+import galleryImage2034 from "../assets/1000082034.jpg";
+import galleryImage491 from "../assets/491736440_3417355075068771_8053323267358177835_n.jpg";
 import { kennelInfo } from "../data/kennel";
 import { litters } from "../data/litters";
 import { currentPuppies } from "../data/puppies";
@@ -98,18 +100,27 @@ export default function Home() {
           </Link>
         </div>
         <div className="preview-grid">
-          {puppyPreview.map((puppy) => (
-            <article
-              className={`preview-item ${
-                puppy.status === "Available" ? "preview-item--available" : ""
-              }`}
-              key={puppy.name}
-            >
-              <span className={getStatusClass(puppy.status)}>{puppy.status}</span>
-              <h3>{puppy.name}</h3>
-              <p>{puppy.note}</p>
-            </article>
-          ))}
+          {puppyPreview.map((puppy) => {
+            const isAvailable = puppy.status === "Available";
+            const className = `preview-item ${isAvailable ? "preview-item--available" : ""}`;
+            const content = (
+              <>
+                <span className={getStatusClass(puppy.status)}>{puppy.status}</span>
+                <h3>{puppy.name}</h3>
+                <p>{puppy.note}</p>
+              </>
+            );
+
+            return isAvailable ? (
+              <Link className={className} key={puppy.name} to="/puppies#eros-titan">
+                {content}
+              </Link>
+            ) : (
+              <article className={className} key={puppy.name}>
+                {content}
+              </article>
+            );
+          })}
         </div>
       </section>
 
@@ -148,9 +159,8 @@ export default function Home() {
         </div>
         <div className="gallery-strip">
           <img src={adamPoseImage} alt="Adam D Black posing during photoshooting" loading="lazy" />
-          <img src={heroImage} alt="Casa di Andrey dogs together" loading="lazy" />
-          <img src={puppyImage} alt="Casa di Andrey puppy portrait" loading="lazy" />
-          <img src={boxerImage} alt="Casa di Andrey Boxer portrait" loading="lazy" />
+          <img src={galleryImage2034} alt="Casa di Andrey Boxer family moment" loading="lazy" />
+          <img src={galleryImage491} alt="Casa di Andrey Boxer outdoor portrait" loading="lazy" />
         </div>
       </section>
 
