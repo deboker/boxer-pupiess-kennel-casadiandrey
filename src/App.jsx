@@ -16,6 +16,7 @@ const Puppies = lazy(() => import("./pages/Puppies"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const About = lazy(() => import("./pages/About"));
 const BoxerArt = lazy(() => import("./pages/BoxerArt"));
+const ArtworkDetail = lazy(() => import("./pages/ArtworkDetail"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -69,6 +70,7 @@ function AppRoutes() {
             <Route path="gallery" element={<Gallery />} />
             <Route path="about" element={<About />} />
             <Route path="boxer-art" element={<BoxerArt />} />
+            <Route path="boxer-art/:slug" element={<ArtworkDetail />} />
             <Route path="contact" element={<Contact />} />
             <Route path="home" element={<Navigate to="/" replace />} />
             <Route path="*" element={<NotFound />} />

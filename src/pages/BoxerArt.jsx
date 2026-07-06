@@ -1,247 +1,64 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
-import novaPortrait from "../assets/nova_cda_portret.webp";
-import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
-import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
-import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
-import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
-import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
-import aprilliaPortrait from "../assets/Aprillia_Von_der_Drachenwiese_Regal_boxer_in_classical_portrait_style.webp";
-import aprilliaGarden from "../assets/Aprillia_Von_der_DrachenwieseBoxer_dog_classical_garden.webp";
+import { artworkFormats, artworkLicenseNotes, artworks } from "../data/artworks";
 
-// Future Gelato order creation, price retrieval, and checkout must be handled
-// through a secure backend or serverless function. Secret credentials must never
-// be stored in frontend code.
-const artworks = [
-  {
-    id: "art-elysia-nova",
-    slug: "elysia-nova",
-    title: "The Noble Presence",
-    dogName: "Elysia Nova",
-    image: novaPortrait,
-    alt: "Fine-art portrait of Elysia Nova Casa di Andrey as an elegant Boxer artwork",
-    description: "A regal fine-art Boxer portrait built around presence, warmth, and character.",
-    featured: true,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-aria-regal",
-    slug: "aria-regal-digital-art",
-    title: "Regal Interior",
-    dogName: "Aria",
-    image: ariaDigitalArt,
-    alt: "Digital fine-art portrait of Aria Casa di Andrey as a regal brindle Boxer in a grand interior",
-    description: "A dramatic digital portrait concept with warm bronze tones and a refined gallery mood.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-daenerys-terrace",
-    slug: "daenerys-khaleesi-sunlit-terrace",
-    title: "Sunlit Terrace",
-    dogName: "Daenerys Khaleesi",
-    image: daenerysTerrace,
-    alt: "Digital fine-art portrait of Daenerys Khaleesi relaxing on a sunlit terrace",
-    description: "A warm terrace portrait concept with soft light, calm presence, and an elegant home-art feeling.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-adam-d-black-guardian",
-    slug: "adam-d-black-noble-guardian",
-    title: "Noble Guardian",
-    dogName: "Adam D Black",
-    image: adamGuardian,
-    alt: "Digital fine-art portrait of Adam D Black as a noble Boxer guardian",
-    description: "A strong guardian portrait concept with a composed expression and classic fine-art atmosphere.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-adam-d-black-puppy",
-    slug: "adam-d-black-puppy-classical-setting",
-    title: "Classical Puppy Portrait",
-    dogName: "Adam D Black",
-    image: adamPuppy,
-    alt: "Digital fine-art puppy portrait of Adam D Black in a classical setting",
-    description: "A tender puppy portrait concept with classical styling, warm tones, and a soft gallery mood.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-adam-d-black-sweet-puppy",
-    slug: "adam-d-black-sweet-puppy-portrait",
-    title: "Blue-Eyed Puppy Portrait",
-    dogName: "Adam D Black",
-    image: adamSweetPuppy,
-    alt: "Digital fine-art portrait of Adam D Black as a very young Boxer puppy with blue eyes",
-    description: "A soft puppy portrait inspired by Adam D Black when he was tiny and still had blue eyes.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-aprillia-von-der-drachenwiese",
-    slug: "aprillia-von-der-drachenwiese-regal-portrait",
-    title: "Classical Regal Portrait",
-    dogName: "Aprillia Von der Drachenwiese",
-    image: aprilliaPortrait,
-    alt: "Digital fine-art portrait of Aprillia Von der Drachenwiese as a regal Boxer in classical portrait style",
-    description: "A classical fine-art Boxer portrait with a dignified pose, rich tones, and a timeless gallery feeling.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-  {
-    id: "art-aprillia-classical-garden",
-    slug: "aprillia-von-der-drachenwiese-classical-garden",
-    title: "Classical Garden Portrait",
-    dogName: "Aprillia Von der Drachenwiese",
-    image: aprilliaGarden,
-    alt: "Digital fine-art portrait of Aprillia Von der Drachenwiese as a Boxer dog in a classical garden",
-    description: "A refined garden portrait concept with classical styling, natural light, and a calm noble presence.",
-    featured: false,
-    printAvailable: false,
-    gelatoProductId: null,
-    productUid: null,
-    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
-    availableSizes: [],
-    frameOptions: [],
-    price: null,
-    currency: null,
-    checkoutEnabled: false,
-  },
-];
-
-const featuredArtwork = artworks.find((artwork) => artwork.featured);
-
-const printFormats = [
-  {
-    title: "Fine-art poster",
-    description: "Clean museum-style wall art for warm, modern interiors.",
-    icon: "poster",
-  },
-  {
-    title: "Framed print",
-    description: "A finished presentation option planned for selected portraits.",
-    icon: "frame",
-  },
-  {
-    title: "Canvas",
-    description: "A gallery-inspired format for a softer, tactile wall piece.",
-    icon: "canvas",
-  },
-];
-
-const orderingSteps = [
-  {
-    title: "Choose your artwork",
-    text: "Select your favourite Casa di Andrey portrait.",
-  },
-  {
-    title: "Select a format",
-    text: "Choose the print type, size, and optional frame.",
-  },
-  {
-    title: "Complete your order",
-    text: "Enter your delivery information and complete secure payment.",
-  },
-  {
-    title: "Printed and delivered",
-    text: "Your artwork will be printed on demand and delivered directly to your address.",
-  },
-];
-
-const brandValues = [
-  "Based on real photographs",
-  "Personally reviewed",
-  "Created with respect for the breed",
-];
+const featuredArtwork = artworks.find((artwork) => artwork.featured) || artworks[0];
 
 const protectedImageProps = {
   draggable: "false",
   onContextMenu: (event) => event.preventDefault(),
 };
 
+const archiveNotes = [
+  {
+    title: "Existing Casa di Andrey artwork",
+    text: "Each piece is already finished and based on an original kennel photograph.",
+  },
+  {
+    title: "Formats are informational",
+    text: "Digital artwork, poster, framed print, and canvas are possible future directions, not active products.",
+  },
+  {
+    title: "No online sales",
+    text: "There is currently no live checkout, payment flow, download, or print ordering on this website.",
+  },
+  {
+    title: "Contact for information",
+    text: "Use the contact page only if you want to ask about the artworks or the Casa di Andrey collection.",
+  },
+];
+
+const collectionValues = [
+  "Original Casa di Andrey source photographs",
+  "Finished artworks only",
+  "Reviewed for a consistent kennel art style",
+];
+
 export default function BoxerArt() {
   return (
     <div className="boxer-art-page">
       <Meta
         title="Boxer Art"
-        description="Fine-art Casa di Andrey Boxer portraits prepared as future framed prints, posters, and canvas wall art."
+        description="The Casa di Andrey Art Collection presents existing fine-art Boxer artworks created from original Casa di Andrey photographs."
         path="/boxer-art"
       />
 
       <section className="boxer-art-hero">
         <div className="boxer-art-hero__content">
-          <p className="boxer-art-eyebrow">Boxer Art by Casa di Andrey</p>
-          <h1>Real Boxers. Timeless Portraits.</h1>
+          <p className="boxer-art-eyebrow">Casa di Andrey Art Collection</p>
+          <h1>Existing Boxer artworks by Casa di Andrey.</h1>
           <p>
-            Fine-art portraits inspired by real Casa di Andrey Boxers, their
-            character, and their stories. Discover our digital art gallery and
-            ask about future framed prints, posters, and canvas wall art.
+            A curated collection of finished fine-art Boxer portraits created
+            from original Casa di Andrey photographs. This section is an art
+            archive and presentation, not an active online shop.
           </p>
           <div className="boxer-art-actions">
             <a className="button button--primary" href="#art-collection">
-              Explore the collection
+              View collection
             </a>
-            <Link className="button button--secondary" to="/contact">
-              Ask about prints
-            </Link>
+            <a className="button button--secondary" href="#art-status">
+              Artwork information
+            </a>
           </div>
         </div>
         <figure className="boxer-art-hero__visual">
@@ -250,7 +67,7 @@ export default function BoxerArt() {
         </figure>
       </section>
 
-      <section className="boxer-art-featured" id="featured-artwork" aria-labelledby="featured-artwork-title">
+      <section className="boxer-art-featured" aria-labelledby="featured-artwork-title">
         <div className="boxer-art-featured__image">
           <img
             src={featuredArtwork.image}
@@ -260,17 +77,14 @@ export default function BoxerArt() {
           />
         </div>
         <div className="boxer-art-featured__content">
-          <p className="boxer-art-eyebrow">Featured portrait</p>
-          <h2 id="featured-artwork-title">Elysia Nova</h2>
-          <p className="boxer-art-kicker">Casa di Andrey Fine-Art Portrait</p>
-          <p>
-            Inspired by a real Casa di Andrey Boxer, this portrait transforms
-            her expression, character, and presence into a timeless work of art.
-          </p>
-          <span className="boxer-art-label">Created from an original Casa di Andrey photograph</span>
+          <p className="boxer-art-eyebrow">Featured artwork</p>
+          <h2 id="featured-artwork-title">{featuredArtwork.title}</h2>
+          <p className="boxer-art-kicker">{featuredArtwork.dogName}</p>
+          <p>{featuredArtwork.shortDescription}</p>
+          <span className="boxer-art-label">{featuredArtwork.sourceNote}</span>
           <div className="boxer-art-actions">
-            <Link className="button button--primary" to="/contact">
-              Ask about this print
+            <Link className="button button--primary" to={`/boxer-art/${featuredArtwork.slug}`}>
+              View artwork
             </Link>
           </div>
         </div>
@@ -279,32 +93,37 @@ export default function BoxerArt() {
       <section className="boxer-art-section" id="art-collection" aria-labelledby="art-collection-title">
         <div className="boxer-art-section__heading">
           <p className="boxer-art-eyebrow">Collection</p>
-          <h2 id="art-collection-title">The Casa di Andrey Art Collection</h2>
+          <h2 id="art-collection-title">Finished Casa di Andrey artworks</h2>
           <p>
-            A growing collection of fine-art portraits inspired by the Boxers of
-            Casa di Andrey.
+            Every artwork begins with a real Casa di Andrey Boxer, an original
+            kennel-owned photograph, and a reviewed fine-art transformation.
           </p>
         </div>
 
         <div className="boxer-art-grid">
           {artworks.map((artwork) => (
             <article className="boxer-art-card" id={artwork.id} key={artwork.id}>
-              <div className="boxer-art-card__image">
+              <Link className="boxer-art-card__image" to={`/boxer-art/${artwork.slug}`}>
                 <img
                   src={artwork.image}
                   alt={artwork.alt}
                   loading="lazy"
                   {...protectedImageProps}
                 />
-              </div>
+              </Link>
               <div className="boxer-art-card__body">
-                <span className="boxer-art-label">Fine-art print planned</span>
+                <span className="boxer-art-label">{artwork.collection}</span>
                 <h3>{artwork.title}</h3>
                 <p className="boxer-art-card__dog">{artwork.dogName}</p>
-                <p>{artwork.description}</p>
+                <p>{artwork.shortDescription}</p>
+                <div className="boxer-art-chip-list">
+                  {artwork.formats.slice(0, 3).map((format) => (
+                    <span key={format}>{format}</span>
+                  ))}
+                </div>
                 <div className="boxer-art-card__actions">
-                  <Link className="text-link" to="/contact">
-                    Ask about this print
+                  <Link className="text-link" to={`/boxer-art/${artwork.slug}`}>
+                    View details
                   </Link>
                 </div>
               </div>
@@ -313,46 +132,42 @@ export default function BoxerArt() {
         </div>
       </section>
 
-      <section className="boxer-art-section boxer-art-prints" aria-labelledby="art-prints-title">
+      <section className="boxer-art-section boxer-art-prints" aria-labelledby="art-formats-title">
         <div className="boxer-art-section__heading">
-          <p className="boxer-art-eyebrow">Coming soon</p>
-          <h2 id="art-prints-title">Art made for your home</h2>
+          <p className="boxer-art-eyebrow">Formats</p>
+          <h2 id="art-formats-title">Possible artwork formats</h2>
           <p>
-            Selected Casa di Andrey portraits are being prepared as
-            professionally produced wall art, printed on demand and delivered
-            directly to your address.
+            These formats describe how the finished artworks may be presented in
+            the future. They are not active products on this website.
           </p>
         </div>
         <div className="boxer-art-format-grid">
-          {printFormats.map((format) => (
+          {artworkFormats.map((format) => (
             <article className="boxer-art-format" key={format.title}>
-              <span className={`boxer-art-format__icon boxer-art-format__icon--${format.icon}`} aria-hidden="true" />
-              <span className="boxer-art-label">Coming soon</span>
+              <span className="boxer-art-label">Format</span>
               <h3>{format.title}</h3>
               <p>{format.description}</p>
             </article>
           ))}
         </div>
         <p className="boxer-art-note">
-          Available sizes, framing options, prices, and delivery information
-          will be published when the online print shop launches.
+          Planned print sizes include 20 x 25 cm, 40 x 50 cm, and 60 x 75 cm.
+          No prices, checkout, downloads, or print orders are active.
         </p>
-        <Link className="button button--primary" to="/contact">
-          Ask about availability
-        </Link>
       </section>
 
-      <section className="boxer-art-section boxer-art-process" aria-labelledby="ordering-title">
+      <section className="boxer-art-section boxer-art-process" id="art-status" aria-labelledby="art-status-title">
         <div className="boxer-art-section__heading">
-          <p className="boxer-art-eyebrow">Planned print shop</p>
-          <h2 id="ordering-title">How ordering will work</h2>
+          <p className="boxer-art-eyebrow">Artwork status</p>
+          <h2 id="art-status-title">Presentation only, no checkout</h2>
           <p>
-            This is the planned future ordering process. Online checkout is not
-            active yet.
+            Boxer Art is currently a Casa di Andrey gallery section. It does not
+            offer custom portraits, customer uploads, made-to-order artwork, or
+            online purchasing.
           </p>
         </div>
         <div className="boxer-art-steps">
-          {orderingSteps.map((step, index) => (
+          {archiveNotes.map((step, index) => (
             <article key={step.title}>
               <span>{index + 1}</span>
               <h3>{step.title}</h3>
@@ -364,15 +179,15 @@ export default function BoxerArt() {
 
       <section className="boxer-art-values" aria-labelledby="art-values-title">
         <div>
-          <h2 id="art-values-title">Created from real stories</h2>
+          <h2 id="art-values-title">Existing artworks only</h2>
           <p>
-            Every Casa di Andrey portrait begins with a real dog, a real
-            photograph, and the unique character that makes every Boxer
-            unforgettable.
+            Casa di Andrey artworks are created from original kennel
+            photographs. The collection does not include customer photo uploads
+            or custom portrait services.
           </p>
         </div>
         <div className="boxer-art-values__grid">
-          {brandValues.map((value) => (
+          {collectionValues.map((value) => (
             <article key={value}>
               <span aria-hidden="true" />
               <h3>{value}</h3>
@@ -381,15 +196,35 @@ export default function BoxerArt() {
         </div>
       </section>
 
+      <section className="boxer-art-section boxer-art-license" aria-labelledby="art-license-title">
+        <div className="boxer-art-section__heading">
+          <p className="boxer-art-eyebrow">Licensing</p>
+          <h2 id="art-license-title">Clear personal-use licensing</h2>
+          <p>
+            The artworks are displayed as protected Casa di Andrey images.
+            Licensing notes clarify that no download or resale permission is
+            granted by viewing this page.
+          </p>
+        </div>
+        <div className="boxer-art-values__grid">
+          {artworkLicenseNotes.map((note) => (
+            <article key={note}>
+              <span aria-hidden="true" />
+              <h3>{note}</h3>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="boxer-art-final" aria-labelledby="art-final-title">
-        <h2 id="art-final-title">Bring Casa di Andrey art into your home.</h2>
+        <h2 id="art-final-title">Casa di Andrey art, prepared carefully.</h2>
         <p>
-          Ask about an existing Casa di Andrey digital artwork prepared for a
-          future framed print, poster, or canvas.
+          Browse the finished artworks and contact Casa di Andrey if you are
+          interested in learning more about the art collection.
         </p>
         <div className="boxer-art-actions">
           <Link className="button button--primary" to="/contact">
-            Ask about a print
+            Contact Casa di Andrey
           </Link>
         </div>
       </section>
