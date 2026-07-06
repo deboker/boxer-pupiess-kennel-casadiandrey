@@ -1919,6 +1919,12 @@ a.preview-item:hover {
   .boxer-art-actions .button {
     width: 100%;
   }
+  .philosophy-band,
+  .cta-section,
+  .art-preview {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
