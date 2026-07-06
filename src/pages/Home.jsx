@@ -4,6 +4,7 @@ import introLogo from "../assets/CASADIANDREY-logo.svg";
 import heroImage from "../assets/banner_aria_puppy.webp";
 import boxerImage from "../assets/aria_08.01.2024.webp";
 import puppyImage from "../assets/aria-vlajko-meet-new.webp";
+import adamPoseImage from "../assets/adam_dblack_pose_fhotosuting.jpg";
 import { kennelInfo } from "../data/kennel";
 import { litters } from "../data/litters";
 import { currentPuppies } from "../data/puppies";
@@ -146,6 +147,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="gallery-strip">
+          <img src={adamPoseImage} alt="Adam D Black posing during photoshooting" loading="lazy" />
           <img src={heroImage} alt="Casa di Andrey dogs together" loading="lazy" />
           <img src={puppyImage} alt="Casa di Andrey puppy portrait" loading="lazy" />
           <img src={boxerImage} alt="Casa di Andrey Boxer portrait" loading="lazy" />

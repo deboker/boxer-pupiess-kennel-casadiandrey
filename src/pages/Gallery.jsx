@@ -4,9 +4,11 @@ import puppyImage from "../assets/aria_puppy.webp";
 import boxerImage from "../assets/aria-vlajko-meet.webp";
 import ariaImage from "../assets/aria_vlajko.webp";
 import cartierImage from "../assets/cartier&free.webp";
+import adamPoseImage from "../assets/adam_dblack_pose_fhotosuting.jpg";
 import { currentPuppies } from "../data/puppies";
 
 const galleryImages = [
+  { src: adamPoseImage, alt: "Adam D Black posing during a Casa di Andrey photoshooting" },
   { src: heroImage, alt: "Casa di Andrey Boxers together" },
   { src: puppyImage, alt: "Casa di Andrey Boxer puppy" },
   { src: boxerImage, alt: "Casa di Andrey adult Boxer photograph" },

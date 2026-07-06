@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
 import { kennelInfo } from "../data/kennel";
+import familyMomentsImage from "../assets/casa_di_andrey_Family_moments.webp";
 
 export default function About() {
   return (
@@ -34,6 +35,13 @@ export default function About() {
             families.
           </p>
         </article>
+        <figure className="editorial-columns__image">
+          <img
+            src={familyMomentsImage}
+            alt="Casa di Andrey family moment with Boxer dogs"
+            loading="lazy"
+          />
+        </figure>
       </section>
 
       <section className="section cta-section">

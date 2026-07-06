@@ -6,6 +6,8 @@ import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_te
 import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
 import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
 import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
+import aprilliaPortrait from "../assets/Aprillia_Von_der_Drachenwiese_Regal_boxer_in_classical_portrait_style.webp";
+import aprilliaGarden from "../assets/Aprillia_Von_der_DrachenwieseBoxer_dog_classical_garden.webp";
 
 // Future Gelato order creation, price retrieval, and checkout must be handled
 // through a secure backend or serverless function. Secret credentials must never
@@ -114,6 +116,44 @@ const artworks = [
     image: adamSweetPuppy,
     alt: "Digital fine-art portrait of Adam D Black as a very young Boxer puppy with blue eyes",
     description: "A soft puppy portrait inspired by Adam D Black when he was tiny and still had blue eyes.",
+    featured: false,
+    printAvailable: false,
+    gelatoProductId: null,
+    productUid: null,
+    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
+    availableSizes: [],
+    frameOptions: [],
+    price: null,
+    currency: null,
+    checkoutEnabled: false,
+  },
+  {
+    id: "art-aprillia-von-der-drachenwiese",
+    slug: "aprillia-von-der-drachenwiese-regal-portrait",
+    title: "Classical Regal Portrait",
+    dogName: "Aprillia Von der Drachenwiese",
+    image: aprilliaPortrait,
+    alt: "Digital fine-art portrait of Aprillia Von der Drachenwiese as a regal Boxer in classical portrait style",
+    description: "A classical fine-art Boxer portrait with a dignified pose, rich tones, and a timeless gallery feeling.",
+    featured: false,
+    printAvailable: false,
+    gelatoProductId: null,
+    productUid: null,
+    printFormats: ["Fine-art poster", "Framed print", "Canvas"],
+    availableSizes: [],
+    frameOptions: [],
+    price: null,
+    currency: null,
+    checkoutEnabled: false,
+  },
+  {
+    id: "art-aprillia-classical-garden",
+    slug: "aprillia-von-der-drachenwiese-classical-garden",
+    title: "Classical Garden Portrait",
+    dogName: "Aprillia Von der Drachenwiese",
+    image: aprilliaGarden,
+    alt: "Digital fine-art portrait of Aprillia Von der Drachenwiese as a Boxer dog in a classical garden",
+    description: "A refined garden portrait concept with classical styling, natural light, and a calm noble presence.",
     featured: false,
     printAvailable: false,
     gelatoProductId: null,
