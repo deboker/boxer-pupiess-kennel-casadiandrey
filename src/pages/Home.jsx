@@ -24,8 +24,8 @@ export default function Home() {
     },
     {
       name: "Egon Imperius Casa di Andrey",
-      status: "In Zaxhause kennel",
-      note: "Now part of Zaxhause kennel.",
+      status: "In Zaxhaus kennel",
+      note: "Now part of Zaxhaus kennel.",
     },
   ]
     .map((preview) => {
