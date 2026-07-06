@@ -168,7 +168,7 @@ p {
 .site-header__inner {
   max-width: var(--width-page);
   margin: 0 auto;
-  padding: 0.9rem var(--space-page);
+  padding: 0.5rem var(--space-page);
   display: flex;
   align-items: center;
   justify-content: space-between;
