@@ -3,6 +3,12 @@ import { FaMars, FaVenus } from "react-icons/fa";
 export default function PuppyCard({ puppy, darkMode }) {
   const isReserved = puppy.reserved === true;
   const isAvailable = puppy.status === "Available" || !isReserved;
+  const statusClass =
+    puppy.status === "In our kennel"
+      ? "reserved-badge--kennel"
+      : isReserved
+        ? "reserved-badge--reserved"
+        : "reserved-badge--available";
 
   return (
     <article
@@ -11,9 +17,7 @@ export default function PuppyCard({ puppy, darkMode }) {
       }`}
     >
       <span
-        className={`reserved-badge ${
-          isReserved ? "reserved-badge--reserved" : "reserved-badge--available"
-        }`}
+        className={`reserved-badge ${statusClass}`}
       >
         {puppy.status || (isReserved ? "New owner" : "Available")}
       </span>

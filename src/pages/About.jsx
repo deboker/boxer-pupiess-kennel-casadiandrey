@@ -22,17 +22,19 @@ export default function About() {
           <p className="eyebrow">Story</p>
           <h2>Casa di Andrey</h2>
           <p>
-            The confirmed repository copy presents Casa di Andrey as a kennel
-            focused on European boxer champions and loving family companions.
+            Casa di Andrey is built around European Boxers with strong
+            character, correct type, and the steady temperament expected from
+            family companions and exhibition dogs. Good health, responsible
+            pairing, and quality for future breeding are central goals of the
+            kennel.
           </p>
         </article>
         <article>
           <p className="eyebrow">Philosophy</p>
           <h2>Character, care, and family life.</h2>
           <p>
-            The current site emphasizes fully health-tested parents, top European
-            bloodlines, transport guidance, and careful communication with future
-            families.
+            We value health-tested parents, thoughtful pairings, early family
+            socialization, and honest communication with every future owner.
           </p>
         </article>
         <figure className="editorial-columns__image">

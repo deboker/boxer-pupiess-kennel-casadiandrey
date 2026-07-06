@@ -3,6 +3,10 @@ import { kennelInfo } from "../../data/kennel";
 
 const ContactForm = () => {
   const [errors, setErrors] = useState({});
+  const [submitStatus, setSubmitStatus] = useState("idle");
+
+  const encodeFormData = (formData) =>
+    new URLSearchParams(formData).toString();
 
   const validate = (form) => {
     const name = form.name.value.trim();
@@ -23,13 +27,38 @@ const ContactForm = () => {
     return nextErrors;
   };
 
-  const handleSubmit = (e) => {
-    const nextErrors = validate(e.target);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const nextErrors = validate(form);
+
     if (Object.keys(nextErrors).length > 0) {
-      e.preventDefault();
       setErrors(nextErrors);
-    } else {
-      setErrors({});
+      setSubmitStatus("idle");
+      return;
+    }
+
+    setErrors({});
+    setSubmitStatus("submitting");
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeFormData(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed.");
+      }
+
+      form.reset();
+      setSubmitStatus("success");
+    } catch {
+      setSubmitStatus("error");
     }
   };
 
@@ -41,71 +70,94 @@ const ContactForm = () => {
         <p>{kennelInfo.contactText}</p>
       </div>
 
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        id="contact-form"
-        className="contact-form"
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p className="hidden">
-          <label>
-            Don&apos;t fill this out if you&apos;re human:{" "}
-            <input name="bot-field" />
-          </label>
-        </p>
-
-        <div className="form-field">
-          <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Full Name" type="text" id="name" required />
-          {errors.name && <p className="error-text">{errors.name}</p>}
+      {submitStatus === "success" ? (
+        <div className="contact-success" role="status">
+          <p className="eyebrow">Message sent</p>
+          <h2>Thank you for contacting Casa di Andrey.</h2>
+          <p>
+            We received your message and will contact you shortly with the next
+            information.
+          </p>
         </div>
+      ) : (
+        <form
+          name="contact"
+          method="POST"
+          action="/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          id="contact-form"
+          className="contact-form"
+          onSubmit={handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p className="hidden">
+            <label>
+              Don&apos;t fill this out if you&apos;re human:{" "}
+              <input name="bot-field" />
+            </label>
+          </p>
 
-        <div className="form-grid">
           <div className="form-field">
-            <label htmlFor="email">Email Address</label>
-            <input
-              name="email"
-              placeholder="Email Address"
-              type="email"
-              id="email"
-              required
-            />
-            {errors.email && <p className="error-text">{errors.email}</p>}
+            <label htmlFor="name">Full Name</label>
+            <input name="name" placeholder="Full Name" type="text" id="name" required />
+            {errors.name && <p className="error-text">{errors.name}</p>}
+          </div>
+
+          <div className="form-grid">
+            <div className="form-field">
+              <label htmlFor="email">Email Address</label>
+              <input
+                name="email"
+                placeholder="Email Address"
+                type="email"
+                id="email"
+                required
+              />
+              {errors.email && <p className="error-text">{errors.email}</p>}
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                name="phone"
+                placeholder="Phone Number"
+                type="tel"
+                id="phone"
+                required
+              />
+              {errors.phone && <p className="error-text">{errors.phone}</p>}
+            </div>
           </div>
 
           <div className="form-field">
-            <label htmlFor="phone">Phone Number</label>
-            <input
-              name="phone"
-              placeholder="Phone Number"
-              type="tel"
-              id="phone"
+            <label htmlFor="message">Your Message</label>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="8"
+              id="message"
               required
-            />
-            {errors.phone && <p className="error-text">{errors.phone}</p>}
+            ></textarea>
+            {errors.message && <p className="error-text">{errors.message}</p>}
           </div>
-        </div>
 
-        <div className="form-field">
-          <label htmlFor="message">Your Message</label>
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="8"
-            id="message"
-            required
-          ></textarea>
-          {errors.message && <p className="error-text">{errors.message}</p>}
-        </div>
+          {submitStatus === "error" && (
+            <p className="error-text" role="alert">
+              The message could not be sent. Please try again or contact us on
+              social media.
+            </p>
+          )}
 
-        <button type="submit" className="button button--primary">
-          Send Message
-        </button>
-      </form>
+          <button
+            type="submit"
+            className="button button--primary"
+            disabled={submitStatus === "submitting"}
+          >
+            {submitStatus === "submitting" ? "Sending..." : "Send Message"}
+          </button>
+        </form>
+      )}
     </section>
   );
 };

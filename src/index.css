@@ -752,6 +752,10 @@ a.preview-item:hover {
   background: #2f6548;
 }
 
+.reserved-badge--kennel {
+  background: #9a633d;
+}
+
 .status-badge-list {
   display: flex;
   flex-wrap: wrap;
@@ -1045,6 +1049,51 @@ a.preview-item:hover {
   max-width: 760px;
 }
 
+.litter-meeting-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.litter-meeting-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.litter-archive {
+  background: #fbf8f3;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+}
+
+.litter-archive__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.litter-archive__item {
+  padding: 1.25rem;
+  border: 1px solid rgba(217, 209, 199, 0.82);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.litter-archive__item img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.litter-archive__item h3 {
+  margin-bottom: 0.65rem;
+}
+
 .litter-video-row,
 .video-grid {
   display: grid;
@@ -1127,6 +1176,26 @@ a.preview-item:hover {
   border-radius: var(--radius-md);
 }
 
+.contact-success {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  min-height: 360px;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid rgba(154, 99, 61, 0.36);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(251, 248, 243, 0.94)),
+    #fbf8f3;
+  box-shadow:
+    0 18px 58px rgba(104, 66, 41, 0.12),
+    0 0 0 4px rgba(154, 99, 61, 0.05);
+}
+
+.contact-success h2 {
+  margin: 0;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1161,6 +1230,11 @@ a.preview-item:hover {
 .error-text {
   color: #a13d2d;
   font-size: 0.85rem;
+}
+
+.contact-form .button:disabled {
+  cursor: wait;
+  opacity: 0.68;
 }
 
 .social-section {
@@ -1758,6 +1832,10 @@ a.preview-item:hover {
   .contact-section__copy {
     position: static;
   }
+
+  .litter-archive__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -1783,7 +1861,8 @@ a.preview-item:hover {
   .gallery-strip,
   .media-grid,
   .video-grid,
-  .litter-video-row {
+  .litter-video-row,
+  .litter-archive__grid {
     grid-template-columns: 1fr;
   }
 

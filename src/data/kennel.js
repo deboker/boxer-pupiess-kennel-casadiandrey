@@ -6,7 +6,7 @@ export const kennelInfo = {
   heroImageAlt: "Meeting",
   shippingHeadline: "Shipping available worldwide!",
   introText:
-    "Welcome to Casa di Andrey Kennel. For almost three decades we have raised European boxer champions and loving family companions. Litter E comes from fully health-tested parents and top European bloodlines. Shipping available worldwide.",
+    "Welcome to Casa di Andrey Kennel. For almost three decades we have raised European boxer champions and loving family companions, with a focus on health, stable character, and careful placement with the right families. Shipping is available worldwide.",
   contactTitle: "Contact us",
   contactText:
     "Tell us which puppy you like and we’ll share current photos, short videos, health certificates, and show ratings. We’re happy to guide you through transport and reservation.",

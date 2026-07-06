@@ -131,7 +131,7 @@ export default function Gallery() {
 
       <section className="section">
         <div className="section-heading">
-          <p className="eyebrow">Selected puppy videos</p>
+          <p className="eyebrow">Selected videos from the kennel</p>
           <h2>Latest clips with manual playback.</h2>
         </div>
         <div className="video-grid">

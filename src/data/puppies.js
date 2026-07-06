@@ -34,7 +34,7 @@ export const sevenWeekPuppies = [
     note: "female fawn, white blaze and white chest",
     video: femaleFawnVideo,
     reserved: true,
-    status: "New owner",
+    status: "In our kennel",
     gender: "female",
   },
   {
@@ -82,7 +82,7 @@ export const eightWeekPuppies = [
     note: "8 weeks update video coming soon",
     video: novaEightWeeksVideo,
     reserved: true,
-    status: "New owner",
+    status: "In our kennel",
     gender: "female",
   },
   {
