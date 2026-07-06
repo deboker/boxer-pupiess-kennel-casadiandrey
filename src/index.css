@@ -405,7 +405,7 @@ p {
 }
 
 .page-hero {
-  padding-top: clamp(7rem, 12vw, 11rem);
+  padding-top: clamp(6rem, 12vw, 8rem);
   max-width: var(--width-narrow);
   text-align: center;
 }
@@ -1371,7 +1371,7 @@ a.preview-item:hover {
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   min-height: 720px;
-  padding: clamp(8rem, 14vw, 11rem) 0 clamp(4rem, 8vw, 7rem);
+  padding: clamp(6rem, 14vw, 8rem) 0 clamp(3rem, 8vw, 5rem);
 }
 
 .boxer-art-hero__content {
@@ -1899,7 +1899,7 @@ a.preview-item:hover {
 @media (max-width: 640px) {
   .boxer-art-hero,
   .boxer-art-detail-hero {
-    padding-top: 7rem;
+    padding-top: 4rem;
   }
 
   .boxer-art-featured,
