@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
+import { FaImage, FaVideo } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import Meta from "../components/Meta";
 import PuppyCard from "../components/home/PuppyCard";
-import puppyImage from "../assets/aria_puppy.webp";
 import puppyMeetingImage from "../assets/aria-vlajko-meet-new.webp";
-import puppyFamilyImage from "../assets/1000082034.jpg";
+import erosTitanGrassImage from "../assets/eros_titan_gras_relax.jpg";
+import erosTitanVideo from "../assets/eros_title_video.mp4";
+import titanFourMonthsVideo from "../assets/Titan_4_months.mp4";
+import titanStandingWindVideo from "../assets/titan_standing_wind.mp4";
+import titanChairRelaxImage from "../assets/titan_chair_relax.jpeg";
 import { kennelInfo } from "../data/kennel";
 import { currentPuppies, sevenWeekPuppies } from "../data/puppies";
+
+const titanFirst = (puppies) =>
+  [
+    ...puppies.filter((puppy) => puppy.name === "Eros Titan Casa di Andrey"),
+    ...puppies.filter((puppy) => puppy.name !== "Eros Titan Casa di Andrey"),
+  ];
 
 export default function Puppies() {
   const location = useLocation();
@@ -16,16 +26,19 @@ export default function Puppies() {
   );
   const erosGallery = [
     {
-      src: puppyImage,
-      alt: "Eros Titan Casa di Andrey puppy portrait",
-    },
-    {
       src: puppyMeetingImage,
       alt: "Casa di Andrey Boxer puppy family moment",
     },
     {
-      src: puppyFamilyImage,
-      alt: "Casa di Andrey puppy outdoor moment",
+      type: "video",
+      src: titanFourMonthsVideo,
+      alt: "Eros Titan Casa di Andrey at four months",
+      poster: erosTitanGrassImage,
+    },
+    {
+      type: "video",
+      src: titanStandingWindVideo,
+      alt: "Eros Titan Casa di Andrey standing in the wind",
     },
   ];
 
@@ -76,11 +89,12 @@ export default function Puppies() {
             <h2>{erosTitan.name}</h2>
             <p className="lead">{erosTitan.note}</p>
             <p>
-              Eros Titan is a golden brindle male Boxer puppy from Litter E,
-              with a white blaze and white chest. He is still available for a
-              carefully selected family that understands the breed, values
-              character, and wants a loyal companion raised inside the Casa di
-              Andrey world.
+              Eros Titan is a golden brindle male from Litter E, born
+              26.02.2026, now 4 months old. He is gentle, smart, playful, eats
+              well, loves ball play, and is friendly with other dogs. When a dog
+              is behind a fence on the street, he already shows a young guardian
+              instinct: he raises his coat and gives a bark. His white blaze is
+              now softer, visible mainly as a few lighter hairs.
             </p>
             <Link className="button button--primary" to="/contact">
               Ask about Eros Titan
@@ -88,12 +102,12 @@ export default function Puppies() {
           </div>
           <div className="puppy-available-feature__media">
             <video
-              src={erosTitan.video}
+              src={erosTitanVideo}
               controls
               muted
               playsInline
               preload="metadata"
-              poster="/aria_puppy.webp"
+              poster={titanChairRelaxImage}
             />
           </div>
           <div className="puppy-available-gallery">
@@ -105,7 +119,20 @@ export default function Puppies() {
                 onClick={() => setSelectedImage(image)}
                 aria-label={`Open larger view: ${image.alt}`}
               >
-                <img src={image.src} alt={image.alt} loading="lazy" />
+                <span className="puppy-available-gallery__type" aria-hidden="true">
+                  {image.type === "video" ? <FaVideo /> : <FaImage />}
+                </span>
+                {image.type === "video" ? (
+                  <video
+                    src={image.src}
+                    muted
+                    playsInline
+                    preload="metadata"
+                    poster={image.poster}
+                  />
+                ) : (
+                  <img src={image.src} alt={image.alt} loading="lazy" />
+                )}
               </button>
             ))}
           </div>
@@ -128,28 +155,55 @@ export default function Puppies() {
           >
             Close
           </button>
-          <img
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            onClick={(event) => event.stopPropagation()}
-          />
+          {selectedImage.type === "video" ? (
+            <video
+              src={selectedImage.src}
+              controls
+              autoPlay
+              playsInline
+              onClick={(event) => event.stopPropagation()}
+            />
+          ) : (
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              onClick={(event) => event.stopPropagation()}
+            />
+          )}
         </div>
       )}
 
-      <section className="section" id="available">
+      <section className="section puppy-updates-highlight" id="available">
         <div className="section-heading">
-          <p className="eyebrow">Current availability</p>
-          <h2>8 weeks old puppies</h2>
-          <p>The puppies are now 8 weeks old and growing beautifully.</p>
+          <p className="eyebrow">8-week gallery</p>
+          <h2>Puppy videos from their 8-week update</h2>
+          <p>
+            A gallery-style look at what already happened: the puppies at 8
+            weeks old, growing beautifully and ready for their next chapter.
+          </p>
+          <div className="status-badge-list" aria-label="Puppy status options">
+            <span className="status-badge status-badge--available">
+              Available
+            </span>
+            <span className="status-badge status-badge--reserved">
+              Reserved
+            </span>
+            <span className="status-badge status-badge--new-owner">
+              New owner
+            </span>
+            <span className="status-badge status-badge--kennel">
+              In our kennel
+            </span>
+          </div>
         </div>
         <div className="puppy-grid" id="available-8weeks">
-          {currentPuppies.map((puppy) => (
+          {titanFirst(currentPuppies).map((puppy) => (
             <PuppyCard puppy={puppy} key={puppy.name} />
           ))}
         </div>
       </section>
 
-      <section className="section">
+      <section className="section puppy-updates-highlight">
         <div className="section-heading">
           <p className="eyebrow">Earlier updates</p>
           <h2>7-week puppy videos</h2>
@@ -159,15 +213,14 @@ export default function Puppies() {
           </p>
         </div>
         <div className="compact-list">
-          {sevenWeekPuppies.map((puppy) => (
+          {titanFirst(sevenWeekPuppies).map((puppy) => (
             <article className="compact-media" key={puppy.name}>
               <video
                 src={puppy.video}
                 controls
                 muted
                 playsInline
-                preload="none"
-                poster="/aria_puppy.webp"
+                preload="metadata"
               />
               <div>
                 <span>{puppy.weekGroup}</span>

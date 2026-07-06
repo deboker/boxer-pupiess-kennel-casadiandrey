@@ -16,7 +16,7 @@ export const sevenWeekPuppies = [
     note: "male fawn, wide white blaze, white chest, white socks",
     video: maleFawnVideo,
     reserved: true,
-    status: "Reserved",
+    status: "In our kennel",
     gender: "male",
   },
   {
@@ -25,7 +25,7 @@ export const sevenWeekPuppies = [
     note: "female dark brindle with a white chest",
     video: femaleBrindleVideo,
     reserved: true,
-    status: "Reserved",
+    status: "In our kennel",
     gender: "female",
   },
   {
@@ -34,7 +34,7 @@ export const sevenWeekPuppies = [
     note: "female fawn, white blaze and white chest",
     video: femaleFawnVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "female",
   },
   {
@@ -52,7 +52,7 @@ export const sevenWeekPuppies = [
     note: "male golden brindle, wide white blaze, white chest, white socks",
     video: maleBrindleWhiteMaskVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "male",
   },
 ];
@@ -64,7 +64,7 @@ export const eightWeekPuppies = [
     note: "8 weeks update video coming soon",
     video: egonEightWeeksVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "male",
   },
   {
@@ -73,7 +73,7 @@ export const eightWeekPuppies = [
     note: "female dark brindle with a white chest",
     video: auroraEightWeeksVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "female",
   },
   {
@@ -82,7 +82,7 @@ export const eightWeekPuppies = [
     note: "8 weeks update video coming soon",
     video: novaEightWeeksVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "female",
   },
   {
@@ -100,7 +100,7 @@ export const eightWeekPuppies = [
     note: "8 weeks update video coming soon",
     video: magnusEightWeeksVideo,
     reserved: true,
-    status: "Reserved",
+    status: "New owner",
     gender: "male",
   },
 ];

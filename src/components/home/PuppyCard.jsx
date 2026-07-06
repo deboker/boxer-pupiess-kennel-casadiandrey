@@ -1,23 +1,26 @@
 import { FaMars, FaVenus } from "react-icons/fa";
-import meetingImage from "../../assets/aria-vlajko-meet-new.webp";
 
 export default function PuppyCard({ puppy, darkMode }) {
   const isReserved = puppy.reserved === true;
+  const isAvailable = puppy.status === "Available" || !isReserved;
 
   return (
-    <article className={`puppy-card ${darkMode ? "dark-mode" : ""}`}>
+    <article
+      className={`puppy-card ${isAvailable ? "puppy-card--available" : ""} ${
+        darkMode ? "dark-mode" : ""
+      }`}
+    >
       <span
         className={`reserved-badge ${
           isReserved ? "reserved-badge--reserved" : "reserved-badge--available"
         }`}
       >
-        {puppy.status || (isReserved ? "Reserved" : "Available")}
+        {puppy.status || (isReserved ? "New owner" : "Available")}
       </span>
       {puppy.video ? (
         <video
           className="card-video"
           src={puppy.video}
-          poster={meetingImage}
           muted
           playsInline
           controls

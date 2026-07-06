@@ -124,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section split-section split-section--reverse section--boxers-preview">
+      <section className="section split-section split-section--reverse section--boxers-preview section--soft">
         <img src={boxerImage} alt="Casa di Andrey adult Boxers" loading="lazy" />
         <div>
           <p className="eyebrow">Our Boxers</p>
@@ -149,7 +149,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="section gallery-preview">
+      <section className="section gallery-preview section--soft">
         <div className="section-heading">
           <p className="eyebrow">Gallery</p>
           <h2>Selected moments from Casa di Andrey.</h2>
