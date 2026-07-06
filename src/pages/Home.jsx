@@ -10,6 +10,8 @@ import { currentPuppies } from "../data/puppies";
 
 export default function Home() {
   const currentLitter = litters[0];
+  const getStatusClass = (status) =>
+    `preview-status preview-status--${status.toLowerCase().replace(/\s+/g, "-")}`;
   const puppyPreview = [
     {
       name: "Eros Titan Casa di Andrey",
@@ -96,8 +98,13 @@ export default function Home() {
         </div>
         <div className="preview-grid">
           {puppyPreview.map((puppy) => (
-            <article className="preview-item" key={puppy.name}>
-              <span>{puppy.status}</span>
+            <article
+              className={`preview-item ${
+                puppy.status === "Available" ? "preview-item--available" : ""
+              }`}
+              key={puppy.name}
+            >
+              <span className={getStatusClass(puppy.status)}>{puppy.status}</span>
               <h3>{puppy.name}</h3>
               <p>{puppy.note}</p>
             </article>
