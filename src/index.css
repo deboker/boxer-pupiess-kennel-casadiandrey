@@ -542,10 +542,12 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: start;
 }
 
 .dog-profile-card {
   display: grid;
+  align-content: start;
   overflow: hidden;
   background: #fbf8f3;
   border: 1px solid rgba(217, 209, 199, 0.82);
@@ -562,6 +564,7 @@ p {
 
 .dog-profile-card > div {
   display: grid;
+  align-content: start;
   gap: 0.85rem;
   padding: clamp(1.2rem, 3vw, 2rem);
 }
@@ -574,6 +577,72 @@ p {
 .dog-profile-card p:not(.eyebrow):not(.lead) {
   color: var(--color-muted);
   line-height: 1.75;
+}
+
+.dog-profile-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.dog-profile-facts span {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border: 1px solid rgba(154, 99, 61, 0.18);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.54);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.dog-profile-facts strong {
+  color: var(--color-accent-dark);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dog-profile-detail {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.35rem;
+}
+
+.dog-profile-detail h3 {
+  font-size: 1.15rem;
+}
+
+.dog-profile-detail ul {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.dog-profile-meeting {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.45rem 0 0;
+}
+
+.dog-profile-meeting img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(154, 99, 61, 0.18);
+}
+
+.dog-profile-meeting figcaption {
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .preview-grid,
@@ -1919,6 +1988,11 @@ a.preview-item:hover {
   .boxer-art-actions .button {
     width: 100%;
   }
+
+  .dog-profile-facts {
+    grid-template-columns: 1fr;
+  }
+
   .philosophy-band,
   .cta-section,
   .art-preview {
