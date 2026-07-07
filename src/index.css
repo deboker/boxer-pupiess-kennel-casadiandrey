@@ -401,7 +401,7 @@ p {
 .page-hero {
   max-width: var(--width-page);
   margin: 0 auto;
-  padding: clamp(4.5rem, 9vw, 6rem) var(--space-page);
+  padding: clamp(3rem, 9vw, 4rem) var(--space-page);
 }
 
 .page-hero {
@@ -1257,6 +1257,14 @@ a.preview-item:hover {
   margin-top: 0.6rem;
   color: var(--color-muted);
   font-size: 0.9rem;
+}
+
+.gallery-video-section {
+  padding-top: clamp(4rem, 8vw, 7rem);
+}
+
+.gallery-video-section .section-heading {
+  padding-bottom: 2rem;
 }
 
 .contact-section {

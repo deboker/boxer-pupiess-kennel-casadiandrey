@@ -129,10 +129,10 @@ export default function Gallery() {
         </div>
       )}
 
-      <section className="section">
+      <section className="section gallery-video-section">
         <div className="section-heading">
-          <p className="eyebrow">Selected videos from the kennel</p>
-          <h2>Latest clips with manual playback.</h2>
+          <p className="eyebrow">Video archive</p>
+          <h2>Selected kennel moments from different periods.</h2>
         </div>
         <div className="video-grid">
           {galleryVideos.map((video) => (
