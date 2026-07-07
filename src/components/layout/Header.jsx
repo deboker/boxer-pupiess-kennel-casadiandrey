@@ -50,9 +50,9 @@ export default function Header({ isHome }) {
         </Link>
 
         <button
-          className="menu-toggle"
+          className={`menu-toggle ${isMenuOpen ? "menu-toggle--open" : ""}`}
           type="button"
-          aria-label="Toggle navigation"
+          aria-label={isMenuOpen ? "Close navigation" : "Open navigation"}
           aria-expanded={isMenuOpen}
           aria-controls="site-navigation"
           onClick={() => setIsMenuOpen((current) => !current)}
