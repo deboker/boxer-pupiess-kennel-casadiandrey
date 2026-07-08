@@ -164,6 +164,12 @@ h3 {
 
 p {
   color: var(--color-muted);
+  font-weight: 200;
+}
+
+li {
+    font-weight: 200;
+
 }
 
 .site {
