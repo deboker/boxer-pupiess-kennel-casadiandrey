@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
+import ArtDecoration from "../components/art/ArtDecoration";
 import { artworkFormats, artworkLicenseNotes, artworks } from "../data/artworks";
 
 const featuredArtwork = artworks.find((artwork) => artwork.featured) || artworks[0];
@@ -44,6 +45,7 @@ export default function BoxerArt() {
       />
 
       <section className="boxer-art-hero">
+        <ArtDecoration variant="brush" className="art-decoration--hero" />
         <div className="boxer-art-hero__content">
           <p className="boxer-art-eyebrow">Casa di Andrey Art Collection</p>
           <h1>Existing Boxer artworks by Casa di Andrey.</h1>
@@ -91,6 +93,7 @@ export default function BoxerArt() {
       </section>
 
       <section className="boxer-art-section" id="art-collection" aria-labelledby="art-collection-title">
+        <ArtDecoration variant="palette" className="art-decoration--collection" />
         <div className="boxer-art-section__heading">
           <p className="boxer-art-eyebrow">Collection</p>
           <h2 id="art-collection-title">Finished Casa di Andrey artworks</h2>
@@ -157,6 +160,7 @@ export default function BoxerArt() {
       </section>
 
       <section className="boxer-art-section boxer-art-process" id="art-status" aria-labelledby="art-status-title">
+        <ArtDecoration variant="stroke" className="art-decoration--process" />
         <div className="boxer-art-section__heading">
           <p className="boxer-art-eyebrow">Artwork status</p>
           <h2 id="art-status-title">Presentation only, no checkout</h2>

@@ -1,5 +1,6 @@
 import novaPortrait from "../assets/nova_cda_portret.webp";
 import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
+import ariaClassicalGarden from "../assets/Aria_Regal_boxer_in_classical_garden_setting.webp";
 import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
 import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
 import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
@@ -97,6 +98,17 @@ export const artworks = [
       "A dramatic interior portrait with warm bronze tones and a composed brindle presence.",
     description:
       "Created from an original Aria photograph and reviewed for a consistent Casa di Andrey fine-art style.",
+  }),
+  createArtwork({
+    id: "aria-classical-garden-reverie",
+    slug: "classical-garden-reverie",
+    title: "Classical Garden Reverie",
+    dogName: "Aria",
+    image: ariaClassicalGarden,
+    shortDescription:
+      "A serene garden portrait framed by classical stone, soft greenery, and Aria's poised brindle character.",
+    description:
+      "Aria stands with quiet confidence in a romantic classical garden, where warm natural light and timeless architecture create an elegant Casa di Andrey fine-art portrait.",
   }),
   createArtwork({
     id: "daenerys-sunlit-terrace",
