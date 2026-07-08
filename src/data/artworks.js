@@ -8,6 +8,7 @@ import aprilliaPortrait from "../assets/Aprillia_Von_der_Drachenwiese_Regal_boxe
 import aprilliaGarden from "../assets/Aprillia_Von_der_DrachenwieseBoxer_dog_classical_garden.webp";
 import erosTitanTerrace from "../assets/Eros_titan_Regal_canine_on_a_classical_terrace.webp";
 import cartierDramaticPortrait from "../assets/Cartier_VAF_E_PLURIBUS_UNUMNoble_boxer_in_dramatic_portrait.webp";
+import threePuppiesGoldenWarmth from "../assets/eros-magnus-eros-titan-elysia-nova_Three_boxer_puppies_in_golden_warmth.webp";
 
 const defaultFormats = [
   "Digital artwork",
@@ -74,6 +75,17 @@ export const artworks = [
       "A regal fine-art portrait created from an original photograph of Elysia Nova.",
     description:
       "A study of warmth, dignity, character, and quiet presence, shaped for a refined Casa di Andrey wall-art collection.",
+  }),
+  createArtwork({
+    id: "eros-magnus-eros-titan-elysia-nova-golden-warmth",
+    slug: "three-boxer-puppies-in-golden-warmth",
+    title: "Three Boxer Puppies in Golden Warmth",
+    dogName: "Eros Magnus, Eros Titan, and Elysia Nova",
+    image: threePuppiesGoldenWarmth,
+    shortDescription:
+      "A warm fine-art portrait of three Casa di Andrey puppies in soft golden light.",
+    description:
+      "A gentle Casa di Andrey puppy artwork shaped around warmth, closeness, and the early family character of Eros Magnus, Eros Titan, and Elysia Nova.",
   }),
   createArtwork({
     id: "aria-regal-interior",
