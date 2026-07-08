@@ -1,3 +1,5 @@
+import forms from '@tailwindcss/forms';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class', // This sets dark mode to be controlled by adding 'dark' class in the HTML
@@ -24,6 +26,6 @@ export default {
     }
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    forms,
   ],
 }

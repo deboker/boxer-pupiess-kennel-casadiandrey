@@ -6,6 +6,8 @@ import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
 import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
 import aprilliaPortrait from "../assets/Aprillia_Von_der_Drachenwiese_Regal_boxer_in_classical_portrait_style.webp";
 import aprilliaGarden from "../assets/Aprillia_Von_der_DrachenwieseBoxer_dog_classical_garden.webp";
+import erosTitanTerrace from "../assets/Eros_titan_Regal_canine_on_a_classical_terrace.webp";
+import cartierDramaticPortrait from "../assets/Cartier_VAF_E_PLURIBUS_UNUMNoble_boxer_in_dramatic_portrait.webp";
 
 const defaultFormats = [
   "Digital artwork",
@@ -50,6 +52,17 @@ const createArtwork = ({
 });
 
 export const artworks = [
+  createArtwork({
+    id: "eros-titan-regal-canine-classical-terrace",
+    slug: "regal-canine-classical-terrace",
+    title: "Regal Canine on a Classical Terrace",
+    dogName: "Eros Titan",
+    image: erosTitanTerrace,
+    shortDescription:
+      "A noble fine-art portrait of Eros Titan posed on a classical terrace.",
+    description:
+      "A refined Eros Titan artwork shaped around classical architecture, warm light, and a calm regal Boxer presence.",
+  }),
   createArtwork({
     id: "elysia-nova-noble-presence",
     slug: "the-noble-presence",
@@ -138,6 +151,17 @@ export const artworks = [
       "A classical garden artwork with natural light and a calm noble presence.",
     description:
       "A garden-inspired Aprillia portrait prepared as part of the existing Casa di Andrey Art Collection.",
+  }),
+  createArtwork({
+    id: "cartier-vaf-e-pluribus-unum-dramatic-portrait",
+    slug: "noble-boxer-dramatic-portrait",
+    title: "Noble Boxer in Dramatic Portrait",
+    dogName: "Cartier VAF E Pluribus Unum",
+    image: cartierDramaticPortrait,
+    shortDescription:
+      "A noble Cartier portrait with dramatic lighting and a refined gallery presence.",
+    description:
+      "A dramatic fine-art Boxer portrait focused on Cartier's strong expression, depth, and classical kennel character.",
   }),
 ];
 
