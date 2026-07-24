@@ -8,6 +8,8 @@ import erosTitanGrassImage from "../assets/eros_titan_gras_relax.jpg";
 import erosTitanVideo from "../assets/eros_title_video.mp4";
 import titanFourMonthsVideo from "../assets/Titan_4_months.mp4";
 import titanStandingWindVideo from "../assets/titan_standing_wind.mp4";
+import titanChairSitVideo from "../assets/titan_chair_sit.mp4";
+import titanLeashTrainingVideo from "../assets/titan_leache_tranning.mp4";
 import titanChairRelaxImage from "../assets/titan_chair_relax.jpeg";
 import { kennelInfo } from "../data/kennel";
 import { currentPuppies, sevenWeekPuppies } from "../data/puppies";
@@ -31,14 +33,28 @@ export default function Puppies() {
     },
     {
       type: "video",
+      src: titanLeashTrainingVideo,
+      alt: "Eros Titan Casa di Andrey leash training",
+      date: "20.07.2026",
+    },
+    {
+      type: "video",
+      src: titanChairSitVideo,
+      alt: "Eros Titan Casa di Andrey sitting on a chair",
+      date: "10.07.2026",
+    },
+    {
+      type: "video",
       src: titanFourMonthsVideo,
       alt: "Eros Titan Casa di Andrey at four months",
       poster: erosTitanGrassImage,
+      date: "01.07.2026",
     },
     {
       type: "video",
       src: titanStandingWindVideo,
       alt: "Eros Titan Casa di Andrey standing in the wind",
+      date: "19.06.2026",
     },
   ];
 
@@ -122,6 +138,14 @@ export default function Puppies() {
                 <span className="puppy-available-gallery__type" aria-hidden="true">
                   {image.type === "video" ? <FaVideo /> : <FaImage />}
                 </span>
+                {image.date && (
+                  <time
+                    className="puppy-available-gallery__date"
+                    dateTime={image.date.split(".").reverse().join("-")}
+                  >
+                    {image.date}
+                  </time>
+                )}
                 {image.type === "video" ? (
                   <video
                     src={image.src}
