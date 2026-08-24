@@ -106,7 +106,7 @@ export default function Puppies() {
             <p className="lead">{erosTitan.note}</p>
             <p>
               Eros Titan is a golden brindle male from Litter E, born
-              26.02.2026, now 4 months old. He is gentle, smart, playful, eats
+              26.02.2026, He is gentle, smart, playful, eats
               well, loves ball play, and is friendly with other dogs. When a dog
               is behind a fence on the street, he already shows a young guardian
               instinct: he raises his coat and gives a bark. His white blaze is
