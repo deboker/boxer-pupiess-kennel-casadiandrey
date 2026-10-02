@@ -1,4 +1,5 @@
 import novaPortrait from "../assets/nova_cda_portret.webp";
+import erosTitanCourtyard from "../assets/Eros_Titan_in_a_Classical_Courtyard.webp";
 import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
 import ariaClassicalGarden from "../assets/Aria_Regal_boxer_in_classical_garden_setting.webp";
 import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
@@ -55,6 +56,19 @@ const createArtwork = ({
 
 export const artworks = [
   createArtwork({
+    id: "eros-titan-classical-courtyard",
+    slug: "eros-titan-in-a-classical-courtyard",
+    title: "Eros Titan in a Classical Courtyard",
+    dogName: "Eros Titan",
+    image: erosTitanCourtyard,
+    aspectRatio: "3:4",
+    featured: true,
+    shortDescription:
+      "Eros Titan rests beside weathered stone columns, his brindle coat glowing in the courtyard's golden light.",
+    description:
+      "A portrait of quiet strength and youthful curiosity. Eros Titan sits on sun-warmed stone, framed by classical columns, deep red flowers, and folds of burgundy fabric. Rich amber light brings out the texture of his brindle coat, giving this Casa di Andrey artwork an intimate, timeless atmosphere.",
+  }),
+  createArtwork({
     id: "eros-titan-regal-canine-classical-terrace",
     slug: "regal-canine-classical-terrace",
     title: "Regal Canine on a Classical Terrace",
@@ -71,7 +85,6 @@ export const artworks = [
     title: "The Noble Presence",
     dogName: "Elysia Nova",
     image: novaPortrait,
-    featured: true,
     shortDescription:
       "A regal fine-art portrait created from an original photograph of Elysia Nova.",
     description:
