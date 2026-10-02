@@ -3,6 +3,7 @@ import erosTitanCourtyard from "../assets/Eros_Titan_in_a_Classical_Courtyard.we
 import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
 import ariaClassicalGarden from "../assets/Aria_Regal_boxer_in_classical_garden_setting.webp";
 import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
+import adamGarden from "../assets/Adam_D_Black_in_the_Garden.webp";
 import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
 import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
 import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
@@ -133,6 +134,18 @@ export const artworks = [
       "A warm terrace artwork with soft light, elegance, and calm family-home atmosphere.",
     description:
       "A gentle Casa di Andrey artwork built around sunlight, relaxed posture, and quiet Boxer expression.",
+  }),
+  createArtwork({
+    id: "adam-d-black-golden-garden-stride",
+    slug: "golden-garden-stride",
+    title: "Golden Garden Stride",
+    dogName: "Adam D Black",
+    image: adamGarden,
+    aspectRatio: "3:4",
+    shortDescription:
+      "Adam D Black bounds through a golden garden, his playful spirit framed by stone urns and cascading flowers.",
+    description:
+      "A moment of joyful motion held in warm afternoon light. Adam D Black sweeps across the grass, his dark coat and white chest luminous against a garden of weathered stone, crimson blossoms, and soft greenery. Classical elegance meets the Boxer's exuberant spirit in a Casa di Andrey portrait alive with freedom, strength, and grace.",
   }),
   createArtwork({
     id: "adam-d-black-noble-guardian",
