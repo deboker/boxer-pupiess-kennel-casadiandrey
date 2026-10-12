@@ -5,6 +5,9 @@ import Meta from "../components/Meta";
 import PuppyCard from "../components/home/PuppyCard";
 import puppyMeetingImage from "../assets/aria-vlajko-meet-new.webp";
 import erosTitanGrassImage from "../assets/eros_titan_gras_relax.jpg";
+import erosTitanFeaturedVideo from "../assets/MP4_20261004_171922_PHOTOMOVIE-1.mp4";
+import erosTitanOctoberPhotoMovie from "../assets/MP4_20261010_130426_PHOTOMOVIE-2.mp4";
+import erosTitanOctoberVideo from "../assets/VID_20261010_122536-1.mp4";
 import erosTitanVideo from "../assets/eros_title_video.mp4";
 import titanFourMonthsVideo from "../assets/Titan_4_months.mp4";
 import titanStandingWindVideo from "../assets/titan_standing_wind.mp4";
@@ -14,14 +17,14 @@ import titoSittingPoseVideo from "../assets/tito_sitting_pose.mp4";
 import titoLeashWalkTrainingVideo from "../assets/tito_leache_walk_traning.mp4";
 import titoTeethVideo from "../assets/tito_teath.mp4";
 import titanChairRelaxImage from "../assets/titan_chair_relax.jpeg";
+import erosTitanFeaturedPoster from "../assets/SCR-20261012-jlox.jpeg";
 import { kennelInfo } from "../data/kennel";
 import { currentPuppies, sevenWeekPuppies } from "../data/puppies";
 
-const titanFirst = (puppies) =>
-  [
-    ...puppies.filter((puppy) => puppy.name === "Eros Titan Casa di Andrey"),
-    ...puppies.filter((puppy) => puppy.name !== "Eros Titan Casa di Andrey"),
-  ];
+const titanFirst = (puppies) => [
+  ...puppies.filter((puppy) => puppy.name === "Eros Titan Casa di Andrey"),
+  ...puppies.filter((puppy) => puppy.name !== "Eros Titan Casa di Andrey"),
+];
 
 export default function Puppies() {
   const location = useLocation();
@@ -33,6 +36,18 @@ export default function Puppies() {
     {
       src: puppyMeetingImage,
       alt: "Casa di Andrey Boxer puppy family moment",
+    },
+    {
+      type: "video",
+      src: erosTitanOctoberPhotoMovie,
+      alt: "Eros Titan Casa di Andrey update",
+      date: "10.10.2026",
+    },
+    {
+      type: "video",
+      src: erosTitanOctoberVideo,
+      alt: "Eros Titan Casa di Andrey update",
+      date: "10.10.2026",
     },
     {
       type: "video",
@@ -66,6 +81,13 @@ export default function Puppies() {
     },
     {
       type: "video",
+      src: erosTitanVideo,
+      alt: "Eros Titan Casa di Andrey featured video",
+      poster: titanChairRelaxImage,
+      date: "10.07.2026",
+    },
+    {
+      type: "video",
       src: titanFourMonthsVideo,
       alt: "Eros Titan Casa di Andrey at four months",
       poster: erosTitanGrassImage,
@@ -80,7 +102,10 @@ export default function Puppies() {
   ];
 
   useEffect(() => {
-    if (location.hash === "#available-8weeks" || location.hash === "#eros-titan") {
+    if (
+      location.hash === "#available-8weeks" ||
+      location.hash === "#eros-titan"
+    ) {
       const targetId =
         location.hash === "#eros-titan" ? "eros-titan" : "available-8weeks";
 
@@ -114,8 +139,9 @@ export default function Puppies() {
         <p className="eyebrow">Puppies</p>
         <h1>Current Casa di Andrey puppies</h1>
         <p>
-          Watch the latest puppy videos, review availability, and send an inquiry
-          for fresh photos, health certificates, show ratings, and next steps.
+          Watch the latest puppy videos, review availability, and send an
+          inquiry for fresh photos, health certificates, show ratings, and next
+          steps.
         </p>
       </section>
 
@@ -127,7 +153,7 @@ export default function Puppies() {
             <p className="lead">{erosTitan.note}</p>
             <p>
               Eros Titan is a golden brindle male from Litter E, born
-              26.02.2026, He is gentle, smart, playful, eats
+              26.02.2026, now 4 months old. He is gentle, smart, playful, eats
               well, loves ball play, and is friendly with other dogs. When a dog
               is behind a fence on the street, he already shows a young guardian
               instinct: he raises his coat and gives a bark. His white blaze is
@@ -139,12 +165,12 @@ export default function Puppies() {
           </div>
           <div className="puppy-available-feature__media">
             <video
-              src={erosTitanVideo}
+              src={erosTitanFeaturedVideo}
               controls
               muted
               playsInline
               preload="metadata"
-              poster={titanChairRelaxImage}
+              poster={erosTitanFeaturedPoster}
             />
           </div>
           <div className="puppy-available-gallery">
@@ -156,7 +182,10 @@ export default function Puppies() {
                 onClick={() => setSelectedImage(image)}
                 aria-label={`Open larger view: ${image.alt}`}
               >
-                <span className="puppy-available-gallery__type" aria-hidden="true">
+                <span
+                  className="puppy-available-gallery__type"
+                  aria-hidden="true"
+                >
                   {image.type === "video" ? <FaVideo /> : <FaImage />}
                 </span>
                 {image.date && (
