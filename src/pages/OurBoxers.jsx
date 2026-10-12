@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Meta from "../components/Meta";
 import ariaImage from "../assets/aria_08.01.2024.webp";
-import elysiaImage from "../assets/elysia_nova_relaxing_sofa.jpeg";
+import elysiaVideo from "../assets/nova_head_all_sides.mp4";
 import litterAMeetingImage from "../assets/cartier&free.jpg";
 import litterEMeetingImage from "../assets/aria-vlajko-meet-new.webp";
 
@@ -66,7 +66,7 @@ const dogs = [
     born: "26 February 2026",
     birthDate: new Date(2026, 1, 26),
     breed: "German Boxer",
-    image: elysiaImage,
+    video: elysiaVideo,
     alt: "Elysia Nova Casa di Andrey Boxer portrait",
     description:
       "Elysia Nova stays in the Casa di Andrey kennel. She is still young, with her first confirmed DNA health result already recorded and her future presentation planned carefully.",
@@ -106,7 +106,18 @@ export default function OurBoxers() {
       <section className="section dog-profile-grid">
         {dogs.map((dog) => (
           <article className="dog-profile-card" key={dog.name}>
-            <img src={dog.image} alt={dog.alt} loading="lazy" />
+            {dog.video ? (
+              <video
+                src={dog.video}
+                aria-label={dog.alt}
+                controls
+                muted
+                playsInline
+                preload="metadata"
+              />
+            ) : (
+              <img src={dog.image} alt={dog.alt} loading="lazy" />
+            )}
             <div>
               <p className="eyebrow">{dog.role}</p>
               <h2>{dog.name}</h2>

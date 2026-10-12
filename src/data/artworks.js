@@ -1,7 +1,9 @@
 import novaPortrait from "../assets/nova_cda_portret.webp";
+import erosTitanCourtyard from "../assets/Eros_Titan_in_a_Classical_Courtyard.webp";
 import ariaDigitalArt from "../assets/aria_digital_art_Regal_brindle_dog_grand_interior.webp";
 import ariaClassicalGarden from "../assets/Aria_Regal_boxer_in_classical_garden_setting.webp";
 import daenerysTerrace from "../assets/Daenerys_Khaleesi_Relaxing_on_a_sunlit_terrace.webp";
+import adamGarden from "../assets/Adam_D_Black_in_the_Garden.webp";
 import adamGuardian from "../assets/adam_dblack_Noble_guardian.webp";
 import adamPuppy from "../assets/adam_dblack_puppy_classical_setting.webp";
 import adamSweetPuppy from "../assets/adam_dblack_Sweet_puppy_portrait.webp";
@@ -55,6 +57,19 @@ const createArtwork = ({
 
 export const artworks = [
   createArtwork({
+    id: "eros-titan-classical-courtyard",
+    slug: "eros-titan-in-a-classical-courtyard",
+    title: "Eros Titan in a Classical Courtyard",
+    dogName: "Eros Titan",
+    image: erosTitanCourtyard,
+    aspectRatio: "3:4",
+    featured: true,
+    shortDescription:
+      "Eros Titan rests beside weathered stone columns, his brindle coat glowing in the courtyard's golden light.",
+    description:
+      "A portrait of quiet strength and youthful curiosity. Eros Titan sits on sun-warmed stone, framed by classical columns, deep red flowers, and folds of burgundy fabric. Rich amber light brings out the texture of his brindle coat, giving this Casa di Andrey artwork an intimate, timeless atmosphere.",
+  }),
+  createArtwork({
     id: "eros-titan-regal-canine-classical-terrace",
     slug: "regal-canine-classical-terrace",
     title: "Regal Canine on a Classical Terrace",
@@ -71,7 +86,6 @@ export const artworks = [
     title: "The Noble Presence",
     dogName: "Elysia Nova",
     image: novaPortrait,
-    featured: true,
     shortDescription:
       "A regal fine-art portrait created from an original photograph of Elysia Nova.",
     description:
@@ -120,6 +134,18 @@ export const artworks = [
       "A warm terrace artwork with soft light, elegance, and calm family-home atmosphere.",
     description:
       "A gentle Casa di Andrey artwork built around sunlight, relaxed posture, and quiet Boxer expression.",
+  }),
+  createArtwork({
+    id: "adam-d-black-golden-garden-stride",
+    slug: "golden-garden-stride",
+    title: "Golden Garden Stride",
+    dogName: "Adam D Black",
+    image: adamGarden,
+    aspectRatio: "3:4",
+    shortDescription:
+      "Adam D Black bounds through a golden garden, his playful spirit framed by stone urns and cascading flowers.",
+    description:
+      "A moment of joyful motion held in warm afternoon light. Adam D Black sweeps across the grass, his dark coat and white chest luminous against a garden of weathered stone, crimson blossoms, and soft greenery. Classical elegance meets the Boxer's exuberant spirit in a Casa di Andrey portrait alive with freedom, strength, and grace.",
   }),
   createArtwork({
     id: "adam-d-black-noble-guardian",
