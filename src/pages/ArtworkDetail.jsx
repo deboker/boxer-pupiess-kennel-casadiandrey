@@ -89,7 +89,7 @@ export default function ArtworkDetail() {
           <h2>Personal art use only</h2>
           <p>
             Every artwork starts from an original Casa di Andrey photograph and
-            remains part of the kennel's protected art collection.
+            remains part of the kennel&apos;s protected art collection.
           </p>
         </div>
         <div className="boxer-art-values__grid">
