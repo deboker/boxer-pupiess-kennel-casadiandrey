@@ -12,7 +12,6 @@ import erosTitanVideo from "../assets/eros_title_video.mp4";
 import titanFourMonthsVideo from "../assets/Titan_4_months.mp4";
 import titanStandingWindVideo from "../assets/titan_standing_wind.mp4";
 import titanChairSitVideo from "../assets/titan_chair_sit.mp4";
-import titanLeashTrainingVideo from "../assets/titan_leache_tranning.mp4";
 import titoSittingPoseVideo from "../assets/tito_sitting_pose.mp4";
 import titoLeashWalkTrainingVideo from "../assets/tito_leache_walk_traning.mp4";
 import titoTeethVideo from "../assets/tito_teath.mp4";
@@ -66,12 +65,6 @@ export default function Puppies() {
       src: titoTeethVideo,
       alt: "Eros Titan Casa di Andrey teeth",
       date: "26.08.2026",
-    },
-    {
-      type: "video",
-      src: titanLeashTrainingVideo,
-      alt: "Eros Titan Casa di Andrey leash training",
-      date: "20.07.2026",
     },
     {
       type: "video",
